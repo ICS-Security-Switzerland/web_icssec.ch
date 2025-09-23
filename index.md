@@ -1,11 +1,9 @@
 ---
 layout: home
-title: Welcome
+title: Welcome to ICS Security Switzerland
 lang: en
 permalink: /
 ---
-
-**Welcome to ICS Security Switzerland**
 
 
 **ICS Security Switzerland** is a newly founded initiative that brings together cybersecurity practitioners and organisations with a shared interest in industrial automation and control systems (IACS/OT) security, standards, and innovation.
