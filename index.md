@@ -28,7 +28,7 @@ Join us to stay ahead of emerging security challenges and help shape future stan
 Membership is open to anyone interested in advancing **operational technology (OT) security** and **industrial automation** in Switzerland.
 
 
-- 👉 [Become a member](./members)
+- 👉 Become a [member](./members) today
 - 📅 Next events: tbd
 - ✉️ Contacts: [info [at] icssec.ch](mailto:info@icssec.ch)
 
