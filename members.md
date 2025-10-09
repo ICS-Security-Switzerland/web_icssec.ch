@@ -11,6 +11,6 @@ permalink: /members/
 <br><br>
 2. Transfer the annual membership fee (CHF 50 😆).
 <br><br>
-   🔗 <a href="/assets/membership_fee.pdf" target="_blank">Download QR-bill (PDF)</a>
+   🔗 <a href="/assets/membership_fee_2026.pdf" target="_blank">Download QR-bill (PDF)</a>
 <br><br>
 3. Welcome! 🎉
