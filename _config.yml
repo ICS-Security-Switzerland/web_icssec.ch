@@ -12,6 +12,8 @@ header_pages:
   - members.md
   - contacts.md
 
+logo: /assets/logo_ics_security.png
+
 plugins:
   - jekyll-feed
   - jekyll-seo-tag

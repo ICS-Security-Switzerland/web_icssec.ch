@@ -1,0 +1,37 @@
+<header class="site-header">
+  <div class="wrapper" style="display: flex; align-items: center; justify-content: space-between;">
+    <!-- Left side: Title + Nav -->
+    <div style="display: flex; align-items: center; gap: 80px;">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        {{ site.title | escape }}
+      </a>
+
+    <div style="display:flex;align-items:center;justify-content:flex-end;gap:100px;">
+
+      <nav class="site-nav" style="display:flex;gap:50px;">
+        {% include navigation.html %}
+      </nav>
+      <style>
+        .site-nav > nav { display:flex; align-items:center; gap:10px; }
+      </style>
+
+      <a href="{{ "/" | relative_url }}">
+        <img src="{{ "/assets/images/logo_ics_security.png" | relative_url }}"
+             alt="ISA Hub Logo"
+             style="height:70px;">
+      </a>
+
+
+
+    </div>
+
+    </div>
+  </div>
+</header>
+
+<style>
+  .site-nav a,
+  .site-nav a:visited { color: #000 !important; }
+  .site-nav a:hover,
+  .site-nav a:focus   { color: #000 !important; text-decoration: underline; }
+</style>
