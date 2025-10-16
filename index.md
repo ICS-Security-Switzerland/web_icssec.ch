@@ -30,5 +30,4 @@ Membership is open to anyone interested in advancing **operational technology (O
 
 - 👉 Become a [member](./members) today
 - 📅 Next events: tbd
-- ✉️ Contacts: [info [at] icssec.ch](mailto:info@icssec.ch)
 
