@@ -1,6 +1,5 @@
 <header class="site-header">
   <div class="wrapper" style="display: flex; align-items: center; justify-content: space-between;">
-    <!-- Left side: Title + Nav -->
     <div style="display: flex; align-items: center; gap: 80px;">
       <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
         {{ site.title | escape }}
@@ -16,15 +15,12 @@
       </style>
 
       <a href="{{ "/" | relative_url }}">
-        <img src="{{ "/assets/images/logo_ics_security.png" | relative_url }}"
+        <img src="{{ "/assets/images/logo_ics_security_transparent.png" | relative_url }}"
              alt="ISA Hub Logo"
              style="height:70px;">
       </a>
 
-
-
     </div>
-
     </div>
   </div>
 </header>
@@ -34,4 +30,9 @@
   .site-nav a:visited { color: #000 !important; }
   .site-nav a:hover,
   .site-nav a:focus   { color: #000 !important; text-decoration: underline; }
+
+  .site-title {
+    font-size: 1.11rem !important;
+  }
 </style>
+

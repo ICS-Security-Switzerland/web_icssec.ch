@@ -1,5 +1,12 @@
-<nav class="site-nav">
-  <a href="{{ "/about/" | relative_url }}">About</a>
-  <a href="{{ "/members/" | relative_url }}">Join</a>
-  <a href="{{ "/contacts/" | relative_url }}">Contact</a>
+<nav class="site-nav" style="border:0;background:transparent;box-shadow:none;">
+  <input type="checkbox" id="nav-trigger" class="nav-trigger">
+  <label for="nav-trigger" style="border:0;background:transparent;box-shadow:none;cursor:pointer;">
+    <span class="menu-icon" style="border:0;background:transparent;box-shadow:none;">☰</span>
+  </label>
+
+  <div class="trigger" style="border:0;background:transparent;box-shadow:none;padding:0;">
+    <a href="/about/"    class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">About</a>
+    <a href="/members/"  class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">Join</a>
+    <a href="/contacts/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">Contact</a>
+  </div>
 </nav>

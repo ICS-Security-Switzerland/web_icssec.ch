@@ -12,7 +12,7 @@ header_pages:
   - members.md
   - contacts.md
 
-logo: /assets/logo_ics_security.png
+# logo: /assets/logo_ics_security_transparent.png
 
 plugins:
   - jekyll-feed
