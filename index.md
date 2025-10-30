@@ -27,7 +27,7 @@ Join us to stay ahead of emerging security challenges and help shape future stan
 
 Membership is open to anyone interested in advancing **operational technology (OT) security** and **industrial automation** in Switzerland.
 
-👉 Become a [member](./members) today
+### 👉 Become a [member](./members) today
 
 ### Next events: 📅 tbd
 
