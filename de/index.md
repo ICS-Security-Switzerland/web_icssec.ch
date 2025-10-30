@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Willkommen im Swiss ISA Hub
+title: Willkommen im ICS Security Switzerland
 lang: de
 permalink: /de/
 ---
