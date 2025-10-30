@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Willkommen im ICS Security Switzerland
+title: Willkommen bei ICS Security Switzerland
 lang: de
 permalink: /de/
 ---
