@@ -7,15 +7,14 @@
 <style>
   .site-nav a,
   .site-nav a:visited { 
-    color: #000 !important;
-    text-decoration:none;
+    color: #000;
+    text-decoration: none;
   }
   .site-nav a:hover,
   .site-nav a:focus { 
-    color: #000 !important; 
+    color: #000; 
     text-decoration: underline;
-    outline:2px solid #000;
-    outline-offset:2px;
+    outline: none;
   }
 
   .menu-icon {
@@ -25,21 +24,37 @@
     cursor: pointer;
   }
 
-  .header-bar { display:flex; align-items:center; justify-content:space-between; gap:1rem }
-
-  @media (min-width:769px) {
-    .site-nav .trigger { display:flex; align-items:center; gap:24px }
-    .site-nav .menu-icon { display:none }
+  .header-bar { 
+    display:flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 1rem;
+    min-height: 70px;
   }
-
+  .site-nav a, .lang-link { font-family: inherit; font-weight: 500; }
   .lang-link {
     font-weight: 600;
     text-decoration: none;
     color: #000;
   }
-  .lang-link:hover { text-decoration: underline; }
+  .lang-link:hover { text-decoration: none; }
+  
   @media (min-width:769px) {
+    .site-nav .trigger { display: flex; align-items: center }
+    .site-nav .menu-icon { display: none }
+    .page-link { margin-right: 24px; }
     .lang-link { margin-left: auto; }
+  }
+
+  .site-title img.logo {
+    height: 70px;
+  }
+  
+  label[for="nav-trigger"] {
+    display: flex;
+    align-items: center;
+    height: 70px;
+    cursor: pointer;
   }
 </style>
 
