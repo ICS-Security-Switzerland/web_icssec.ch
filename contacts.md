@@ -5,9 +5,8 @@ lang: en
 permalink: /contacts/
 ---
 
-- [info [at] icssec.ch](mailto:info@icssec.ch)
+The easiest way to reach us is by e-mail. We’ll get back to you as soon as possible.
 
-- [Linkedin](https://www.linkedin.com/company/icssecurity)
-
-- Postal address: tbd
-
+- ✉️ **E-mail:** [info@icssec.ch](mailto:info@icssec.ch)  
+- 🔗 **LinkedIn:** [ICS Security Switzerland](https://www.linkedin.com/company/ics-security-switzerland/)  
+- 📍 **Based in:** Bern, Switzerland
