@@ -2,20 +2,12 @@
   <div class="wrapper header-bar">
     
     <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
-    {{ site.title | escape }}
-    </a>
-
-    {% include navigation.html %}
-      
-    <style>
-      .site-nav > nav { display:flex; align-items:center; gap:10px; }
-    </style>
-
-    <a href="{{ "/" | relative_url }}">
       <img src="{{ "/assets/images/logo_ics_security_transparent.png" | relative_url }}"
            alt="ICS Security Switzerland Logo"
            style="height:70px;">
     </a>
+
+    {% include navigation.html %}
   </div>
 </header>
 
@@ -29,7 +21,7 @@
     font-size: 1.11rem !important;
   }
   
-  .brand{ height:70px }
+  .brand { height:70px }
   @media (max-width:600px) { .brand{ display:none !important } }
 
   .header-bar { display:flex; align-items:center; justify-content:space-between; gap:1rem }
