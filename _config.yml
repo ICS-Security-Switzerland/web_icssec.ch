@@ -33,7 +33,7 @@ minima:
     - platform: github
       user_url: "https://github.com/ICS-Security-Switzerland"
     - platform: linkedin
-      user_url: "https://www.linkedin.com/company/tbd"
+      user_url: "https://www.linkedin.com/company/icssecurity"
   date_format: "%-d. %B %Y"
 show_excerpts: true
 
