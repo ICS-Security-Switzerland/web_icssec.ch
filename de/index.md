@@ -5,27 +5,35 @@ lang: de
 permalink: /de/
 ---
 
-**ICS Security Switzerland** ist eine neu gegründete Initiative, die Cybersicherheitsfachleute und Organisationen mit einem gemeinsamen Interesse an der Sicherheit, den Standards und der Innovation in industriellen Automatisierungs- und Steuerungssystemen (IACS/OT) zusammenbringt.
+**ICS Security Switzerland** ist eine neu gegründete, gemeinnützige Initiative, die Cybersicherheitsfachleute und Organisationen mit einem gemeinsamen Interesse an der Sicherheit, den Standards und der Innovation im Bereich industrieller Automatisierungs- und Steuerungssysteme (IACS/OT) zusammenbringt.
 
-Unser Fokus liegt auf der Förderung von Bewusstsein, Wissensaustausch und der Umsetzung der [**ISA/IEC 62443**](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards)-Normenreihe sowie verwandter Best Practices in Schweizer Branchen – darunter Energie, Wasseraufbereitung, Fertigung, Pharma und öffentlicher Verkehr.
+Wir fördern das Bewusstsein, den Wissensaustausch und die Anwendung der [**ISA/IEC 62443**](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards)-Normenreihe sowie verwandter Best Practices zur Absicherung von **kritischen Infrastrukturen** und **industriellen Sektoren** – darunter Energie, Wasser, Transport und Fertigung.
 
-Mitglieder profitieren von Networking-Möglichkeiten, Weiterbildungsanlässen und gemeinsamen Projekten, die Innovation in der IACS-Sicherheit vorantreiben.
+Mitglieder profitieren von Networking-Möglichkeiten, Weiterbildungsanlässen und gemeinsamen Projekten, die Innovation im Bereich der IACS- und OT-Sicherheit vorantreiben.
 
 ## Unsere Mission
 
 Als Gemeinschaft möchten wir:
 
-* Fachleute aus verschiedenen Schweizer Branchen vernetzen.
-* Bildung und berufliche Entwicklung durch Workshops, Vorträge und Events fördern.
-* Lokale Unternehmen bei der Angleichung an internationale ISA/IEC-Standards unterstützen.
-* Die Schweiz mit ISA Europe und der globalen ISA-Community verbinden.
+- Ein starkes Netzwerk zwischen Fachleuten aus verschiedenen Schweizer Branchen aufbauen.  
+- Bildung und berufliche Weiterentwicklung durch Workshops, Vorträge und Events fördern.  
+- Schweizer Unternehmen bei der Umsetzung internationaler ISA/IEC-Standards unterstützen.  
+- Die Schweiz mit ISA Europe und der globalen ISA-Community vernetzen.
 
 ---
 
-Mach mit, um den zukünftigen Sicherheitsherausforderungen einen Schritt voraus zu sein und die Standards der Schweizer Industrie aktiv mitzugestalten.
+Mach mit, um den zukünftigen Sicherheitsherausforderungen einen Schritt voraus zu sein und die Standards in der Schweizer Industrie aktiv mitzugestalten.
 
 Die Mitgliedschaft steht allen offen, die sich für **OT-Sicherheit (Operational Technology)** und **industrielle Automatisierung** in der Schweiz engagieren möchten.
 
-### 👉 Heute noch [Mitglied](./members) werden.
+### 👉 [Jetzt Mitglied werden](./members)
 
-### Nächste Veranstaltungen: 📅 wird bekanntgegeben
+---
+
+## Kommende Veranstaltungen
+
+- 📅 **November 2025:** Meetup in Zürich *(tbd)*  
+- 📅 **März 2026:** Get-together in Bern *(tbd)*  
+- 📅 **Frühling 2026:** Führung im Gotthard-Basistunnel (SBB)
+
+➡️ [Alle Veranstaltungen →](./events)
