@@ -5,8 +5,7 @@ lang: en
 permalink: /about/
 ---
 
-We operate as a neutral, non-profit association, bringing together engineers, operators, integrators, and assessors dedicated to advancing OT and IACS security beyond individual organizations and commercial interests.
+We are a neutral, non-profit association that brings together engineers, operators, integrators, and assessors dedicated to advancing OT and IACS security across Switzerland — beyond individual organisations and commercial interests.
 
-- Founded on: 9 September 2025
-- Headquarters: Bern, Switzerland
-
+- 🗓️ **Founded:** 9 September 2025  
+- 📍 **Based in:** Bern, Switzerland
