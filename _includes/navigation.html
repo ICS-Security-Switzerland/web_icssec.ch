@@ -18,26 +18,26 @@
     {% assign other_title = 'Deutsch' %}
 {% endif %}
 
-<a class="site-title" rel="author" href="{{ prefix | relative_url }}">
+<a class="site-title" href="{{ prefix | relative_url }}">
     <img src="{{ "/assets/images/logo_ics_security_transparent.png" | relative_url }}"
          alt="ICS Security Switzerland Logo"
          style="height:70px;">
 </a>
 
-<nav class="site-nav" style="border:0;background:transparent;box-shadow:none;">
+<nav class="site-nav">
   <input type="checkbox" id="nav-trigger" class="nav-trigger">
-  <label for="nav-trigger" style="border:0;background:transparent;box-shadow:none;cursor:pointer;">
-    <span class="menu-icon" style="border:0;background:transparent;box-shadow:none;">☰</span>
+  <label for="nav-trigger">
+    <span class="menu-icon">☰</span>
   </label>
 
   <div class="trigger" style="border:0;background:transparent;box-shadow:none;padding:0;">
-    <a href="{{ prefix }}about/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ about_label }}</a>
-    <a href="{{ prefix }}events/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ events_label }}</a>
-    <a href="{{ prefix }}members/"  class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ members_label }}</a>
-    <a href="{{ prefix }}contacts/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ contacts_label }}</a>
+    <a href="{{ prefix }}about/" class="page-link">{{ about_label }}</a>
+    <a href="{{ prefix }}events/" class="page-link">{{ events_label }}</a>
+    <a href="{{ prefix }}members/"  class="page-link">{{ members_label }}</a>
+    <a href="{{ prefix }}contacts/" class="page-link">{{ contacts_label }}</a>
 
     <!-- language toggle (flag icon) -->
-    <a href="{{ other_url }}" class="lang-link" title="{{ other_title }}" style="margin-left:0.5rem;text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;font-weight:600;">
+    <a href="{{ other_url }}" class="lang-link" title="{{ other_title }}" >
       <span role="img" aria-label="{{ other_title }}">{{ other_flag }}</span>
     </a>
   </div>
