@@ -6,5 +6,8 @@ permalink: /de/contacts/
 ---
 
 
-- Email: [info [at] icssec.ch](mailto:info@icssec.ch)
+- [info [at] icssec.ch](mailto:info@icssec.ch)
+
+- [Linkedin](https://www.linkedin.com/company/icssecurity)
+
 - Postal address: tbd
