@@ -1,5 +1,5 @@
 {% if page.lang == "de" or page.url contains '/de/' %}
-    {% assign prefix = '/de' %}
+    {% assign prefix = '/de/' %}
     {% assign about_label = 'Über uns' %}
     {% assign events_label = 'Veranstaltungen' %}
     {% assign members_label = 'Mitglied werden' %}
@@ -8,7 +8,7 @@
     {% assign other_flag = '🇬🇧' %}
     {% assign other_title = 'English' %}
   {% else %}
-    {% assign prefix = '' %}
+    {% assign prefix = '/' %}
     {% assign about_label = 'About us' %}
     {% assign events_label = 'Upcoming Events' %}
     {% assign members_label = 'Join' %}
@@ -31,10 +31,10 @@
   </label>
 
   <div class="trigger" style="border:0;background:transparent;box-shadow:none;padding:0;">
-    <a href="{{ prefix }}/about/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ about_label }}</a>
-    <a href="{{ prefix }}/events/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ events_label }}</a>
-    <a href="{{ prefix }}/members/"  class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ members_label }}</a>
-    <a href="{{ prefix }}/contacts/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ contacts_label }}</a>
+    <a href="{{ prefix }}about/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ about_label }}</a>
+    <a href="{{ prefix }}events/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ events_label }}</a>
+    <a href="{{ prefix }}members/"  class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ members_label }}</a>
+    <a href="{{ prefix }}contacts/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ contacts_label }}</a>
 
     <!-- language toggle (flag icon) -->
     <a href="{{ other_url }}" class="lang-link" title="{{ other_title }}" style="margin-left:0.5rem;text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;font-weight:600;">
