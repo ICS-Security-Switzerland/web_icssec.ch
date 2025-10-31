@@ -13,6 +13,6 @@ permalink: /members/
 <br><br>
    🔗 <a href="/assets/membership_fee_2026.pdf" target="_blank">Download QR bill (PDF)</a>
 <br><br>
-Membership is free for the rest of 2025 — join now and later pay for 2026!
+Membership is **free for the remainder of 2025** — join now and your first payment will be for 2026.
 <br><br>
 3. Welcome aboard! 🎉
