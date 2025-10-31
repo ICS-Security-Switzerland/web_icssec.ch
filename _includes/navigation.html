@@ -6,15 +6,17 @@
 
   {% if page.lang == "de" or page.url contains '/de/' %}
     {% assign prefix = '/de' %}
-    {% assign about_label = 'Über' %}
-    {% assign members_label = 'Mitglied' %}
+    {% assign about_label = 'Über uns' %}
+    {% assign events_label = 'Veranstaltungen' %}
+    {% assign members_label = 'Mitglied werden' %}
     {% assign contacts_label = 'Kontakt' %}
     {% assign other_url = page.url | replace: '/de/', '/' %}
     {% assign other_flag = '🇬🇧' %}
     {% assign other_title = 'English' %}
   {% else %}
     {% assign prefix = '' %}
-    {% assign about_label = 'About' %}
+    {% assign about_label = 'About us' %}
+    {% assign events_label = 'Upcoming Events' %}
     {% assign members_label = 'Join' %}
     {% assign contacts_label = 'Contact' %}
     {% assign other_url = '/de' | append: page.url %}
@@ -23,7 +25,8 @@
   {% endif %}
 
   <div class="trigger" style="border:0;background:transparent;box-shadow:none;padding:0;">
-    <a href="{{ prefix }}/about/"    class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ about_label }}</a>
+    <a href="{{ prefix }}/about/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ about_label }}</a>
+    <a href="{{ prefix }}/events/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ events_label }}</a>
     <a href="{{ prefix }}/members/"  class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ members_label }}</a>
     <a href="{{ prefix }}/contacts/" class="page-link" style="text-decoration:none;color:black;border:0;outline:0;box-shadow:none;background:none;">{{ contacts_label }}</a>
 
