@@ -1,5 +1,4 @@
-<nav class="site-nav" style="border:0;background:transparent;box-shadow:none;">
-  {% if page.lang == "de" or page.url contains '/de/' %}
+{% if page.lang == "de" or page.url contains '/de/' %}
     {% assign prefix = '/de' %}
     {% assign about_label = 'Über uns' %}
     {% assign events_label = 'Veranstaltungen' %}
@@ -17,14 +16,15 @@
     {% assign other_url = '/de' | append: page.url %}
     {% assign other_flag = '🇩🇪' %}
     {% assign other_title = 'Deutsch' %}
-  {% endif %}
+{% endif %}
 
-  <a class="site-title" rel="author" href="{{ other_url }}">
-      <img src="{{ "/assets/images/logo_ics_security_transparent.png" | relative_url }}"
-           alt="ICS Security Switzerland Logo"
-           style="height:70px;">
-    </a>
+<a class="site-title" rel="author" href="{{ prefix | relative_url }}">
+    <img src="{{ "/assets/images/logo_ics_security_transparent.png" | relative_url }}"
+         alt="ICS Security Switzerland Logo"
+         style="height:70px;">
+</a>
 
+<nav class="site-nav" style="border:0;background:transparent;box-shadow:none;">
   <input type="checkbox" id="nav-trigger" class="nav-trigger">
   <label for="nav-trigger" style="border:0;background:transparent;box-shadow:none;cursor:pointer;">
     <span class="menu-icon" style="border:0;background:transparent;box-shadow:none;">☰</span>
