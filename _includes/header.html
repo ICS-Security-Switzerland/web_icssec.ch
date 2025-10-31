@@ -31,6 +31,7 @@
     gap: 1rem;
     min-height: 70px;
   }
+  .site-nav { display: flex; align-items: center; }
   .site-nav a, .lang-link { font-family: inherit; font-weight: 500; }
   .lang-link {
     font-weight: 600;
@@ -40,14 +41,14 @@
   .lang-link:hover { text-decoration: none; }
   
   @media (min-width:769px) {
-    .site-nav .trigger { display: flex; align-items: center }
+    .site-nav .trigger { display: flex; align-items: center; gap: 24px; }
     .site-nav .menu-icon { display: none }
-    .page-link { margin-right: 24px; }
     .lang-link { margin-left: auto; }
   }
 
   .site-title img.logo {
     height: 70px;
+    display: block;
   }
   
   label[for="nav-trigger"] {
