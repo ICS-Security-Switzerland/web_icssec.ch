@@ -6,22 +6,40 @@
 
 <style>
   .site-nav a,
-  .site-nav a:visited { color: #000 !important; }
-  .site-nav a:hover,
-  .site-nav a:focus   { color: #000 !important; text-decoration: underline; }
-
-  .site-title {
-    font-size: 1.11rem !important;
+  .site-nav a:visited { 
+    color: #000 !important;
+    text-decoration:none;
   }
-  
-  .brand { height:70px }
-  @media (max-width:600px) { .brand{ display:none !important } }
+  .site-nav a:hover,
+  .site-nav a:focus { 
+    color: #000 !important; 
+    text-decoration: underline;
+    outline:2px solid #000;
+    outline-offset:2px;
+  }
+
+  .menu-icon {
+    display: inline-flex;
+    align-items: center;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 
   .header-bar { display:flex; align-items:center; justify-content:space-between; gap:1rem }
 
-  @media (min-width:769px){
+  @media (min-width:769px) {
     .site-nav .trigger { display:flex; align-items:center; gap:24px }
     .site-nav .menu-icon { display:none }
+  }
+
+  .lang-link {
+    font-weight: 600;
+    text-decoration: none;
+    color: #000;
+  }
+  .lang-link:hover { text-decoration: underline; }
+  @media (min-width:769px) {
+    .lang-link { margin-left: auto; }
   }
 </style>
 
