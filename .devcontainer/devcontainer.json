@@ -1,0 +1,12 @@
+{
+  "name": "Jekyll DevContainer ICS Security",
+  "features": {
+    "ghcr.io/devcontainers/features/ruby:1": { "version": "3.2" }
+  },
+  "forwardPorts": [4000, 35729],
+  "portsAttributes": {
+    "4000": { "label": "Jekyll", "onAutoForward": "openBrowser", "visibility": "private" },
+    "35729": { "label": "LiveReload", "visibility": "private" }
+  },
+  "postCreateCommand": "gem install bundler && bundle config set path 'vendor/bundle' && bundle install"
+}

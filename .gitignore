@@ -1,11 +1,13 @@
-vendor/*
+# Jekyll build output
 _site/*
+vendor/*
 
-Gemfile
-.gitignore
-.bundle/config
-Gemfile.lock
+# Locale Bundler config (can be different per build environment)
+.bundle/
 
+# Keep Gemfile & Lockfile für reproducable builds
+!Gemfile
+!Gemfile.lock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

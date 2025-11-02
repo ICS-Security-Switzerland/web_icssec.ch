@@ -1,0 +1,4 @@
+{
+  "remote.autoForwardPorts": true,
+  "terminal.integrated.sendKeybindingsToShell": true
+}

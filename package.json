@@ -1,0 +1,8 @@
+{
+  "name": "icssec-site",
+  "private": true,
+  "scripts": {
+    "dev": "bundle exec jekyll serve --host 0.0.0.0 --livereload --port 4000",
+    "clean": "rm -rf _site .jekyll-cache vendor/bundle"
+  }
+}
