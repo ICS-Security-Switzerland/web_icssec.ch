@@ -12,20 +12,28 @@ Exact dates and details will also be announced via our [LinkedIn page](https://w
 
 ---
 
-### 📅 November 2025 — Meetup / Get-together in Zürich  
-Informal networking and community exchange.  
+### 📅 19th November 2025, 4:00-5:00pm – Virtual Meetup
+Location: **Online** _(link will be published)_<br>
+Informal networking, open Q&A about the association, and exchange on ICS security topics.
 
-### 📅 March 2026 — Get-together in Bern  
-Casual evening event to connect with peers in the OT security community.
+### 📅 3rd December 2025, from 5:30pm – Meetup / Get-together
+Location: **Lucerne** ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))<br>
+Informal networking, open Q&A about the association, and exchange on ICS security topics.
 
-### 🌄 Spring 2026 — Guided visit at the Gotthard Base Tunnel (SBB)  
-Exclusive tour with a focus on ICS/OT systems in railway infrastructure.
+### 📅 20th January 2025, 12:00-1:00pm – Virtual Meetup
+Location: **Online** _(link will be published)_<br>
+Informal networking, open Q&A about the association, and exchange on ICS security topics.
+
+### 📅 25th February 2026, from 5:30pm - Meetup / Get-together
+Location: **Bern** _(tbd - next to station)_<br>
+Informal networking, open Q&A about the association, and exchange on ICS security topics.
+
+### 🌄 12th March 2026 — Guided visit at the Gotthard Base Tunnel
+Location: **Faido, TI**<br>
+Exclusive tour with a focus on ICS/OT systems in railway infrastructure. _(Limited spaces)_
 
 ### 📅 May 2026 — General Assembly (GV)  
 Official members’ meeting of ICS Security Switzerland.
-
-### 📅 June 2026 — Get-together in Lucerne  
-Regional networking event with short technical inputs.
 
 ---
 

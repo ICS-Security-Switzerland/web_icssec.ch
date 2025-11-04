@@ -22,18 +22,18 @@ Als Gemeinschaft möchten wir:
 
 ---
 
-Mach mit, um den zukünftigen Sicherheitsherausforderungen einen Schritt voraus zu sein und die Standards in der Schweizer Industrie aktiv mitzugestalten.
+Wir sind eine offene Community für alle, die sich für **OT-Security** und **industrielle Automatisierung** in der Schweiz interessieren.  
 
-Die Mitgliedschaft steht allen offen, die sich für **OT-Sicherheit (Operational Technology)** und **industrielle Automatisierung** in der Schweiz engagieren möchten.
+Wenn du neugierig bist oder einfach Gleichgesinnte treffen möchtest – schau gerne bei einem unserer Events vorbei und lerne uns kennen.  
 
-### 👉 [Jetzt Mitglied werden](./members)
+### 👉 [Werde Mitglied](./members), wenn es für dich passt
 
 ---
 
-## Kommende Veranstaltungen
+## Nächste Veranstaltungen
 
-- 📅 **November 2025:** Meetup in Zürich *(tbd)*  
-- 📅 **März 2026:** Get-together in Bern *(tbd)*  
-- 📅 **Frühling 2026:** Führung im Gotthard-Basistunnel (SBB)
+📅 19. Nov 2025 – Virtuelles Meetup  
+📅 3. Dez 2025 – Meetup in Luzern  
+🌄 12. Mär 2026 – Führung im Gotthard-Basistunnel (SBB)  
 
-➡️ [Alle Veranstaltungen →](./events)
+➡️ [Alle Events →](./events)

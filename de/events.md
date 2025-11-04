@@ -12,20 +12,29 @@ Genaue Daten und Details werden zusätzlich über unsere [LinkedIn-Seite](https:
 
 ---
 
-### 📅 November 2025 — Meetup / Get-together in Zürich  
-Informelles Netzwerktreffen und Austausch in der Community.  
+### 📅 19. November 2025, 16:00–17:00 Uhr – Virtuelles Meetup  
+**Ort:** Online _(Link wird noch veröffentlicht)_  
+Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.
 
-### 📅 März 2026 — Get-together in Bern  
-Gemütlicher Abendanlass zum Austausch innerhalb der OT-Sicherheitscommunity.  
+### 📅 3. Dezember 2025, ab 17:30 Uhr – Meetup / Get-together  
+**Ort:** Luzern ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))  
+Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.
 
-### 🌄 Frühling 2026 — Führung im Gotthard-Basistunnel (SBB)  
-Exklusive Besichtigung mit Fokus auf ICS-/OT-Systeme in der Bahninfrastruktur.  
+### 📅 20. Januar 2026, 12:00–13:00 Uhr – Virtuelles Meetup  
+**Ort:** Online _(Link wird noch veröffentlicht)_  
+Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.
+
+### 📅 25. Februar 2026, ab 17:30 Uhr – Meetup / Get-together  
+**Ort:** Bern _(tbd – Nähe Bahnhof)_  
+Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.
+
+### 🌄 12. März 2026 — Besuch im Gotthard-Basistunnel (SBB)  
+**Ort:** Faido, TI  
+Exklusive technische Führung mit Fokus auf ICS-/OT-Systeme in der Bahninfrastruktur. _(Begrenzte Plätze)_
 
 ### 📅 Mai 2026 — Generalversammlung (GV)  
-Offizielles Vereinstreffen der Mitglieder von ICS Security Switzerland.  
-
-### 📅 Juni 2026 — Get-together in Luzern  
-Regionales Netzwerktreffen mit kurzen technischen Inputs.  
+**Ort:** wird bekanntgegeben  
+Offizielles Mitgliedertreffen von ICS Security Switzerland.
 
 ---
 

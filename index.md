@@ -22,18 +22,18 @@ As a community, we aim to:
 
 ---
 
-Join us to stay ahead of emerging security challenges and help shape future standards in Swiss industries.
+We’re an open community for anyone interested in **operational technology (OT) security** and **industrial automation** in Switzerland. 
 
-Membership is open to anyone interested in advancing **operational technology (OT) security** and **industrial automation** in Switzerland.
+If you’re curious about ICS security or just want to meet like-minded people — feel free to join one of our events and see what we’re about.  
 
-### 👉 [Become a member](./members) today
+### 👉 [Become a member](./members) whenever it feels right
 
 ---
 
 ## Upcoming Events
 
-- 📅 **November 2025:** Meetup in Zürich *(tbd)*
-- 📅 **March 2026:** Get-together in Bern *(tbd)*
-- 📅 **Spring 2026:** Guided visit at the Gotthard Base Tunnel (SBB)
+📅 19 Nov 2025 – Virtual Meetup  
+📅 3 Dec 2025 – Meetup in Lucerne  
+🌄 12 Mar 2026 – Gotthard Base Tunnel Visit (SBB)  
 
 ➡️ [See all events →](./events)
