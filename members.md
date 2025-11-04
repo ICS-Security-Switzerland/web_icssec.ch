@@ -5,14 +5,17 @@ lang: en
 permalink: /members/
 ---
 
-**How to become a member:**
+We’re an open community for everyone interested in **OT/ICS security** in Switzerland.  
+If you’d like to get involved – join one of our events or become a member.
 
-1. Fill out the <a href="https://forms.gle/2YvZBTwMdkRZJ84v7" target="_blank">registration form</a>.
-<br><br>
-2. Transfer the annual membership fee (CHF 50, hopefully covered by your employer 😆).
-<br><br>
-   🔗 <a href="/assets/membership_fee_2026.pdf" target="_blank">Download QR bill (PDF)</a>
-<br><br>
-Membership is **free for the remainder of 2025** — join now and your first payment will be for 2026.
-<br><br>
-3. Welcome aboard! 🎉
+---
+
+### How to become a member
+
+1. Fill out the [registration form](https://forms.gle/2YvZBTwMdkRZJ84v7).  
+2. Transfer the annual membership fee (CHF 50 – maybe your employer will cover it 😄).  
+   🔗 [Download QR bill (PDF)](/assets/membership_fee_2026.pdf)
+
+Membership is **free for the rest of 2025** – so feel free to join now, and your first payment will only be for 2026.
+
+Welcome aboard! 🎉

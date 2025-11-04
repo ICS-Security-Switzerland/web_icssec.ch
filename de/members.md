@@ -5,13 +5,17 @@ lang: de
 permalink: /de/members/
 ---
 
-**So wirst du Mitglied**
+Wir sind eine offene Gemeinschaft für alle, die sich für **OT-/ICS-Security** in der Schweiz interessieren.  
+Wenn du dabei sein möchtest – komm einfach zu einem unserer Events oder werde direkt Mitglied.
 
-1. Fülle das <a href="https://forms.gle/2YvZBTwMdkRZJ84v7" target="_blank">Anmeldeformular</a> aus.
-<br><br>
-2. Überweise den jährlichen Mitgliederbeitrag (CHF 50 – hoffentlich übernimmt ihn dein Arbeitgeber 😆).
-<br><br>
-   🔗 <a href="/assets/membership_fee_2026.pdf" target="_blank">QR-Rechnung herunterladen (PDF)</a> <br><br>
-   Die Mitgliedschaft ist **für den Rest des Jahres 2025 kostenlos** — tritt jetzt bei und zahle erst für 2026!
-   <br><br>
-3. Willkommen an Bord! 🎉
+---
+
+### So wirst du Mitglied
+
+1. Fülle das [Anmeldeformular](https://forms.gle/2YvZBTwMdkRZJ84v7) aus.  
+2. Überweise den jährlichen Mitgliederbeitrag (CHF 50 – vielleicht übernimmt ihn ja dein Arbeitgeber 😄).  
+   🔗 [QR-Rechnung herunterladen (PDF)](/assets/membership_fee_2026.pdf)
+
+Die Mitgliedschaft ist **für den Rest des Jahres 2025 kostenlos** – tritt also gerne jetzt bei, dein erster Beitrag gilt dann für 2026.
+
+Willkommen an Bord! 🎉
