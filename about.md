@@ -37,4 +37,4 @@ Our most important asset 💪
 ---
 
 **Founded:** 9 September 2025<br>
-**Registered Office:** Bern, Switzerland
+**Based in:** Bern, Switzerland
