@@ -26,6 +26,9 @@ We’re an open community for anyone interested in **operational technology (OT)
 
 If you’re curious about ICS security or just want to meet like-minded people — feel free to join one of our events and see what we’re about.  
 
+💡 *Our primary goal is not to facilitate business or consultancy services.*  
+We serve as a **neutral, non-commercial platform** for knowledge exchange and collaboration — a place where professionals can share experiences and best practices in a trusted environment.
+
 ### 👉 [Become a member](./members) whenever it feels right
 
 ---
