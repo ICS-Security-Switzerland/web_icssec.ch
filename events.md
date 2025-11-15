@@ -13,7 +13,7 @@ Exact dates and details will also be announced via our [LinkedIn page](https://w
 ---
 
 ### 📅 19th November 2025, 4:00-5:00pm – Virtual Meetup
-Location: **Online** _(link will be published)_<br>
+Location: **Online** ([Google Meet](https://meet.google.com/vhu-rudm-abj))<br>
 Informal networking, open Q&A about the association, and exchange on ICS security topics.
 
 ### 📅 3rd December 2025, from 5:30pm – Meetup / Get-together
