@@ -41,7 +41,7 @@ defaults:
   - scope:
       path: ""
     values:
-      image: /assets/images/logo_ics_security_transparent.png
+      image: /assets/images/og-image.png
 
 exclude:
   - README.md
