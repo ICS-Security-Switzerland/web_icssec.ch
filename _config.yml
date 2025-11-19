@@ -37,6 +37,12 @@ minima:
   date_format: "%-d. %B %Y"
 show_excerpts: true
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/logo_ics_security_transparent.png
+
 exclude:
   - README.md
   - node_modules
