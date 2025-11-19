@@ -1,0 +1,36 @@
+---
+layout: page
+title: Eventi
+lang: it
+permalink: /it/events/
+---
+
+# Prossimi eventi
+
+Di seguito una panoramica delle nostre attività e incontri previsti.  
+Le date e i dettagli esatti saranno annunciati anche tramite la nostra [pagina LinkedIn](https://www.linkedin.com/company/icssecurity/).
+
+---
+
+### 📅 3 dicembre 2025, dalle 17:30 – Incontro / Aperitivo
+Luogo: **Lucerna** ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))<br>
+Networking informale, Q&A aperto sull'associazione e scambio su temi ICS.
+
+### 📅 20 gennaio 2026, 12:00-13:00 – Incontro virtuale
+Luogo: **Online** _(link in arrivo)_<br>
+Networking informale, Q&A aperto sull'associazione e scambio su temi ICS.
+
+### 📅 25 febbraio 2026, dalle 17:30 – Incontro / Aperitivo
+Luogo: **Berna** _(da definire - vicino alla stazione)_<br>
+Networking informale, Q&A aperto sull'associazione e scambio su temi ICS.
+
+### 🌄 12 marzo 2026 – Visita guidata alla Galleria di base del Gottardo
+Luogo: **Faido, TI**<br>
+Visita esclusiva con focus sui sistemi ICS/OT nelle infrastrutture ferroviarie. _(Posti limitati)_
+
+### 📅 Maggio 2026 – Assemblea generale (AG)
+Riunione ufficiale dei membri di ICS Security Switzerland.
+
+---
+
+Restate sintonizzati — altri eventi saranno annunciati presto!

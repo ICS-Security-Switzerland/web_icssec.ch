@@ -1,22 +1,31 @@
-{% if page.lang == "de" or page.url contains '/de/' %}
+
+{% assign lang = page.lang | default: 'en' %}
+{% case lang %}
+  {% when 'de' %}
     {% assign prefix = '/de/' %}
     {% assign about_label = 'Über uns' %}
     {% assign events_label = 'Veranstaltungen' %}
     {% assign members_label = 'Mitglied werden' %}
     {% assign contacts_label = 'Kontakt' %}
-    {% assign other_url = page.url | replace: '/de/', '/' %}
-    {% assign other_flag = '🇬🇧' %}
-    {% assign other_title = 'English' %}
+  {% when 'fr' %}
+    {% assign prefix = '/fr/' %}
+    {% assign about_label = 'À propos' %}
+    {% assign events_label = 'Événements' %}
+    {% assign members_label = 'Devenir membre' %}
+    {% assign contacts_label = 'Contacts' %}
+  {% when 'it' %}
+    {% assign prefix = '/it/' %}
+    {% assign about_label = 'Chi siamo' %}
+    {% assign events_label = 'Eventi' %}
+    {% assign members_label = 'Diventa membro' %}
+    {% assign contacts_label = 'Contatti' %}
   {% else %}
     {% assign prefix = '/' %}
     {% assign about_label = 'About us' %}
     {% assign events_label = 'Upcoming Events' %}
     {% assign members_label = 'Join' %}
     {% assign contacts_label = 'Contact' %}
-    {% assign other_url = '/de' | append: page.url %}
-    {% assign other_flag = '🇩🇪' %}
-    {% assign other_title = 'Deutsch' %}
-{% endif %}
+{% endcase %}
 
 <a class="site-title" href="{{ prefix | relative_url }}">
     <img class="logo" src="{{ "/assets/images/logo_ics_security_transparent.png" | relative_url }}"
@@ -35,9 +44,54 @@
     <a href="{{ prefix }}members/"  class="page-link">{{ members_label }}</a>
     <a href="{{ prefix }}contacts/" class="page-link">{{ contacts_label }}</a>
 
-    <!-- language toggle (flag icon) -->
-    <a href="{{ other_url }}" class="page-link lang-link" title="{{ other_title }}" >
-      <span role="img" aria-label="{{ other_title }}">{{ other_flag }}</span>
-    </a>
+    <!-- language dropdown -->
+    <div class="lang-dropdown">
+      <button class="lang-btn">
+        <span class="lang-btn-flag">
+          {% if lang == 'de' %}🇩🇪{% elsif lang == 'fr' %}🇫🇷{% elsif lang == 'it' %}🇮🇹{% else %}🇬🇧{% endif %}
+        </span>
+        <span class="lang-btn-chevron">▾</span>
+      </button>
+
+      <div class="lang-menu">
+        {% if lang != "en" %}
+        <a href="/" title="English"><span class="flag">🇬🇧</span> English</a>
+        {% endif %}
+
+        {% if lang != "de" %}
+        <a href="/de/" title="Deutsch"><span class="flag">🇩🇪</span> Deutsch</a>
+        {% endif %}
+
+        {% if lang != "fr" %}
+        <a href="/fr/" title="Français"><span class="flag">🇫🇷</span> Français</a>
+        {% endif %}
+
+        {% if lang != "it" %}
+        <a href="/it/" title="Italiano"><span class="flag">🇮🇹</span> Italiano</a>
+        {% endif %}
+      </div>
+    </div>
+  </nav>
+
+  <script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var dropdown = document.querySelector('.lang-dropdown');
+    var btn = dropdown?.querySelector('.lang-btn');
+    var menu = dropdown?.querySelector('.lang-menu');
+
+    if (btn && menu) {
+      btn.addEventListener('click', function(e) {
+        e.preventDefault();
+        dropdown.classList.toggle('open');
+      });
+
+      document.addEventListener('click', function(e) {
+        if (!dropdown.contains(e.target)) {
+          dropdown.classList.remove('open');
+        }
+      });
+    }
+  });
+  </script>
   </div>
 </nav>
