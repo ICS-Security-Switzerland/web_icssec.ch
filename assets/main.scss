@@ -1,0 +1,107 @@
+---
+---
+
+@import "minima";
+
+/* WRAPPER */
+.lang-dropdown {
+  position: relative;
+  display: inline-block;
+  line-height: 0;  /* prevents extra vertical space from inline layout */
+}
+
+/* BUTTON WITH FLAG + CHEVRON */
+.lang-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1.3rem;
+  padding: 4px 8px;
+  cursor: pointer;
+  line-height: 1;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.lang-btn:hover {
+  background: #f5f5f5;
+  border-color: #ccc;
+}
+
+.lang-btn-flag {
+  display: inline-block;
+}
+
+.lang-btn-chevron {
+  font-size: 0.7rem;
+  margin-top: 1px; /* tiny visual tweak */
+}
+
+.lang-menu {
+  display: none;
+  position: absolute;
+  top: 100%;       /* directly under the button */
+  right: 0;
+  margin-top: -1px;   /* overlap the border by 1px to remove any hairline gap */
+
+  background: #fff;
+  border-radius: 12px;
+  border: 1px solid #e2e2e2;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  padding: 6px 0;
+  min-width: 170px;
+  z-index: 1000;
+}
+
+/* EACH LANGUAGE ENTRY */
+.lang-menu a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 14px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: #222;
+  white-space: nowrap;
+  line-height: 1.1;
+}
+
+.lang-menu a:hover {
+  background: #f2f2f2;
+}
+
+.lang-menu {
+  display: none;
+  flex-direction: column;
+}
+.lang-dropdown.open .lang-menu {
+  display: flex;
+}
+
+/* CONSISTENT FLAG SIZE IN MENU */
+.lang-menu .flag {
+  font-size: 1.3rem;
+  width: 1.3rem;
+  line-height: 1;
+}
+
+/* Remove Minima header spacing for the language dropdown */
+.site-header .lang-dropdown {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* Align it perfectly with the nav links */
+.site-nav {
+  float: right;          /* keep it on the right, like minima */
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  line-height: normal;   /* kill the 54px line-height */
+}
+
+.site-nav .lang-dropdown {
+  margin-left: 12px !important;
+}
