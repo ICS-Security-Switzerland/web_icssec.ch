@@ -35,6 +35,7 @@ Bei Nutzung externer Dienste wie LinkedIn oder Google Forms gelten deren Datensc
 
 - [Datenschutzerklärung LinkedIn](https://de.linkedin.com/legal/privacy-policy)
 - [Datenschutzerklärung Google](https://policies.google.com/privacy?hl=de)
+- [Datenschutzerklärung GitHub](https://docs.github.com/de/site-policy/privacy-policies/github-general-privacy-statement)
 
 Externe Links können zu anderen Datenschutzbedingungen führen.
 
@@ -74,6 +75,7 @@ Wenn Sie sich über unser **Google-Formular** als Mitglied anmelden, erfassen wi
 
 - **Industry / Branche**  
 - **City / Wohnort**  
+- **Telefon**  
 - **ISA-Mitgliedschaft (Ja/Nein)**  
 
 Diese Angaben werden genutzt für:
