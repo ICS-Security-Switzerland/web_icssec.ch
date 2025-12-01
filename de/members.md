@@ -13,8 +13,11 @@ Wenn du dabei sein möchtest – komm einfach zu einem unserer Events oder werde
 ### So wirst du Mitglied
 
 1. Fülle das [Anmeldeformular](https://forms.gle/2YvZBTwMdkRZJ84v7) aus.
+
 2. Überweise den jährlichen Mitgliederbeitrag (CHF 50 – vielleicht übernimmt ja der Arbeitgeber 😄).
+
    🔗 [QR-Rechnung herunterladen (PDF)](/assets/membership_fee_2026.pdf)
+
    IBAN CH43 0900 0000 1674 3834 7
 
 Die Mitgliedschaft ist **für den Rest des Jahres 2025 kostenlos** – tritt also gerne jetzt bei, dein erster Beitrag gilt dann für 2026.
