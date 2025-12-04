@@ -12,10 +12,6 @@ Genaue Daten und Details werden zusätzlich über unsere [LinkedIn-Seite](https:
 
 ---
 
-### 📅 3. Dezember 2025, ab 17:30 Uhr – Meetup / Get-together  
-**Ort:** Luzern ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))  
-Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.
-
 ### 📅 20. Januar 2026, 12:00–13:00 Uhr – Virtuelles Meetup  
 **Ort:** Online _(Link wird noch veröffentlicht)_  
 Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.

@@ -35,8 +35,8 @@ We serve as a **neutral, non-commercial platform** for knowledge exchange and co
 
 ## Upcoming Events
 
-📅 3 Dec 2025 – Meetup in Lucerne<br>
-📅 20 Jan 2026 – Virtual Meetup<br>
-🌄 12 Mar 2026 – Gotthard Base Tunnel Visit (SBB)  
+📅 20 Jan. 2026 – Virtual Meetup<br>
+📅 25 Feb. 2026 – Meetup in Bern<br>
+🌄 12 Mar. 2026 – Gotthard Base Tunnel Visit (SBB)  
 
 ➡️ [See all events →](./events)

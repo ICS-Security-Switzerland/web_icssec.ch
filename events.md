@@ -12,10 +12,6 @@ Exact dates and details will also be announced via our [LinkedIn page](https://w
 
 ---
 
-### 📅 3rd December 2025, from 5:30pm – Meetup / Get-together
-Location: **Lucerne** ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))<br>
-Informal networking, open Q&A about the association, and exchange on ICS security topics.
-
 ### 📅 20th January 2025, 12:00-1:00pm – Virtual Meetup
 Location: **Online** _(link will be published)_<br>
 Informal networking, open Q&A about the association, and exchange on ICS security topics.

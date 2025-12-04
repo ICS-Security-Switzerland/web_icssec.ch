@@ -12,10 +12,6 @@ Les dates et détails exacts seront également annoncés via notre [page LinkedI
 
 ---
 
-### 📅 3 décembre 2025, dès 17h30 – Rencontre / Afterwork
-Lieu : **Lucerne** ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))<br>
-Réseautage informel, questions-réponses ouvertes sur l'association et échanges sur les sujets ICS.
-
 ### 📅 20 janvier 2026, 12h00-13h00 – Rencontre virtuelle
 Lieu : **En ligne** _(lien à venir)_<br>
 Réseautage informel, questions-réponses ouvertes sur l'association et échanges sur les sujets ICS.
