@@ -12,7 +12,7 @@ If you’d like to get involved – join one of our events or become a member.
 
 ### How to become a member
 
-1. Fill out the [registration form](https://forms.gle/2YvZBTwMdkRZJ84v7).
+1. Fill out the [registration form](https://forms.gle/whFeX9hJp3Cpq2E67).
 
 2. Transfer the annual membership fee (CHF 50 – maybe your employer will cover it 😄).
 
@@ -23,3 +23,5 @@ If you’d like to get involved – join one of our events or become a member.
 Membership is **free for the rest of 2025** – so feel free to join now, and your first payment will only be for 2026.
 
 Welcome aboard! 🎉
+
+https://forms.gle/whFeX9hJp3Cpq2E67

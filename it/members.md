@@ -12,7 +12,7 @@ Se vuoi partecipare – unisciti a uno dei nostri eventi o diventa membro.
 
 ### Come diventare membro
 
-1. Compila il [modulo di iscrizione](https://forms.gle/2YvZBTwMdkRZJ84v7).
+1. Compila il [modulo di iscrizione](https://forms.gle/whFeX9hJp3Cpq2E67).
 
 2. Versa la quota associativa annuale (CHF 50 – magari il tuo datore di lavoro la copre 😄).
 

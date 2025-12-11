@@ -12,7 +12,7 @@ Si vous souhaitez vous impliquer, participez à l'un de nos événements ou deve
 
 ### Comment devenir membre
 
-1. Remplissez le [formulaire d'inscription](https://forms.gle/2YvZBTwMdkRZJ84v7).
+1. Remplissez le [formulaire d'inscription](https://forms.gle/whFeX9hJp3Cpq2E67).
 
 2. Transférez la cotisation annuelle (CHF 50 – peut-être que votre employeur la prendra en charge 😄).
 
