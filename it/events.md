@@ -12,10 +12,6 @@ Le date e i dettagli esatti saranno annunciati anche tramite la nostra [pagina L
 
 ---
 
-### 📅 3 dicembre 2025, dalle 17:30 – Incontro / Aperitivo
-Luogo: **Lucerna** ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))<br>
-Networking informale, Q&A aperto sull'associazione e scambio su temi ICS.
-
 ### 📅 20 gennaio 2026, 12:00-13:00 – Incontro virtuale
 Luogo: **Online** _(link in arrivo)_<br>
 Networking informale, Q&A aperto sull'associazione e scambio su temi ICS.

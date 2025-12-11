@@ -35,8 +35,8 @@ Nous servons de **plateforme neutre et non commerciale** pour l'échange de conn
 
 ## Prochains événements
 
-📅 3 déc. 2025 – Rencontre à Lucerne<br>
 📅 20 janv. 2026 – Rencontre virtuelle<br>
+📅 25 fév. 2026 – Rencontre à Berne<br>
 🌄 12 mars 2026 – Visite du tunnel de base du Gothard (CFF)
 
 ➡️ [Voir tous les événements →](../events)
