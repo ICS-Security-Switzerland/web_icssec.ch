@@ -20,8 +20,6 @@ If you’d like to get involved – join one of our events or become a member.
 
    IBAN CH43 0900 0000 1674 3834 7
 
-Membership is **free for the rest of 2025** – so feel free to join now, and your first payment will only be for 2026.
-
 Welcome aboard! 🎉
 
 https://forms.gle/whFeX9hJp3Cpq2E67

@@ -20,6 +20,4 @@ Wenn du dabei sein möchtest – komm einfach zu einem unserer Events oder werde
 
    IBAN CH43 0900 0000 1674 3834 7
 
-Die Mitgliedschaft ist **für den Rest des Jahres 2025 kostenlos** – tritt also gerne jetzt bei, dein erster Beitrag gilt dann für 2026.
-
 Willkommen an Bord! 🎉

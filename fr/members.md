@@ -20,7 +20,4 @@ Si vous souhaitez vous impliquer, participez à l'un de nos événements ou deve
 
    IBAN CH43 0900 0000 1674 3834 7
 
-
-L'adhésion est **gratuite pour le reste de 2025** – alors n'hésitez pas à nous rejoindre maintenant, votre premier paiement ne sera que pour 2026.
-
 Bienvenue à bord ! 🎉
