@@ -23,7 +23,8 @@ Website: **https://www.icssec.ch**
 
 
 Unsere Website wird über **GitHub Pages** gehostet.  
-Unsere E-Mail-Kommunikation läuft über **Google Workspace**.
+Unsere E-Mail-Kommunikation läuft über **Google Workspace**.  
+Unsere Mitgliederverwaltung erfolgt über **Webling** (uSystems GmbH, Schweiz).
 
 ---
 
@@ -67,6 +68,8 @@ Bei der Aufnahme in den Verein erfassen wir:
 
 - Name, Adresse, E-Mail  
 - Rechnungs- und Zahlungshistorie (Mitgliederbeiträge)
+
+Die Mitgliederverwaltung erfolgt über die **Webling Vereinssoftware** der uSystems GmbH (Schweiz).
 
 ---
 
@@ -115,6 +118,24 @@ Ausnahmen nur:
 - wenn eine gesetzliche Verpflichtung besteht, oder  
 - wenn externe Plattformen (wie LinkedIn Events, Google Forms) technisch notwendig sind.
 
+### 4.1 Auftragsverarbeitung durch Webling
+
+Für die Mitgliederverwaltung nutzen wir die **Webling Vereinssoftware** der **uSystems GmbH** (Schweiz). Webling verarbeitet Mitgliederdaten in unserem Auftrag.
+
+**Art der Verarbeitung:**
+- Technischer Betrieb der Mitgliederverwaltungssoftware
+- Speicherung von Mitgliederdaten (Name, Adresse, E-Mail, Zahlungshistorie)
+- Bereitstellung von Funktionen zur Vereinsverwaltung
+
+**Datenschutz-Garantien:**
+- Webling speichert alle Daten ausschliesslich in der Schweiz oder EU
+- Es besteht eine **Zusatzvereinbarung zur Datenverarbeitung** gemäss DSGVO und Schweizer Datenschutzgesetz (nDSG)
+- Webling setzt technische und organisatorische Massnahmen zum Datenschutz um
+- Webling arbeitet nur auf unsere Weisung und gibt Daten nicht ohne Berechtigung weiter
+- Subunternehmer werden nur nach Prüfung und mit Benachrichtigung eingesetzt
+
+Die vollständige Zusatzvereinbarung zur Datenverarbeitung kann auf Anfrage eingesehen werden.
+
 ---
 
 
@@ -146,7 +167,7 @@ Für Datenschutzanfragen wenden Sie sich bitte an: **info@icssec.ch**
 ## 7. Datensicherheit
 
 Wir schützen Ihre Daten durch angemessene technische und organisatorische Massnahmen.  
-GitHub Pages als Hosting-Anbieter und Google Workspace als E-Mail-Dienstleister verarbeiten Daten gemäss ihren eigenen Sicherheits- und Datenschutzstandards.
+GitHub Pages als Hosting-Anbieter, Google Workspace als E-Mail-Dienstleister und Webling als Mitgliederverwaltungssoftware verarbeiten Daten gemäss ihren eigenen Sicherheits- und Datenschutzstandards. Webling setzt dabei spezifische technische und organisatorische Massnahmen gemäss der Zusatzvereinbarung zur Datenverarbeitung um.
 
 ---
 
