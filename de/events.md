@@ -24,8 +24,8 @@ Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-
 **Ort:** Faido, TI  
 Exklusive technische Führung mit Fokus auf ICS-/OT-Systeme in der Bahninfrastruktur. _(Begrenzte Plätze)_
 
-### 📅 Mai 2026 — Generalversammlung (GV)  
-**Ort:** wird bekanntgegeben  
+### 📅 6. Mai 2026, 19:00 Uhr — Generalversammlung (GV)  
+**Ort:** Zürich _(genaue Location wird noch bekanntgegeben)_  
 Offizielles Mitgliedertreffen von ICS Security Switzerland.
 
 ---

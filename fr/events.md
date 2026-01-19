@@ -24,7 +24,8 @@ Réseautage informel, questions-réponses ouvertes sur l'association et échange
 Lieu : **Faido, TI**<br>
 Visite exclusive axée sur les systèmes ICS/OT dans l'infrastructure ferroviaire. _(Places limitées)_
 
-### 📅 Mai 2026 – Assemblée générale (AG)
+### 📅 6 mai 2026, 19h00 – Assemblée générale (AG)  
+**Lieu :** Zurich _(lieu exact à confirmer)_  
 Réunion officielle des membres d'ICS Security Switzerland.
 
 ---
