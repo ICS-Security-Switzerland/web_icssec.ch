@@ -12,10 +12,6 @@ Exact dates and details will also be announced via our [LinkedIn page](https://w
 
 ---
 
-### 📅 20th January 2026, 12:00-1:00pm – Virtual Meetup
-Location: **Online** — [Join Meeting](https://meet.google.com/vof-tddm-mnr)<br>
-Informal networking, open Q&A about the association, and exchange on ICS security topics.
-
 ### 📅 25th February 2026, from 5:30pm - Meetup / Get-together
 Location: **Bern** _(tbd - next to station)_<br>
 Informal networking, open Q&A about the association, and exchange on ICS security topics.

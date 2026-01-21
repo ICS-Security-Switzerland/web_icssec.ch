@@ -35,8 +35,8 @@ Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenz
 
 ## Prossimi eventi
 
-📅 20 gen 2026 – Incontro virtuale<br>
 📅 25 feb 2026 – Incontro a Berna<br>
-🌄 12 mar 2026 – Visita alla Galleria di base del Gottardo (FFS)
+🌄 12 mar 2026 – Visita alla Galleria di base del Gottardo (FFS)<br>
+📅 6 mag 2026 – Assemblea generale (Zurigo)
 
 ➡️ [Vedi tutti gli eventi →](../events)

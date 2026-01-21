@@ -12,10 +12,6 @@ Genaue Daten und Details werden zusätzlich über unsere [LinkedIn-Seite](https:
 
 ---
 
-### 📅 20. Januar 2026, 12:00–13:00 Uhr – Virtuelles Meetup  
-**Ort:** Online — [Meeting beitreten](https://meet.google.com/vof-tddm-mnr)  
-Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.
-
 ### 📅 25. Februar 2026, ab 17:30 Uhr – Meetup / Get-together  
 **Ort:** Bern _(tbd – Nähe Bahnhof)_  
 Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.

@@ -12,10 +12,6 @@ Les dates et détails exacts seront également annoncés via notre [page LinkedI
 
 ---
 
-### 📅 20 janvier 2026, 12h00-13h00 – Rencontre virtuelle
-Lieu : **En ligne** — [Rejoindre la réunion](https://meet.google.com/vof-tddm-mnr)<br>
-Réseautage informel, questions-réponses ouvertes sur l'association et échanges sur les sujets ICS.
-
 ### 📅 25 février 2026, dès 17h30 – Rencontre / Afterwork
 Lieu : **Berne** _(à définir - près de la gare)_<br>
 Réseautage informel, questions-réponses ouvertes sur l'association et échanges sur les sujets ICS.

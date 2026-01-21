@@ -35,8 +35,8 @@ Nous servons de **plateforme neutre et non commerciale** pour l'échange de conn
 
 ## Prochains événements
 
-📅 20 janv. 2026 – Rencontre virtuelle<br>
 📅 25 fév. 2026 – Rencontre à Berne<br>
-🌄 12 mars 2026 – Visite du tunnel de base du Gothard (CFF)
+🌄 12 mars 2026 – Visite du tunnel de base du Gothard (CFF)<br>
+📅 6 mai 2026 – Assemblée générale (Zurich)
 
 ➡️ [Voir tous les événements →](../events)
