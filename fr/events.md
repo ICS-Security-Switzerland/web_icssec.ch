@@ -18,7 +18,7 @@ Réseautage informel, questions-réponses ouvertes sur l'association et échange
 
 ### 🌄 12 mars 2026 – Visite guidée du tunnel de base du Gothard
 Lieu : **Faido, TI**<br>
-Visite exclusive axée sur les systèmes ICS/OT dans l'infrastructure ferroviaire. _(Places limitées)_
+Visite technique exclusive. _(Complet)_
 
 ### 📅 6 mai 2026, 19h00 – Assemblée générale (AG)  
 **Lieu :** Zurich _(lieu exact à confirmer)_  

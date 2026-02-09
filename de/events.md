@@ -18,7 +18,7 @@ Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-
 
 ### 🌄 12. März 2026 — Besuch im Gotthard-Basistunnel (SBB)  
 **Ort:** Faido, TI  
-Exklusive technische Führung mit Fokus auf ICS-/OT-Systeme in der Bahninfrastruktur. _(Begrenzte Plätze)_
+Exklusive technische Führung. _(Ausgebucht)_
 
 ### 📅 6. Mai 2026, 19:00 Uhr — Generalversammlung (GV)  
 **Ort:** Zürich _(genaue Location wird noch bekanntgegeben)_  

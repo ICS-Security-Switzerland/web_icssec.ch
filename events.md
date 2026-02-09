@@ -18,7 +18,7 @@ Informal networking, open Q&A about the association, and exchange on ICS securit
 
 ### 🌄 12th March 2026 — Guided visit at the Gotthard Base Tunnel
 Location: **Faido, TI**<br>
-Exclusive tour with a focus on ICS/OT systems in railway infrastructure. _(Limited spaces)_
+Exclusive technical tour. _(Fully booked)_
 
 ### 📅 6th May 2026, 7:00pm — General Assembly (GV)  
 **Location:** Zurich _(exact venue to be announced)_  
