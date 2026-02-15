@@ -13,7 +13,8 @@ Les dates et détails exacts seront également annoncés via notre [page LinkedI
 ---
 
 ### 📅 25 février 2026, dès 17h30 – Rencontre / Afterwork
-Lieu : **Berne** _(à définir - près de la gare)_<br>
+Lieu : **Simmentaler Brewhouse** – directement à la gare de Berne<br>
+🔗 [simmentalerbrewhouse.ch](https://www.simmentalerbrewhouse.ch/)<br>
 Réseautage informel, questions-réponses ouvertes sur l'association et échanges sur les sujets ICS.
 
 ### 🌄 12 mars 2026 – Visite guidée du tunnel de base du Gothard

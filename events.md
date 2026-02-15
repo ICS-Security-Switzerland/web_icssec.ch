@@ -13,7 +13,8 @@ Exact dates and details will also be announced via our [LinkedIn page](https://w
 ---
 
 ### 📅 25th February 2026, from 5:30pm - Meetup / Get-together
-Location: **Bern** _(tbd - next to station)_<br>
+Location: **Simmentaler Brewhouse** – directly at Bern main station<br>
+🔗 [simmentalerbrewhouse.ch](https://www.simmentalerbrewhouse.ch/)<br>
 Informal networking, open Q&A about the association, and exchange on ICS security topics.
 
 ### 🌄 12th March 2026 — Guided visit at the Gotthard Base Tunnel

@@ -13,7 +13,8 @@ Genaue Daten und Details werden zusätzlich über unsere [LinkedIn-Seite](https:
 ---
 
 ### 📅 25. Februar 2026, ab 17:30 Uhr – Meetup / Get-together  
-**Ort:** Bern _(tbd – Nähe Bahnhof)_  
+**Ort:** Simmentaler Brewhouse – direkt am Bahnhof Bern  
+🔗 [simmentalerbrewhouse.ch](https://www.simmentalerbrewhouse.ch/)  
 Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.
 
 ### 🌄 12. März 2026 — Besuch im Gotthard-Basistunnel (SBB)  
