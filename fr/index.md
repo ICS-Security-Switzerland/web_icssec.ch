@@ -29,7 +29,7 @@ Si vous êtes curieux de la sécurité ICS ou souhaitez simplement rencontrer de
 💡 *Notre objectif principal n'est pas de faciliter les affaires ou les services de conseil.*
 Nous servons de **plateforme neutre et non commerciale** pour l'échange de connaissances et la collaboration — un lieu où les professionnels peuvent partager leurs expériences et leurs meilleures pratiques en toute confiance.
 
-### 👉 [Devenez membre](../members) quand vous le souhaitez
+### 👉 [Devenez membre](./members) quand vous le souhaitez
 
 ---
 
@@ -39,4 +39,4 @@ Nous servons de **plateforme neutre et non commerciale** pour l'échange de conn
 🌄 12 mars 2026 – Visite du tunnel de base du Gothard (CFF)<br>
 📅 6 mai 2026 – Assemblée générale (Zurich)
 
-➡️ [Voir tous les événements →](../events)
+➡️ [Voir tous les événements →](./events)

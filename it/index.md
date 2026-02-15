@@ -29,7 +29,7 @@ Se sei curioso della sicurezza ICS o vuoi semplicemente incontrare persone con i
 💡 *Il nostro obiettivo principale non è facilitare affari o servizi di consulenza.*
 Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenze e la collaborazione — un luogo dove i professionisti possono condividere esperienze e best practice in un ambiente di fiducia.
 
-### 👉 [Diventa membro](../members) quando vuoi
+### 👉 [Diventa membro](./members) quando vuoi
 
 ---
 
@@ -39,4 +39,4 @@ Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenz
 🌄 12 mar 2026 – Visita alla Galleria di base del Gottardo (FFS)<br>
 📅 6 mag 2026 – Assemblea generale (Zurigo)
 
-➡️ [Vedi tutti gli eventi →](../events)
+➡️ [Vedi tutti gli eventi →](./events)
