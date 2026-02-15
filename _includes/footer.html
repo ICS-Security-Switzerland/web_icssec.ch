@@ -1,3 +1,70 @@
-<footer class="site-footer">
+{% assign lang = page.lang | default: 'en' %}
+{% case lang %}
+  {% when 'de' %}
+    {% assign prefix = '/de/' %}
+    {% assign nav_label = 'Navigation' %}
+    {% assign connect_label = 'Kontakt' %}
+    {% assign about_label = 'Über uns' %}
+    {% assign events_label = 'Events' %}
+    {% assign members_label = 'Mitglied werden' %}
+    {% assign contacts_label = 'Kontakt' %}
+    {% assign copyright_text = 'ICS Security Switzerland. Alle Rechte vorbehalten.' %}
+  {% when 'fr' %}
+    {% assign prefix = '/fr/' %}
+    {% assign nav_label = 'Navigation' %}
+    {% assign connect_label = 'Contact' %}
+    {% assign about_label = 'À propos' %}
+    {% assign events_label = 'Événements' %}
+    {% assign members_label = 'Devenir membre' %}
+    {% assign contacts_label = 'Contacts' %}
+    {% assign copyright_text = 'ICS Security Switzerland. Tous droits réservés.' %}
+  {% when 'it' %}
+    {% assign prefix = '/it/' %}
+    {% assign nav_label = 'Navigazione' %}
+    {% assign connect_label = 'Contatti' %}
+    {% assign about_label = 'Chi siamo' %}
+    {% assign events_label = 'Eventi' %}
+    {% assign members_label = 'Diventa membro' %}
+    {% assign contacts_label = 'Contatti' %}
+    {% assign copyright_text = 'ICS Security Switzerland. Tutti i diritti riservati.' %}
+  {% else %}
+    {% assign prefix = '/' %}
+    {% assign nav_label = 'Navigation' %}
+    {% assign connect_label = 'Connect' %}
+    {% assign about_label = 'About' %}
+    {% assign events_label = 'Events' %}
+    {% assign members_label = 'Join' %}
+    {% assign contacts_label = 'Contact' %}
+    {% assign copyright_text = 'ICS Security Switzerland. All rights reserved.' %}
+{% endcase %}
 
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-col">
+      <h4>{{ nav_label }}</h4>
+      <a href="{{ prefix }}about/">{{ about_label }}</a>
+      <a href="{{ prefix }}events/">{{ events_label }}</a>
+      <a href="{{ prefix }}members/">{{ members_label }}</a>
+      <a href="{{ prefix }}contacts/">{{ contacts_label }}</a>
+    </div>
+    <div class="footer-col">
+      <h4>{{ connect_label }}</h4>
+      <a href="mailto:info@icssec.ch">info@icssec.ch</a>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/company/icssecurity/" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        </a>
+        <a href="https://github.com/ICS-Security-Switzerland" aria-label="GitHub" rel="noopener noreferrer" target="_blank">
+          <svg viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.5.5.09.66-.22.66-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.61.07-.61 1 .07 1.53 1.03 1.53 1.03.89 1.53 2.34 1.09 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.11 2.51.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85v2.75c0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-col" style="text-align: right;">
+      <img src="{{ '/assets/images/logo_ics_security_transparent.png' | relative_url }}" alt="ICS Security Switzerland" style="height: 36px; width: auto; opacity: 0.5; margin-bottom: 8px;">
+      <div style="font-size: 0.82rem; color: rgba(237,242,247,0.35);">Bern, Switzerland</div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; {{ site.time | date: '%Y' }} {{ copyright_text }}
+  </div>
 </footer>

@@ -5,14 +5,12 @@ baseurl: ""
 lang: en-GB
 timezone: Europe/Zurich
 
-theme: minima
+# theme: minima  # using custom layouts
 
 header_pages:
   - about.md
   - members.md
   - contacts.md
-
-# logo: /assets/logo_ics_security_transparent.png
 
 plugins:
   - jekyll-feed
@@ -27,14 +25,7 @@ kramdown:
   hard_wrap: false
   smart_quotes: lsquo,rsquo,ldquo,rdquo
 
-minima:
-  skin: auto
-  social_links:
-    - platform: github
-      user_url: "https://github.com/ICS-Security-Switzerland"
-    - platform: linkedin
-      user_url: "https://www.linkedin.com/company/icssecurity"
-  date_format: "%-d. %B %Y"
+date_format: "%-d. %B %Y"
 show_excerpts: true
 
 defaults:
