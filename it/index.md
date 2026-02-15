@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Benvenuti a ICS Security Switzerland
+subtitle: Colleghiamo esperti in Svizzera per promuovere la cybersicurezza industriale e l'adozione dello standard IEC 62443.
 lang: it
 permalink: /it/
 ---

@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Welcome to ICS Security Switzerland
+subtitle: Connecting experts in Switzerland to advance industrial cybersecurity and IEC 62443 adoption.
 lang: en
 permalink: /
 ---
