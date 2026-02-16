@@ -21,5 +21,3 @@ If you’d like to get involved – join one of our events or become a member.
    IBAN CH43 0900 0000 1674 3834 7
 
 Welcome aboard! 🎉
-
-https://forms.gle/whFeX9hJp3Cpq2E67
