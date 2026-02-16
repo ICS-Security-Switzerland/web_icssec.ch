@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Willkommen bei ICS Security Switzerland
+subtitle: Wir vernetzen Fachleute in der Schweiz, um industrielle Cybersicherheit und die Einführung von IEC 62443 voranzutreiben.
 lang: de
 permalink: /de/
 ---
@@ -18,7 +19,6 @@ Als Gemeinschaft möchten wir:
 - Ein starkes Netzwerk zwischen Fachleuten aus verschiedenen Schweizer Branchen aufbauen.  
 - Bildung und berufliche Weiterentwicklung durch Workshops, Vorträge und Events fördern.  
 - Schweizer Unternehmen bei der Umsetzung internationaler ISA/IEC-Standards unterstützen.  
-- Die Schweiz mit ISA Europe und der globalen ISA-Community vernetzen.
 
 ---
 
