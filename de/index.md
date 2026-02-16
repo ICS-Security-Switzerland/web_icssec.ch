@@ -19,7 +19,6 @@ Als Gemeinschaft möchten wir:
 - Ein starkes Netzwerk zwischen Fachleuten aus verschiedenen Schweizer Branchen aufbauen.  
 - Bildung und berufliche Weiterentwicklung durch Workshops, Vorträge und Events fördern.  
 - Schweizer Unternehmen bei der Umsetzung internationaler ISA/IEC-Standards unterstützen.  
-- Die Schweiz mit ISA Europe und der globalen ISA-Community vernetzen.
 
 ---
 
