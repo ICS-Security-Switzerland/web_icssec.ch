@@ -72,13 +72,21 @@ http://localhost:4000
 
 ```
 .
-├── _config.yml          # Site configuration (title, description, etc.)
-├── _layouts/            # Page templates
-├── _includes/           # Header, footer, and reusable elements
-├── _posts/              # Blog posts (optional)
-├── assets/              # Images, CSS, JS
-├── pages/               # Content pages (About, Members, Events, etc.)
-├── Gemfile              # Ruby gem dependencies (GitHub Pages setup)
+├── _config.yml          # Site configuration (title, URL, plugins)
+├── _layouts/            # Page templates (default, home, page)
+├── _includes/           # Header, navigation, footer
+├── assets/
+│   ├── main.scss        # Complete custom stylesheet (CSS variables, responsive)
+│   └── images/          # Logo and other images
+├── index.md             # English homepage
+├── about.md             # English about page
+├── events.md            # English events page
+├── members.md           # English membership page
+├── contacts.md          # English contact page
+├── de/                  # German translations
+├── fr/                  # French translations
+├── it/                  # Italian translations
+├── Gemfile              # Ruby gem dependencies (GitHub Pages)
 ├── package.json         # NPM scripts for convenience
 └── .devcontainer/       # GitHub Codespaces configuration
 ```

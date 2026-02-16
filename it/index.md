@@ -1,6 +1,7 @@
 ---
 layout: home
 title: Benvenuti a ICS Security Switzerland
+subtitle: Colleghiamo esperti in Svizzera per promuovere la cybersicurezza industriale e l'adozione dello standard IEC 62443.
 lang: it
 permalink: /it/
 ---
@@ -18,7 +19,6 @@ Come comunità, ci proponiamo di:
 - Costruire una solida rete tra colleghi nei settori svizzeri.
 - Promuovere l'istruzione e la crescita professionale attraverso workshop, conferenze ed eventi.
 - Supportare le aziende locali nell'allineamento agli standard ISA/IEC globali.
-- Collegare la Svizzera alla comunità ISA europea e globale.
 
 ---
 
@@ -29,7 +29,7 @@ Se sei curioso della sicurezza ICS o vuoi semplicemente incontrare persone con i
 💡 *Il nostro obiettivo principale non è facilitare affari o servizi di consulenza.*
 Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenze e la collaborazione — un luogo dove i professionisti possono condividere esperienze e best practice in un ambiente di fiducia.
 
-### 👉 [Diventa membro](../members) quando vuoi
+### 👉 [Diventa membro](./members) quando vuoi
 
 ---
 
@@ -39,4 +39,4 @@ Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenz
 🌄 12 mar 2026 – Visita alla Galleria di base del Gottardo (FFS)<br>
 📅 6 mag 2026 – Assemblea generale (Zurigo)
 
-➡️ [Vedi tutti gli eventi →](../events)
+➡️ [Vedi tutti gli eventi →](./events)
