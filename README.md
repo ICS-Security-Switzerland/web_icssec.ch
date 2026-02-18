@@ -1,10 +1,7 @@
 
-[![pages-build-deploy-jekyll](https://github.com/ICS-Security-Switzerland/web_icssec.ch/actions/workflows/jekyll-gh-pages.yml/badge.svg)](https://github.com/ICS-Security-Switzerland/web_icssec.ch/actions/workflows/jekyll-gh-pages.yml)
-
-
 # ICS Security Switzerland Website
 
-Official website of **[ICS Security Switzerland](https://www.icssec.ch/)** — built with **Jekyll** and hosted on **GitHub Pages** - [www.icssec.ch](https://www.icssec.ch/)
+Official website of **[ICS Security Switzerland](https://www.icssec.ch/)** — built with **Jekyll** and hosted on **Cloudflare Pages** - [www.icssec.ch](https://www.icssec.ch/)
 
 This project supports both:
 - 🧩 Local development on macOS / Linux / Windows  
@@ -74,10 +71,13 @@ http://localhost:4000
 .
 ├── _config.yml          # Site configuration (title, URL, plugins)
 ├── _layouts/            # Page templates (default, home, page)
-├── _includes/           # Header, navigation, footer
+├── _includes/           # Header, navigation, footer, membership form
 ├── assets/
 │   ├── main.scss        # Complete custom stylesheet (CSS variables, responsive)
 │   └── images/          # Logo and other images
+├── functions/
+│   └── api/
+│       └── register.js  # Cloudflare Pages Function (membership → Webling)
 ├── index.md             # English homepage
 ├── about.md             # English about page
 ├── events.md            # English events page
@@ -93,21 +93,34 @@ http://localhost:4000
 
 ---
 
-## 🔄 Deployment (GitHub Pages)
+## 🔄 Deployment (Cloudflare Pages)
 
-The site is automatically built and deployed via GitHub Actions:
+The site is hosted on **Cloudflare Pages** with a built-in serverless function for the membership registration form.
 
-- Triggered on every push to the `main` branch  
-- Uses the official [jekyll-build-pages](https://github.com/actions/jekyll-build-pages) GitHub Action  
-- Deployment result:  
-  ```
-  https://www.icssec.ch
-  ```
+### Initial Setup
 
-To check build status:
-1. Go to your repository → **Actions** tab  
-2. Select workflow: `pages-build-deploy-jekyll`  
-3. Verify that all steps are ✅ successful
+1. Go to [Cloudflare Dashboard](https://dash.cloudflare.com/) → **Workers & Pages** → **Create** → **Pages** → **Connect to Git**
+2. Select the `ICS-Security-Switzerland/web_icssec.ch` repository
+3. Configure the build:
+   - **Build command:** `bundle exec jekyll build`
+   - **Build output directory:** `_site`
+   - **Root directory:** `/`
+4. Under **Environment variables**, add:
+   - `WEBLING_API_KEY` — Your API key from icssec.webling.ch → Administration → API keys
+   - `WEBLING_GROUP_ID` — Numeric ID of the "Interessenten" membergroup.
+     Find it via: `curl -H "apikey: YOUR_KEY" https://icssec.webling.ch/api/1/membergroup`
+5. Deploy
+
+### Custom Domain
+
+After the first deployment, go to your Pages project → **Custom domains** → add `www.icssec.ch`.
+Update your DNS to point to Cloudflare (CNAME record → `<project>.pages.dev`).
+
+### How it works
+
+- On every push to `main`, Cloudflare builds Jekyll and deploys the static site
+- The `functions/api/register.js` file is automatically deployed as a serverless endpoint at `/api/register`
+- The membership form on `/members/` submits directly to `/api/register` — no CORS, same domain
 
 ---
 

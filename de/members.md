@@ -12,9 +12,11 @@ Wenn du dabei sein möchtest – komm einfach zu einem unserer Events oder werde
 
 ### So wirst du Mitglied
 
-1. Fülle das [Anmeldeformular](https://forms.gle/whFeX9hJp3Cpq2E67) aus.
+**1. Fülle das Anmeldeformular aus:**
 
-2. Überweise den jährlichen Mitgliederbeitrag (CHF 50 – vielleicht übernimmt ja der Arbeitgeber 😄).
+{% include membership-form.html %}
+
+**2. Überweise den jährlichen Mitgliederbeitrag** (CHF 50 – vielleicht übernimmt ja der Arbeitgeber 😄).
 
    🔗 [QR-Rechnung herunterladen (PDF)](/assets/membership_fee_2026.pdf)
 

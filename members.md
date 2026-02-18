@@ -12,9 +12,11 @@ If you’d like to get involved – join one of our events or become a member.
 
 ### How to become a member
 
-1. Fill out the [registration form](https://forms.gle/whFeX9hJp3Cpq2E67).
+**1. Fill out the registration form:**
 
-2. Transfer the annual membership fee (CHF 50 – maybe your employer will cover it 😄).
+{% include membership-form.html %}
+
+**2. Transfer the annual membership fee** (CHF 50 – maybe your employer will cover it 😄).
 
    🔗 [Download QR bill (PDF)](/assets/membership_fee_2026.pdf)
 

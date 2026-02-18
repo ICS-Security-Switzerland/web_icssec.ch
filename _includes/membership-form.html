@@ -1,0 +1,187 @@
+{% comment %}
+  Membership registration form — included in members.md pages.
+  Detects page.lang and renders labels in EN / DE / FR / IT.
+  Anti-spam: CSS-hidden honeypot + JS timestamp check.
+{% endcomment %}
+
+{% assign lang = page.lang | default: 'en' %}
+
+{% case lang %}
+  {% when 'de' %}
+    {% assign f_firstname   = 'Vorname' %}
+    {% assign f_lastname    = 'Nachname' %}
+    {% assign f_email       = 'E-Mail' %}
+    {% assign f_industry    = 'Branche' %}
+    {% assign f_city        = 'Ort' %}
+    {% assign f_isa         = 'Bereits ISA-Mitglied?' %}
+    {% assign f_yes         = 'Ja' %}
+    {% assign f_no          = 'Nein' %}
+    {% assign f_required    = 'Pflichtfeld' %}
+    {% assign f_submit      = 'Anmeldung absenden' %}
+    {% assign f_submitting  = 'Wird gesendet…' %}
+    {% assign f_success     = 'Vielen Dank! Deine Anmeldung wurde erfolgreich übermittelt.' %}
+    {% assign f_error       = 'Etwas ist schiefgelaufen. Bitte versuche es erneut.' %}
+    {% assign f_invalid     = 'Bitte fülle alle Pflichtfelder korrekt aus.' %}
+  {% when 'fr' %}
+    {% assign f_firstname   = 'Prénom' %}
+    {% assign f_lastname    = 'Nom' %}
+    {% assign f_email       = 'E-mail' %}
+    {% assign f_industry    = 'Secteur' %}
+    {% assign f_city        = 'Ville' %}
+    {% assign f_isa         = 'Déjà membre ISA ?' %}
+    {% assign f_yes         = 'Oui' %}
+    {% assign f_no          = 'Non' %}
+    {% assign f_required    = 'Champ obligatoire' %}
+    {% assign f_submit      = "Envoyer l'inscription" %}
+    {% assign f_submitting  = 'Envoi en cours…' %}
+    {% assign f_success     = 'Merci ! Votre inscription a bien été reçue.' %}
+    {% assign f_error       = "Une erreur s'est produite. Veuillez réessayer." %}
+    {% assign f_invalid     = 'Veuillez remplir tous les champs obligatoires.' %}
+  {% when 'it' %}
+    {% assign f_firstname   = 'Nome' %}
+    {% assign f_lastname    = 'Cognome' %}
+    {% assign f_email       = 'E-mail' %}
+    {% assign f_industry    = 'Settore' %}
+    {% assign f_city        = 'Città' %}
+    {% assign f_isa         = 'Già membro ISA?' %}
+    {% assign f_yes         = 'Sì' %}
+    {% assign f_no          = 'No' %}
+    {% assign f_required    = 'Campo obbligatorio' %}
+    {% assign f_submit      = 'Invia iscrizione' %}
+    {% assign f_submitting  = 'Invio in corso…' %}
+    {% assign f_success     = 'Grazie! La tua iscrizione è stata ricevuta.' %}
+    {% assign f_error       = 'Si è verificato un errore. Riprova.' %}
+    {% assign f_invalid     = 'Compila tutti i campi obbligatori.' %}
+  {% else %}
+    {% assign f_firstname   = 'First Name' %}
+    {% assign f_lastname    = 'Last Name' %}
+    {% assign f_email       = 'Email' %}
+    {% assign f_industry    = 'Industry' %}
+    {% assign f_city        = 'City' %}
+    {% assign f_isa         = 'Already ISA member?' %}
+    {% assign f_yes         = 'Yes' %}
+    {% assign f_no          = 'No' %}
+    {% assign f_required    = 'Required' %}
+    {% assign f_submit      = 'Submit Registration' %}
+    {% assign f_submitting  = 'Submitting…' %}
+    {% assign f_success     = 'Thank you! Your registration has been received.' %}
+    {% assign f_error       = 'Something went wrong. Please try again.' %}
+    {% assign f_invalid     = 'Please fill in all required fields correctly.' %}
+{% endcase %}
+
+<form id="membership-form" class="membership-form" novalidate>
+
+  <div class="form-group">
+    <label for="mf-firstname">{{ f_firstname }} <span class="required" aria-label="{{ f_required }}">*</span></label>
+    <input type="text" id="mf-firstname" name="firstName" required autocomplete="given-name">
+  </div>
+
+  <div class="form-group">
+    <label for="mf-lastname">{{ f_lastname }} <span class="required" aria-label="{{ f_required }}">*</span></label>
+    <input type="text" id="mf-lastname" name="lastName" required autocomplete="family-name">
+  </div>
+
+  <div class="form-group">
+    <label for="mf-email">{{ f_email }} <span class="required" aria-label="{{ f_required }}">*</span></label>
+    <input type="email" id="mf-email" name="email" required autocomplete="email">
+  </div>
+
+  <div class="form-group">
+    <label for="mf-industry">{{ f_industry }} <span class="required" aria-label="{{ f_required }}">*</span></label>
+    <input type="text" id="mf-industry" name="industry" required>
+  </div>
+
+  <div class="form-group">
+    <label for="mf-city">{{ f_city }}</label>
+    <input type="text" id="mf-city" name="city" autocomplete="address-level2">
+  </div>
+
+  <fieldset class="form-group form-radio-group">
+    <legend>{{ f_isa }}</legend>
+    <label class="radio-label"><input type="radio" name="isaMember" value="yes"> {{ f_yes }}</label>
+    <label class="radio-label"><input type="radio" name="isaMember" value="no" checked> {{ f_no }}</label>
+  </fieldset>
+
+  <!-- Honeypot — hidden from humans, bots will fill it -->
+  <div class="form-hp" aria-hidden="true" tabindex="-1">
+    <label for="mf-website">Website</label>
+    <input type="text" id="mf-website" name="website" autocomplete="off" tabindex="-1">
+  </div>
+
+  <div id="mf-message" class="form-message" role="alert" aria-live="polite"></div>
+
+  <button type="submit" id="mf-submit" class="form-submit">{{ f_submit }}</button>
+</form>
+
+<script>
+(function () {
+  var form = document.getElementById('membership-form');
+  var btn  = document.getElementById('mf-submit');
+  var msg  = document.getElementById('mf-message');
+  var ts   = Date.now();
+
+  var TEXTS = {
+    submitting: {{ f_submitting  | jsonify }},
+    submit:     {{ f_submit      | jsonify }},
+    success:    {{ f_success     | jsonify }},
+    error:      {{ f_error       | jsonify }},
+    invalid:    {{ f_invalid     | jsonify }}
+  };
+
+  var API_URL = '/api/register';
+
+  function showMsg(text, type) {
+    msg.textContent = text;
+    msg.className = 'form-message form-message--' + type;
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    // Client-side required check
+    if (!form.checkValidity()) {
+      showMsg(TEXTS.invalid, 'error');
+      // highlight first invalid field
+      var first = form.querySelector(':invalid');
+      if (first) first.focus();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = TEXTS.submitting;
+    msg.className = 'form-message';
+    msg.textContent = '';
+
+    var payload = {
+      firstName:  form.firstName.value,
+      lastName:   form.lastName.value,
+      email:      form.email.value,
+      industry:   form.industry.value,
+      city:       form.city.value,
+      isaMember:  form.isaMember.value === 'yes',
+      _hp:        form.website.value,  // honeypot
+      _ts:        ts                   // timestamp
+    };
+
+    fetch(API_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(payload)
+    })
+    .then(function (r) {
+      if (!r.ok) throw new Error(r.status);
+      return r.json();
+    })
+    .then(function () {
+      showMsg(TEXTS.success, 'success');
+      form.reset();
+      btn.disabled = true; // keep disabled after success
+    })
+    .catch(function () {
+      showMsg(TEXTS.error, 'error');
+      btn.disabled = false;
+      btn.textContent = TEXTS.submit;
+    });
+  });
+})();
+</script>

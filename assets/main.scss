@@ -531,3 +531,142 @@ strong {
   h2 { font-size: 1.3rem; }
   .page-heading { font-size: 1.5rem; }
 }
+
+/* ============================================================
+   MEMBERSHIP FORM
+   ============================================================ */
+.membership-form {
+  margin-top: 12px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label,
+.form-group legend {
+  display: block;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 6px;
+}
+
+.form-group .required {
+  color: var(--color-accent);
+  margin-left: 1px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+  width: 100%;
+  padding: 10px 14px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  color: var(--color-text);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  transition: border-color 0.2s, box-shadow 0.2s;
+  outline: none;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(213, 43, 43, 0.1);
+}
+
+.form-group input:invalid:not(:placeholder-shown):not(:focus) {
+  border-color: var(--color-accent);
+}
+
+.form-radio-group {
+  border: none;
+  padding: 0;
+  margin: 0 0 20px;
+}
+
+.form-radio-group legend {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  margin-bottom: 8px;
+}
+
+.radio-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 400;
+  font-size: 0.93rem;
+  color: var(--color-text);
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.radio-label input[type="radio"] {
+  accent-color: var(--color-accent);
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Honeypot — visually hidden, accessible to screen readers via aria-hidden */
+.form-hp {
+  position: absolute;
+  left: -9999px;
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.form-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 32px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #fff;
+  background: var(--color-accent);
+  border: none;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.form-submit:hover:not(:disabled) {
+  background: var(--color-accent-hover);
+  transform: translateY(-1px);
+}
+
+.form-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.form-message {
+  min-height: 1.5em;
+  margin-bottom: 16px;
+  font-size: 0.92rem;
+  border-radius: var(--radius-sm);
+  padding: 0;
+  transition: all 0.2s;
+}
+
+.form-message--success {
+  color: #15803d;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  padding: 12px 16px;
+}
+
+.form-message--error {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  padding: 12px 16px;
+}
