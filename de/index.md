@@ -35,7 +35,6 @@ Wir verstehen uns als **neutrale, nicht-kommerzielle Plattform** für den Wissen
 
 ## Nächste Veranstaltungen
 
-📅 25. Feb 2026 – Meetup in Bern<br>
 🌄 12. Mär 2026 – Führung im Gotthard-Basistunnel (SBB)<br>
 📅 6. Mai 2026 – Generalversammlung (Zürich)  
 
