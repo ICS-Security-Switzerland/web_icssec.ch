@@ -12,18 +12,13 @@ Le date e i dettagli esatti saranno annunciati anche tramite la nostra [pagina L
 
 ---
 
-### 📅 25 febbraio 2026, dalle 17:30 – Incontro / Aperitivo
-Luogo: **Simmentaler Brewhouse** – direttamente alla stazione di Berna<br>
-🔗 [simmentalerbrewhouse.ch](https://www.simmentalerbrewhouse.ch/)<br>
-Networking informale, Q&A aperto sull'associazione e scambio su temi ICS.
-
 ### 🌄 12 marzo 2026 – Visita guidata alla Galleria di base del Gottardo
 Luogo: **Faido, TI**<br>
 Visita tecnica esclusiva. _(Completo)_
 
-### 📅 6 maggio 2026, ore 19:00 – Assemblea generale (AG)  
-**Luogo:** Zurigo _(sede esatta da confermare)_  
-Riunione ufficiale dei membri di ICS Security Switzerland.
+### 📅 6 maggio 2026, ore 19:00 – Assemblea generale (AG) con aperitivo  
+**Luogo:** Detecon (Schweiz) AG, Loewenstrasse 1, 8001 Zurigo _(uso delle sale riunioni)_  
+Riunione ufficiale dei membri di ICS Security Switzerland, seguita da un aperitivo.
 
 ---
 

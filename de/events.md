@@ -12,18 +12,13 @@ Genaue Daten und Details werden zusätzlich über unsere [LinkedIn-Seite](https:
 
 ---
 
-### 📅 25. Februar 2026, ab 17:30 Uhr – Meetup / Get-together  
-**Ort:** Simmentaler Brewhouse – direkt am Bahnhof Bern  
-🔗 [simmentalerbrewhouse.ch](https://www.simmentalerbrewhouse.ch/)  
-Unverbindliches Kennenlernen, offene Fragerunde zum Verein und Austausch zu ICS-Security-Themen.
-
 ### 🌄 12. März 2026 — Besuch im Gotthard-Basistunnel (SBB)  
 **Ort:** Faido, TI  
 Exklusive technische Führung. _(Ausgebucht)_
 
-### 📅 6. Mai 2026, 19:00 Uhr — Generalversammlung (GV)  
-**Ort:** Zürich _(genaue Location wird noch bekanntgegeben)_  
-Offizielles Mitgliedertreffen von ICS Security Switzerland.
+### 📅 6. Mai 2026, 19:00 Uhr — Generalversammlung (GV) mit Apéro  
+**Ort:** Detecon (Schweiz) AG, Löwenstrasse 1, 8001 Zürich _(Nutzung der Meetingräume)_  
+Offizielles Mitgliedertreffen von ICS Security Switzerland, anschliessend Apéro.
 
 ---
 
