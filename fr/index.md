@@ -35,7 +35,7 @@ Nous servons de **plateforme neutre et non commerciale** pour l'échange de conn
 
 ## Prochains événements
 
-🌄 12 mars 2026 – Visite du tunnel de base du Gothard (CFF)<br>
+💻 15 avr 2026, 17h00 – Rencontre virtuelle: Use of Containerlab to Simulate OT Environments<br>
 📅 6 mai 2026 – Assemblée générale (Zurich)
 
 ➡️ [Voir tous les événements →](./events)

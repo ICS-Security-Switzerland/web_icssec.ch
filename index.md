@@ -35,7 +35,7 @@ We serve as a **neutral, non-commercial platform** for knowledge exchange and co
 
 ## Upcoming Events
 
-🌄 12 Mar. 2026 – Gotthard Base Tunnel Visit (SBB)<br>
+💻 15 Apr. 2026, 5:00pm – Virtual Meetup: Use of Containerlab to Simulate OT Environments<br>
 📅 6 May 2026 – General Assembly (Zurich)  
 
 ➡️ [See all events →](./events)
