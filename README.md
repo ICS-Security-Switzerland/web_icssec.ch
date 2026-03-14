@@ -130,6 +130,16 @@ To check build status:
 - `.gitignore` excludes `_site/` and `vendor/` folders to keep the repo clean.
 - Codespaces automatically exposes port `4000` for preview.
 
+### If `npm` is not available
+
+If you see `npm: command not found` in an existing container session, use:
+
+```bash
+bundle exec jekyll serve --host 0.0.0.0 --livereload --port 4000
+```
+
+Then rebuild/recreate the Dev Container once so that `nodejs` and `npm` from `.devcontainer/devcontainer.json` are installed permanently.
+
 ---
 
 ## 👥 Contributions

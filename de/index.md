@@ -35,7 +35,7 @@ Wir verstehen uns als **neutrale, nicht-kommerzielle Plattform** für den Wissen
 
 ## Nächste Veranstaltungen
 
-💻 15. Apr 2026, 17:00 Uhr – Virtual Meetup: Use of Containerlab to Simulate OT Environments<br>
+💻 15. Apr 2026 – Virtual Meetup: Use of Containerlab to Simulate OT Environments<br>
 📅 6. Mai 2026 – Generalversammlung (Zürich)  
 
 ➡️ [Alle Events →](./events)

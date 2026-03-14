@@ -6,6 +6,6 @@
     "4000": { "label": "Jekyll", "onAutoForward": "openBrowser", "visibility": "private" },
     "35729": { "label": "LiveReload", "visibility": "private" }
   },
-  "onCreateCommand": "apk add --no-cache ruby ruby-dev ruby-bundler build-base git",
+  "onCreateCommand": "apk add --no-cache ruby ruby-dev ruby-bundler build-base git nodejs npm",
   "postCreateCommand": "bundle config set path 'vendor/bundle' && bundle install"
 }
