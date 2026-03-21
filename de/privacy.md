@@ -6,7 +6,7 @@ permalink: /de/privacy/
 ---
 
 # ICS Security Switzerland
-_Stand: 21. November 2025_
+_Stand: 21. März 2026_
 
 Diese Datenschutzerklärung informiert darüber, wie der Verein **ICS Security Switzerland** Personendaten im Sinne des Schweizer Datenschutzgesetzes (DSG) bearbeitet.  
 Sie gilt für Vereinsmitglieder, Interessierte, Event-Teilnehmende sowie Besucherinnen und Besucher unserer Website.
@@ -32,7 +32,7 @@ Unsere Mitgliederverwaltung erfolgt über **Webling** (uSystems GmbH, Schweiz).
 
 Unsere Website verwendet **keine Cookies** und **keine Webanalyse-Tools**. Es findet kein Tracking und keine Profilbildung auf www.icssec.ch statt.
 
-Bei Nutzung externer Dienste wie LinkedIn oder Google Forms gelten deren Datenschutz- und Cookie-Richtlinien, auf die wir keinen Einfluss haben:
+Bei Nutzung externer Dienste wie LinkedIn gelten deren Datenschutz- und Cookie-Richtlinien, auf die wir keinen Einfluss haben:
 
 - [Datenschutzerklärung LinkedIn](https://de.linkedin.com/legal/privacy-policy)
 - [Datenschutzerklärung Google](https://policies.google.com/privacy?hl=de)
@@ -64,35 +64,24 @@ Bei einer Kontaktaufnahme per E-Mail oder über ein Formular speichern wir die a
 ---
 
 ### 2.3 Mitgliedschaft
-Bei der Aufnahme in den Verein erfassen wir:
+Bei der Aufnahme in den Verein und bei der Anmeldung über das **Webling-Portal** erfassen wir:
 
 - Name, Adresse, E-Mail  
-- Rechnungs- und Zahlungshistorie (Mitgliederbeiträge)
-
-Die Mitgliederverwaltung erfolgt über die **Webling Vereinssoftware** der uSystems GmbH (Schweiz).
-
----
-
-### 2.4 Vereinsanmeldung (Google Forms)
-Wenn Sie sich über unser **Google-Formular** als Mitglied anmelden, erfassen wir zusätzlich:
-
+- Rechnungs- und Zahlungshistorie (Mitgliederbeiträge)  
 - **Industry / Branche**  
 - **City / Wohnort**  
-- **Telefon**  
-- **ISA-Mitgliedschaft (Ja/Nein)**  
 
 Diese Angaben werden genutzt für:
 
 - interne Mitgliederverwaltung  
 - Zuordnung zu Themenbereichen  
 - Planung von Treffen und Aktivitäten  
-- Vernetzung mit ISA (International Society of Automation)
 
 **Keine Verwendung für Marketing.  
 Keine Weitergabe an Dritte.  
 Keine Profilbildung.**
 
-Das Formular wird über **Google Forms** bereitgestellt. Google verarbeitet die Daten nur im Rahmen dieses Dienstes.
+Die Mitgliederverwaltung und Anmeldung erfolgt über die **Webling Vereinssoftware** der uSystems GmbH (Schweiz). Die Daten werden ausschliesslich in der Schweiz oder EU gespeichert.
 
 ---
 
@@ -116,7 +105,7 @@ Wir geben personenbezogene Daten **nicht an Dritte** weiter.
 Ausnahmen nur:
 
 - wenn eine gesetzliche Verpflichtung besteht, oder  
-- wenn externe Plattformen (wie LinkedIn Events, Google Forms) technisch notwendig sind.
+- wenn externe Plattformen (wie LinkedIn Events) technisch notwendig sind.
 
 ### 4.1 Auftragsverarbeitung durch Webling
 

@@ -5,19 +5,10 @@ lang: de
 permalink: /de/members/
 ---
 
-Wir sind eine offene Gemeinschaft für alle, die sich für **OT-/ICS-Security** in der Schweiz interessieren.
-Wenn du dabei sein möchtest – komm einfach zu einem unserer Events oder werde direkt Mitglied.
-
----
-
-### So wirst du Mitglied
-
-1. Fülle das [Anmeldeformular](https://forms.gle/whFeX9hJp3Cpq2E67) aus.
-
-2. Überweise den jährlichen Mitgliederbeitrag (CHF 50 – vielleicht übernimmt ja der Arbeitgeber 😄).
-
-   🔗 [QR-Rechnung herunterladen (PDF)](/assets/membership_fee_2026.pdf)
-
-   IBAN CH43 0900 0000 1674 3834 7
-
-Willkommen an Bord! 🎉
+<iframe
+  src="https://icssec.webling.ch/forms/memberform/d5a94617c6c43535a9df"
+  frameborder="0"
+  style="overflow: hidden; min-height: 1200px; width: 100%"
+  height="1200px"
+  width="100%"
+></iframe>
