@@ -303,7 +303,6 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  minima
 
 BUNDLED WITH
    2.7.2
