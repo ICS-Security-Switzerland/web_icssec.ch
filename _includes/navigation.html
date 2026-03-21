@@ -27,6 +27,16 @@
     {% assign contacts_label = 'Contact' %}
 {% endcase %}
 
+{% assign page_key = page.url | default: '/' %}
+{% assign page_key = page_key | replace_first: '/de/', '/' %}
+{% assign page_key = page_key | replace_first: '/fr/', '/' %}
+{% assign page_key = page_key | replace_first: '/it/', '/' %}
+
+{% assign en_link = page_key %}
+{% assign de_link = '/de' | append: page_key %}
+{% assign fr_link = '/fr' | append: page_key %}
+{% assign it_link = '/it' | append: page_key %}
+
 <a class="site-logo" href="{{ prefix | relative_url }}">
   <img src="{{ '/assets/images/logo_ics_security_transparent.png' | relative_url }}"
        alt="ICS Security Switzerland">
@@ -49,10 +59,10 @@
       <span class="lang-btn-chevron">▾</span>
     </button>
     <div class="lang-menu">
-      {% if lang != "en" %}<a href="/"><span class="flag">🇬🇧</span> English</a>{% endif %}
-      {% if lang != "de" %}<a href="/de/"><span class="flag">🇩🇪</span> Deutsch</a>{% endif %}
-      {% if lang != "fr" %}<a href="/fr/"><span class="flag">🇫🇷</span> Français</a>{% endif %}
-      {% if lang != "it" %}<a href="/it/"><span class="flag">🇮🇹</span> Italiano</a>{% endif %}
+      {% if lang != "en" %}<a href="{{ en_link | relative_url }}"><span class="flag">🇬🇧</span> English</a>{% endif %}
+      {% if lang != "de" %}<a href="{{ de_link | relative_url }}"><span class="flag">🇩🇪</span> Deutsch</a>{% endif %}
+      {% if lang != "fr" %}<a href="{{ fr_link | relative_url }}"><span class="flag">🇫🇷</span> Français</a>{% endif %}
+      {% if lang != "it" %}<a href="{{ it_link | relative_url }}"><span class="flag">🇮🇹</span> Italiano</a>{% endif %}
     </div>
   </div>
 </nav>
