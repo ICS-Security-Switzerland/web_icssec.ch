@@ -36,6 +36,8 @@ We serve as a **neutral, non-commercial platform** for knowledge exchange and co
 ## Upcoming Events
 
 💻 15 Apr. 2026 – Virtual Meetup: Use of Containerlab to Simulate OT Environments<br>
-📅 6 May 2026 – General Assembly (Zurich)  
+📅 6 May 2026 – General Assembly (Zurich)<br>
+📅 June 2026 – Meetup in Lugano (Il Fermento) _(date tbd: 9 or 23 June)_<br>
+📅 15 Sep. 2026 – Meetup in Basel
 
 ➡️ [See all events →](./events)

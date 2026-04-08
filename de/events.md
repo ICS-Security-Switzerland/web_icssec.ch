@@ -20,6 +20,27 @@ Online-Konferenz (Zugangslink folgt)
 **Ort:** Detecon (Schweiz) AG, Löwenstrasse 1, 8001 Zürich _(Nutzung der Meetingräume)_  
 Offizielles Mitgliedertreffen von ICS Security Switzerland, anschliessend Apéro.
 
+**Ablauf / Traktanden**
+1. Wahl des Protokollführers
+2. Wahl des Stimmenzählers
+3. Protokoll der letzten Vereinsversammlung
+4. Berichte des Vorstandes
+5. Revisorenbericht und Entlastung des Vorstandes
+6. Wahl des Vorstandes
+7. Wahl des Präsidenten
+8. Wahl von Rechnungsrevisoren und evtl. Ersatzrevisoren
+9. Festsetzen der Budgets
+10. Festsetzen der Mitgliederbeiträge
+11. Beschlussfassung über Rekurse (falls gegeben)
+12. Anträge von Mitgliedern (falls gegeben)
+13. Varia
+
+### 📅 Juni 2026, ab 17:30 Uhr – Meetup / Get-together  
+**Ort:** [Il Fermento](https://share.google/aXYhMi83xBcOHhMd4), Lugano _(Datum tbd: 9. oder 23. Juni)_
+
+### 📅 15. September 2026, ab 17:30 Uhr – Meetup / Get-together  
+**Ort:** Basel _(tbd – Nähe Bahnhof)_
+
 ---
 
 Bleib auf dem Laufenden — weitere Veranstaltungen werden bald bekanntgegeben!
