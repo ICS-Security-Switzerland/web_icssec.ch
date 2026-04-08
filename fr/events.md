@@ -14,7 +14,7 @@ Les dates et détails exacts seront également annoncés via notre [page LinkedI
 
 ### 💻 15 avril 2026, 17h00 - env. 18h00 – Rencontre virtuelle
 **Titre :** Use of Containerlab to Simulate OT Environments<br>
-Conférence en ligne (lien d'accès à venir)
+Conférence en ligne : [Google Meet](https://meet.google.com/izs-rvig-bcd)
 
 ### 📅 6 mai 2026, 19h00 – Assemblée générale (AG) avec apéro  
 **Lieu :** Detecon (Schweiz) AG, Loewenstrasse 1, 8001 Zurich _(utilisation des salles de réunion)_  
