@@ -14,6 +14,8 @@ Les dates et détails exacts seront également annoncés via notre [page LinkedI
 
 ### 💻 15 avril 2026, 17h00 - env. 18h00 – Rencontre virtuelle
 **Titre :** Use of Containerlab to Simulate OT Environments<br>
+**Intervenant :** [Martin Scheu](https://www.linkedin.com/in/martin-scheu/), [Switch](https://www.switch.ch)<br>
+_Switch est une fondation privée suisse créée en 1987, dédiée à la mise en place d'une infrastructure de recherche et d'éducation sécurisée et interconnectée pour les hautes écoles et institutions de recherche en Suisse._<br>
 Conférence en ligne : [Google Meet](https://meet.google.com/izs-rvig-bcd)
 
 ### 📅 6 mai 2026, 19h00 – Assemblée générale (AG) avec apéro  
