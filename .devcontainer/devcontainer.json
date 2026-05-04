@@ -1,11 +1,27 @@
 {
   "name": "Jekyll DevContainer ICS Security",
-  "image": "mcr.microsoft.com/devcontainers/base:alpine",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/ruby:1": {
+      "version": "3.1"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
+    }
+  },
+  "containerEnv": {
+    "BUNDLE_PATH": "/workspaces/.bundle",
+    "BUNDLE_JOBS": "4",
+    "BUNDLE_RETRY": "3"
+  },
+  "mounts": [
+    "source=jekyll-bundle-cache,target=/workspaces/.bundle,type=volume"
+  ],
   "forwardPorts": [4000, 35729],
   "portsAttributes": {
     "4000": { "label": "Jekyll", "onAutoForward": "openBrowser", "visibility": "private" },
     "35729": { "label": "LiveReload", "visibility": "private" }
   },
-  "onCreateCommand": "apk add --no-cache ruby ruby-dev ruby-bundler build-base git nodejs npm",
-  "postCreateCommand": "bundle config set path 'vendor/bundle' && bundle install"
+  "postCreateCommand": "bundle check || bundle install",
+  "postAttachCommand": "if ! pgrep -f 'jekyll serve.*--port 4000' >/dev/null; then nohup bundle exec jekyll serve --livereload --host 0.0.0.0 --port 4000 >/tmp/jekyll.log 2>&1 & fi"
 }
