@@ -21,8 +21,11 @@ Siamo un piccolo ma motivato gruppo di professionisti che crede nella collaboraz
 - **[Andreas Bernhard](https://www.linkedin.com/in/andreas-n-bernhard/)** — *Segretario*  
   Prende appunti, redige i verbali e mantiene la comunicazione.
 
-- **[Pasquale Quaranta](https://www.linkedin.com/in/pasquale-quaranta-/)** — *Revisore*  
-  Vigila sulla trasparenza e sulla buona governance.
+- **[Martin Scheu](https://www.linkedin.com/in/martin-scheu/)** — *Responsabile contenuti*  
+  Pianifica, progetta e serve conoscenza, cosi ogni workshop e ogni formazione centra il bersaglio.
+
+- **[Pasquale Quaranta](https://www.linkedin.com/in/pasquale-quaranta-/)** & **[Ruedi Kubli](https://www.linkedin.com/in/ruedi-k-78700b7/)** — *Revisori*  
+  In coppia garantiscono trasparenza, correttezza e una contabilita impeccabile.
 
 ---
 

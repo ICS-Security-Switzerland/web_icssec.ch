@@ -22,8 +22,11 @@ Wir sind eine kleine, engagierte Gruppe von Fachleuten, die an Zusammenarbeit st
 - **[Andreas Bernhard](https://www.linkedin.com/in/andreas-n-bernhard/)** — *Schriftführer/Aktuar*  
   Führt Protokoll, schreibt Dinge auf und hält den Informationsfluss am Laufen.
 
-- **[Pasquale Quaranta](https://www.linkedin.com/in/pasquale-quaranta-/)** — *Revisor*  
-  Achtet auf Transparenz und gute Vereinsführung.
+- **[Martin Scheu](https://www.linkedin.com/in/martin-scheu/)** — *Content Manager*  
+  Plant, konzipiert und serviert Wissen - damit jeder Workshop und jedes Training genau ins Schwarze trifft.
+
+- **[Pasquale Quaranta](https://www.linkedin.com/in/pasquale-quaranta-/)** & **[Ruedi Kubli](https://www.linkedin.com/in/ruedi-k-78700b7/)** — *Revisoren*  
+  Sorgen im Doppelpack fuer Transparenz, Korrektheit und eine lupenreine Buchfuehrung.
 
 ---
 

@@ -35,8 +35,8 @@ Wir verstehen uns als **neutrale, nicht-kommerzielle Plattform** für den Wissen
 
 ## Nächste Veranstaltungen
 
-📅 6. Mai 2026 – Generalversammlung (Zürich)<br>
-📅 Juni 2026 – Meetup in Lugano (Il Fermento) _(Datum tbd: 9. oder 23. Juni)_<br>
+📅 9. Juni 2026 – Meetup in Lugano (Il Fermento)<br>
+📅 7. Sep 2026, 16:00-17:00 Uhr – Virtual Meetup: "Securing OPC-UA: Case Studies" (Benedict Simliner)<br>
 📅 15. Sep 2026 – Meetup in Basel
 
 ➡️ [Alle Events →](./events)

@@ -21,8 +21,11 @@ Nous sommes un petit groupe motivé de professionnels qui croient en la collabor
 - **[Andreas Bernhard](https://www.linkedin.com/in/andreas-n-bernhard/)** — *Secrétaire*  
   Prend des notes, rédige les comptes rendus et veille à la bonne circulation de l'information.
 
-- **[Pasquale Quaranta](https://www.linkedin.com/in/pasquale-quaranta-/)** — *Auditeur (Réviseur)*  
-  Veille à la transparence et à la bonne gouvernance.
+- **[Martin Scheu](https://www.linkedin.com/in/martin-scheu/)** — *Responsable contenu*  
+  Planifie, conçoit et sert le savoir pour que chaque atelier et chaque formation fasse mouche.
+
+- **[Pasquale Quaranta](https://www.linkedin.com/in/pasquale-quaranta-/)** & **[Ruedi Kubli](https://www.linkedin.com/in/ruedi-k-78700b7/)** — *Auditeurs (Réviseurs)*  
+  En duo, ils garantissent la transparence, la justesse et une comptabilité irréprochable.
 
 ---
 

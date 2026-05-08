@@ -2,7 +2,10 @@
   "name": "icssec-site",
   "private": true,
   "scripts": {
-    "dev": "bundle exec jekyll serve --host 0.0.0.0 --port 4000",
-    "clean": "rm -rf _site .jekyll-cache vendor/bundle"
+    "dev": "bash .devcontainer/ruby-bootstrap.sh serve",
+    "preview:fast": "python3 -m http.server 4173 --directory .",
+    "preview:full": "bash .devcontainer/ruby-bootstrap.sh serve",
+    "check:full": "bash .devcontainer/ruby-bootstrap.sh install",
+    "clean": "rm -rf _site .jekyll-cache vendor/bundle .ruby-lsp"
   }
 }

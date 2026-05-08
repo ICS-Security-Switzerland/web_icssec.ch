@@ -12,27 +12,13 @@ Les dates et détails exacts seront également annoncés via notre [page LinkedI
 
 ---
 
-### 📅 6 mai 2026, 19h00 – Assemblée générale (AG) avec apéro  
-**Lieu :** Detecon (Schweiz) AG, Loewenstrasse 1, 8001 Zurich _(utilisation des salles de réunion)_  
-Réunion officielle des membres d'ICS Security Switzerland, suivie d'un apéro.
+### 📅 9 juin 2026, dès 17h30 – Meetup / Get-together  
+**Lieu :** [Il Fermento](https://share.google/aXYhMi83xBcOHhMd4), Lugano
 
-**Ordre du jour**
-1. Élection du secrétaire de séance
-2. Élection des scrutateurs
-3. Procès-verbal de la dernière assemblée générale
-4. Rapports du Comité
-5. Rapport des réviseurs et décharge du Comité
-6. Élection du Comité
-7. Élection du Président
-8. Élection des réviseurs des comptes et, le cas échéant, des suppléants
-9. Approbation du budget
-10. Fixation des cotisations des membres
-11. Décisions sur les recours (le cas échéant)
-12. Propositions des membres (le cas échéant)
-13. Divers
-
-### 📅 Juin 2026, dès 17h30 – Meetup / Get-together  
-**Lieu :** [Il Fermento](https://share.google/aXYhMi83xBcOHhMd4), Lugano _(date à confirmer : 9 ou 23 juin)_
+### 📅 Lundi 7 septembre 2026, 16h00-17h00 – Meetup virtuel  
+**Sujet :** "Securing OPC-UA: Case Studies"  
+**Intervenant :** Benedict Simliner  
+**Lieu :** En ligne
 
 ### 📅 15 septembre 2026, dès 17h30 – Meetup / Get-together  
 **Lieu :** Bâle _(à confirmer – près de la gare)_
@@ -40,3 +26,35 @@ Réunion officielle des membres d'ICS Security Switzerland, suivie d'un apéro.
 ---
 
 Restez à l'écoute — d'autres événements seront bientôt annoncés !
+
+## Événements passés
+
+### ✅ 6 mai 2026, 19h00 – Assemblée générale (AG) avec apéro  
+**Lieu :** Detecon (Schweiz) AG, Loewenstrasse 1, 8001 Zurich _(utilisation des salles de réunion)_  
+Réunion officielle des membres d'ICS Security Switzerland, suivie d'un apéro.
+
+### ✅ 💻 15 avril 2026, 17h00 - env. 18h00 — Meetup virtuel  
+**Titre :** Use of Containerlab to Simulate OT Environments  
+**Intervenant :** [Martin Scheu](https://www.linkedin.com/in/martin-scheu/), [Switch](https://www.switch.ch)  
+_Switch est une fondation privee suisse, creee en 1987, qui se consacre a une infrastructure de recherche et d'education securisee et connectee pour les universites et les institutions de recherche en Suisse._
+
+### ✅ 12 mars 2026 — Visite guidée du tunnel de base du Gothard  
+**Lieu :** Faido, TI  
+Visite technique exclusive. _(Complet)_
+
+### ✅ 25 février 2026, dès 17h30 — Meetup / Get-together  
+**Lieu :** Simmentaler Brewhouse, directement à la gare centrale de Berne  
+🔗 [simmentalerbrewhouse.ch](https://www.simmentalerbrewhouse.ch/)  
+Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
+
+### ✅ 20 janvier 2026, 12h00-13h00 — Meetup virtuel  
+**Lieu :** En ligne — [Join Meeting](https://meet.google.com/vof-tddm-mnr)  
+Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
+
+### ✅ 3 décembre 2025, dès 17h30 — Meetup / Get-together  
+**Lieu :** Lucerne ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))  
+Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
+
+### ✅ 19 novembre 2025, 16h00-17h00 — Meetup virtuel  
+**Lieu :** En ligne ([Google Meet](https://meet.google.com/vhu-rudm-abj))  
+Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.

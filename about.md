@@ -21,8 +21,11 @@ We are a small but motivated group of professionals who believe in collaboration
 - **[Andreas Bernhard](https://www.linkedin.com/in/andreas-n-bernhard/)** — *Secretary*  
   Takes notes, writes things down, and keeps the words flowing.
 
-- **[Pasquale Quaranta](https://www.linkedin.com/in/pasquale-quaranta-/)** — *Auditor (Revisor)*  
-  Keeps an eye on transparency and good governance.
+- **[Martin Scheu](https://www.linkedin.com/in/martin-scheu/)** — *Content Manager*  
+  Plans, curates, and serves knowledge so every workshop and training hits the mark.
+
+- **[Pasquale Quaranta](https://www.linkedin.com/in/pasquale-quaranta-/)** & **[Ruedi Kubli](https://www.linkedin.com/in/ruedi-k-78700b7/)** — *Auditors (Revisoren)*  
+  Together they ensure transparency, correctness, and spotless bookkeeping.
 
 ---
 
