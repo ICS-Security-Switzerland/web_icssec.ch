@@ -20,6 +20,9 @@ case "${MODE}" in
     ;;
   serve)
     "${bundle_cmd[@]}" check || "${bundle_cmd[@]}" install
+    # Kill any stale Jekyll/LiveReload processes before starting fresh
+    pkill -f "jekyll serve" 2>/dev/null || true
+    sleep 1
     exec "${bundle_cmd[@]}" exec jekyll serve --livereload --host 0.0.0.0 --port 4000
     ;;
   *)

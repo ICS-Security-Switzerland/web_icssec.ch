@@ -371,6 +371,44 @@ strong {
   font-size: 1.1rem;
 }
 
+/* ---------- Events: Past Events should be visually quieter ---------- */
+.events-past {
+  margin-top: 30px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--color-border);
+  color: var(--color-text-secondary);
+}
+
+.events-past h2 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+
+.page-content .events-past h3,
+.home-content .events-past h3 {
+  background: none;
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+  margin: 14px 0 6px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+}
+
+.events-past p {
+  margin: 0 0 7px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.events-past strong {
+  color: var(--color-text);
+}
+
 /* ============================================================
    FOOTER
    ============================================================ */

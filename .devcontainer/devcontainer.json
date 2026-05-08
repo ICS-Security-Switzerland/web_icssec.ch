@@ -11,7 +11,6 @@
     }
   },
   "containerEnv": {
-    "BUNDLE_PATH": "/workspaces/web_icssec.ch/vendor/bundle",
     "BUNDLE_JOBS": "4",
     "BUNDLE_RETRY": "3"
   },

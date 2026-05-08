@@ -12,20 +12,22 @@ Le date e i dettagli esatti saranno annunciati anche tramite la nostra [pagina L
 
 ---
 
-### 📅 9 giugno 2026, dalle 17:30 – Meetup / Get-together  
+### 📅 Martedì 9 giugno 2026, dalle 17:30 – Meetup / Get-together  
 **Luogo:** [Il Fermento](https://share.google/aXYhMi83xBcOHhMd4), Lugano
 
 ### 📅 Lunedì 7 settembre 2026, 16:00-17:00 – Meetup virtuale  
 **Tema:** "Securing OPC-UA: Case Studies"  
-**Relatore:** Benedict Simliner  
+**Relatore:** [Benedict Simlinger](https://www.linkedin.com/in/benedictsimlinger/)  
 **Luogo:** Online
 
-### 📅 15 settembre 2026, dalle 17:30 – Meetup / Get-together  
+### 📅 Martedì 15 settembre 2026, dalle 17:30 – Meetup / Get-together  
 **Luogo:** Basilea _(da confermare – vicino alla stazione)_
 
 ---
 
 Restate sintonizzati — altri eventi saranno annunciati presto!
+
+<section class="events-past" markdown="1">
 
 ## Eventi passati
 
@@ -58,3 +60,5 @@ Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS secu
 ### ✅ 19 novembre 2025, 16:00-17:00 — Meetup virtuale  
 **Luogo:** Online ([Google Meet](https://meet.google.com/vhu-rudm-abj))  
 Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS security.
+
+</section>
