@@ -12,9 +12,6 @@ Le date e i dettagli esatti saranno annunciati anche tramite la nostra [pagina L
 
 ---
 
-### 📅 Martedì 9 giugno 2026, dalle 17:30 – Meetup / Get-together  
-**Luogo:** [Il Fermento](https://share.google/aXYhMi83xBcOHhMd4), Lugano
-
 ### 📅 Lunedì 7 settembre 2026, 16:00-17:00 – Meetup virtuale  
 **Tema:** "Securing OPC-UA: Case Studies"  
 **Relatore:** [Benedict Simlinger](https://www.linkedin.com/in/benedictsimlinger/)  
@@ -30,6 +27,9 @@ Restate sintonizzati — altri eventi saranno annunciati presto!
 <section class="events-past" markdown="1">
 
 ## Eventi passati
+
+### ✅ 9 giugno 2026, dalle 17:30 – Meetup / Get-together  
+**Luogo:** [Il Fermento](https://share.google/aXYhMi83xBcOHhMd4), Lugano
 
 ### ✅ 6 maggio 2026, ore 19:00 – Assemblea generale (AG) con aperitivo  
 **Luogo:** Detecon (Schweiz) AG, Loewenstrasse 1, 8001 Zurigo _(uso delle sale riunioni)_  
