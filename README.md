@@ -61,7 +61,6 @@ Workflow file: `.github/workflows/jekyll-gh-pages.yml`
 Site URL: https://www.icssec.ch
 
 ## Notes
-
 - Jekyll dependencies are declared through `github-pages` in `Gemfile` for Pages parity.
   The deploy workflow does **not** use this Gemfile — `actions/jekyll-build-pages` ships its
   own pinned bundle (currently Jekyll 3.10). The Gemfile only governs local previews.
