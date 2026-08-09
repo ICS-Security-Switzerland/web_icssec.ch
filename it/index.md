@@ -29,7 +29,8 @@ Se sei curioso della sicurezza ICS o vuoi semplicemente incontrare persone con i
 💡 *Il nostro obiettivo principale non è facilitare affari o servizi di consulenza.*
 Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenze e la collaborazione — un luogo dove i professionisti possono condividere esperienze e best practice in un ambiente di fiducia.
 
-### 👉 [Diventa membro](./members) quando vuoi
+[Diventa membro](./members){: .btn} quando vuoi
+{: .cta}
 
 ---
 
