@@ -3,9 +3,10 @@ layout: page
 title: Events
 lang: en
 permalink: /events/
+schema: events
 ---
 
-# Upcoming Events
+## Upcoming Events
 
 Below is an overview of our planned activities and meetings.  
 Exact dates and details will also be announced via our [LinkedIn page](https://www.linkedin.com/company/icssecurity/).

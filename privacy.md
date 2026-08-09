@@ -5,7 +5,7 @@ lang: en
 permalink: /privacy/
 ---
 
-# ICS Security Switzerland
+## ICS Security Switzerland
 _As of: 21 March 2026_
 
 This Privacy Policy informs you about how the association **ICS Security Switzerland** processes personal data within the meaning of the Swiss Data Protection Act (DSG).  

@@ -1,0 +1,58 @@
+{%- comment -%}
+schema.org/Event markup for the upcoming events, generated from the same
+_data/events.yml the page renders from — so it cannot drift from what a
+visitor sees.
+
+Only upcoming events are emitted; past events carry no value for search
+engines and would only add noise. Every field comes from the data — nothing
+is filled in to satisfy the schema.
+{%- endcomment -%}
+{%- assign today = site.time | date: '%Y%m%d' | plus: 0 -%}
+{%- assign by_date = site.data.events | sort: 'date' -%}
+{%- assign page_url = page.url | absolute_url -%}
+{%- capture events_json -%}
+{%- assign first = true -%}
+{%- for ev in by_date -%}
+{%- assign day = ev.date | date: '%Y%m%d' | plus: 0 -%}
+{%- if day >= today -%}
+{%- assign l = ev[page.lang] -%}
+{%- assign title = l.title | default: ev.title -%}
+{%- assign topic = l.topic | default: ev.topic -%}
+{%- assign location = l.location | default: ev.location -%}
+{%- assign note = l.note | default: ev.note -%}
+{%- if topic -%}
+{%- assign topic_text = topic | markdownify | strip_html | strip -%}
+{%- assign name = title | append: ': ' | append: topic_text -%}
+{%- else -%}
+{%- assign name = title -%}
+{%- endif -%}
+{%- assign date_iso = ev.date | date: '%Y-%m-%d' -%}
+{%- if ev.start -%}
+{%- assign start_iso = date_iso | append: ' ' | append: ev.start | date: '%Y-%m-%dT%H:%M:%S%:z' -%}
+{%- else -%}
+{%- assign start_iso = date_iso -%}
+{%- endif -%}
+{%- unless first -%},{%- endunless -%}
+{%- assign first = false -%}
+{"@context":"https://schema.org","@type":"Event","name":{{ name | jsonify }},"eventStatus":"https://schema.org/EventScheduled","startDate":{{ start_iso | jsonify }}
+{%- if ev.end and ev.end_approx != true -%}
+{%- assign end_iso = date_iso | append: ' ' | append: ev.end | date: '%Y-%m-%dT%H:%M:%S%:z' -%}
+,"endDate":{{ end_iso | jsonify }}
+{%- endif -%}
+{%- if ev.online -%}
+,"eventAttendanceMode":"https://schema.org/OnlineEventAttendanceMode","location":{"@type":"VirtualLocation","url":{{ page_url | jsonify }}}
+{%- elsif location -%}
+{%- assign place = location | markdownify | strip_html | strip -%}
+,"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":{{ place | jsonify }},"address":{{ place | jsonify }}}
+{%- endif -%}
+{%- if note -%}
+,"description":{{ note | markdownify | strip_html | strip | jsonify }}
+{%- endif -%}
+,"inLanguage":{{ page.lang | jsonify }},"url":{{ page_url | jsonify }},"organizer":{"@type":"Organization","name":"ICS Security Switzerland","url":"https://www.icssec.ch"}}
+{%- endif -%}
+{%- endfor -%}
+{%- endcapture -%}
+{%- assign events_json = events_json | strip -%}
+{%- if events_json != '' %}
+<script type="application/ld+json">[{{ events_json }}]</script>
+{%- endif -%}

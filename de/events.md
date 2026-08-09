@@ -3,9 +3,10 @@ layout: page
 title: Veranstaltungen
 lang: de
 permalink: /de/events/
+schema: events
 ---
 
-# Kommende Veranstaltungen
+## Kommende Veranstaltungen
 
 Nachfolgend findest du eine Übersicht unserer geplanten Aktivitäten und Treffen.  
 Genaue Daten und Details werden zusätzlich über unsere [LinkedIn-Seite](https://www.linkedin.com/company/icssecurity/) bekanntgegeben.
