@@ -1,0 +1,43 @@
+{%- comment -%}
+Renders one event as Markdown (the surrounding page is Markdown, so kramdown
+converts this the same way the hand-written entries were converted before).
+
+  include.event  an entry from _data/events.yml
+  include.lang   'en' | 'de' | 'fr' | 'it'
+  include.past   true for the archive (checkmark icon, no weekday)
+
+Per-language values override the language-independent ones on the entry.
+{%- endcomment -%}
+{%- assign ev = include.event -%}
+{%- assign l = ev[include.lang] -%}
+{%- assign t = site.data.i18n[include.lang].events -%}
+{%- assign title = l.title | default: ev.title -%}
+{%- assign topic = l.topic | default: ev.topic -%}
+{%- assign speaker = l.speaker | default: ev.speaker -%}
+{%- assign location = l.location | default: ev.location -%}
+{%- assign note = l.note | default: ev.note -%}
+{%- if include.past -%}
+  {%- assign icon = '✅' -%}
+  {%- assign show_weekday = false -%}
+{%- else -%}
+  {%- assign icon = '📅' -%}
+  {%- assign show_weekday = true -%}
+{%- endif -%}
+{%- assign lines = '' -%}
+{%- if topic -%}
+  {%- assign lines = lines | append: '**' | append: t.topic | append: t.label_end | append: '** ' | append: topic | append: '|;|' -%}
+{%- endif -%}
+{%- if speaker -%}
+  {%- assign lines = lines | append: '**' | append: t.speaker | append: t.label_end | append: '** ' | append: speaker | append: '|;|' -%}
+{%- endif -%}
+{%- if location -%}
+  {%- assign lines = lines | append: '**' | append: t.location | append: t.label_end | append: '** ' | append: location | append: '|;|' -%}
+{%- endif -%}
+{%- if note -%}
+  {%- assign lines = lines | append: note | append: '|;|' -%}
+{%- endif -%}
+{%- assign body = lines | split: '|;|' | join: '<br>
+' -%}
+### {{ icon }} {% include event-when.html event=ev lang=include.lang weekday=show_weekday %} — {{ title }}
+
+{{ body }}

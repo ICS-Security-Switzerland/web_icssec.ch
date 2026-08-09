@@ -1,0 +1,35 @@
+{%- comment -%}
+Renders the upcoming or the past events for one language.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+  include.past  true for the archive
+
+The split is made against the build date, not by hand. See the scheduled
+rebuild in .github/workflows/jekyll-gh-pages.yml — without it, an event would
+only move to the archive on the next push.
+{%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang].events -%}
+{%- assign today = site.time | date: '%Y%m%d' | plus: 0 -%}
+{%- assign by_date = site.data.events | sort: 'date' -%}
+{%- assign shown = 0 -%}
+{%- if include.past -%}
+{%- assign ordered = by_date | reverse -%}
+{%- for ev in ordered -%}
+{%- assign day = ev.date | date: '%Y%m%d' | plus: 0 -%}
+{%- if day < today -%}
+{%- assign shown = shown | plus: 1 %}
+{% include event-item.html event=ev lang=include.lang past=true %}
+{%- endif -%}
+{%- endfor -%}
+{%- else -%}
+{%- for ev in by_date -%}
+{%- assign day = ev.date | date: '%Y%m%d' | plus: 0 -%}
+{%- if day >= today -%}
+{%- assign shown = shown | plus: 1 %}
+{% include event-item.html event=ev lang=include.lang past=false %}
+{%- endif -%}
+{%- endfor -%}
+{%- if shown == 0 %}
+{{ t.none_upcoming }}
+{% endif -%}
+{%- endif -%}

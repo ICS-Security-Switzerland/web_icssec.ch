@@ -35,7 +35,6 @@ Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenz
 
 ## Prossimi eventi
 
-📅 7 set 2026, 16:00-17:00 – Meetup virtuale: "Securing OPC-UA"<br>
-📅 15 set 2026 – Meetup a Basilea
+{% include events-teaser.html lang=page.lang %}
 
 ➡️ [Vedi tutti gli eventi →](./events)

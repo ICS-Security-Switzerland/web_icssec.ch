@@ -1,0 +1,37 @@
+{%- comment -%}
+Short list of the next few events for the homepage, from the same data as the
+events page.
+
+  include.lang   'en' | 'de' | 'fr' | 'it'
+  include.limit  how many to show (default 3)
+
+Uses the optional per-language `teaser` field when present, otherwise the title.
+{%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang].events -%}
+{%- assign today = site.time | date: '%Y%m%d' | plus: 0 -%}
+{%- assign by_date = site.data.events | sort: 'date' -%}
+{%- assign limit = include.limit | default: 3 | plus: 0 -%}
+{%- assign lines = '' -%}
+{%- assign shown = 0 -%}
+{%- for ev in by_date -%}
+{%- assign day = ev.date | date: '%Y%m%d' | plus: 0 -%}
+{%- if day >= today and shown < limit -%}
+{%- assign l = ev[include.lang] -%}
+{%- assign label = l.teaser | default: ev.teaser | default: l.title | default: ev.title -%}
+{%- comment -%} Show the time only when the event has a fixed slot. {%- endcomment -%}
+{%- if ev.end and ev.open_end != true -%}
+{%- assign show_time = true -%}
+{%- else -%}
+{%- assign show_time = false -%}
+{%- endif -%}
+{%- capture when -%}{%- include event-when.html event=ev lang=include.lang weekday=false time=show_time -%}{%- endcapture -%}
+{%- assign lines = lines | append: '📅 ' | append: when | append: ' – ' | append: label | append: '|;|' -%}
+{%- assign shown = shown | plus: 1 -%}
+{%- endif -%}
+{%- endfor -%}
+{%- if shown == 0 -%}
+{{ t.none_upcoming }}
+{%- else -%}
+{{ lines | split: '|;|' | join: '<br>
+' }}
+{%- endif -%}

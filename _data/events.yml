@@ -1,0 +1,194 @@
+# Single source of truth for every event on the site.
+#
+# Whether an event shows up under "Upcoming" or "Past" is decided at build time
+# by comparing `date` with the build date — never by hand. The list is sorted by
+# date automatically, so the order here does not matter (newest-first is just
+# convenient for editing).
+#
+# Fields
+#   date        required, YYYY-MM-DD. Drives sorting and the upcoming/past split.
+#   start, end  optional "HH:MM" (24h). Rendered per language: 4:00pm / 16:00 / 16h00.
+#   open_end    true for get-togethers with no fixed end -> "from 17:30" / "ab 17:30 Uhr".
+#   end_approx  true -> "17:00 - approx. 18:00".
+#   online      true for virtual meetups.
+#   title, topic, speaker, location, note
+#               language-independent defaults; any of them can be overridden
+#               inside an en/de/fr/it block. Markdown is allowed.
+#
+# Adding an event = one entry here. Nothing else needs touching.
+
+- date: 2026-09-15
+  start: "17:30"
+  open_end: true
+  title: Meetup / Get-together
+  en:
+    location: Basel _(tbd – near the train station)_
+    teaser: Meetup in Basel
+  de:
+    location: Basel _(tbd – Nähe Bahnhof)_
+    teaser: Meetup in Basel
+  fr:
+    location: Bâle _(à confirmer – près de la gare)_
+    teaser: Meetup à Bâle
+  it:
+    location: Basilea _(da confermare – vicino alla stazione)_
+    teaser: Meetup a Basilea
+
+- date: 2026-09-07
+  start: "16:00"
+  end: "17:00"
+  online: true
+  topic: '"Securing OPC-UA: Case Studies"'
+  speaker: "[Benedict Simlinger](https://www.linkedin.com/in/benedictsimlinger/)"
+  en:
+    title: Virtual Meetup
+    location: Online
+    teaser: 'Virtual Meetup: "Securing OPC-UA"'
+  de:
+    title: Virtual Meetup
+    location: Online
+    teaser: 'Virtual Meetup: "Securing OPC-UA"'
+  fr:
+    title: Meetup virtuel
+    location: En ligne
+    teaser: 'Meetup virtuel : "Securing OPC-UA"'
+  it:
+    title: Meetup virtuale
+    location: Online
+    teaser: 'Meetup virtuale: "Securing OPC-UA"'
+
+- date: 2026-06-09
+  start: "17:30"
+  open_end: true
+  title: Meetup / Get-together
+  location: "[Il Fermento](https://share.google/aXYhMi83xBcOHhMd4), Lugano"
+
+- date: 2026-05-06
+  start: "19:00"
+  en:
+    title: General Assembly (GV) with Apéro
+    location: Detecon (Schweiz) AG, Loewenstrasse 1, 8001 Zurich _(meeting rooms)_
+    note: Official members' meeting of ICS Security Switzerland, followed by an apéro.
+  de:
+    title: Generalversammlung (GV) mit Apéro
+    location: Detecon (Schweiz) AG, Löwenstrasse 1, 8001 Zürich _(Nutzung der Meetingräume)_
+    note: Offizielles Mitgliedertreffen von ICS Security Switzerland, anschliessend Apéro.
+  fr:
+    title: Assemblée générale (AG) avec apéro
+    location: Detecon (Schweiz) AG, Loewenstrasse 1, 8001 Zurich _(utilisation des salles de réunion)_
+    note: Réunion officielle des membres d'ICS Security Switzerland, suivie d'un apéro.
+  it:
+    title: Assemblea generale (AG) con aperitivo
+    location: Detecon (Schweiz) AG, Loewenstrasse 1, 8001 Zurigo _(uso delle sale riunioni)_
+    note: Riunione ufficiale dei membri di ICS Security Switzerland, seguita da un aperitivo.
+
+- date: 2026-04-15
+  start: "17:00"
+  end: "18:00"
+  end_approx: true
+  online: true
+  topic: Use of Containerlab to Simulate OT Environments
+  speaker: "[Martin Scheu](https://www.linkedin.com/in/martin-scheu/), [Switch](https://www.switch.ch)"
+  en:
+    title: Virtual Meetup
+    note: _Switch is a private Swiss foundation established in 1987, dedicated to enabling a secure and networked research and education infrastructure for universities and research institutions across Switzerland._
+  de:
+    title: Virtual Meetup
+    note: _Switch ist eine private Schweizer Stiftung, die 1987 gegründet wurde und eine sichere sowie vernetzte Forschungs- und Bildungsinfrastruktur für Hochschulen und Forschungseinrichtungen in der Schweiz ermöglicht._
+  fr:
+    title: Meetup virtuel
+    note: _Switch est une fondation privée suisse, créée en 1987, qui se consacre à une infrastructure de recherche et d'éducation sécurisée et connectée pour les universités et les institutions de recherche en Suisse._
+  it:
+    title: Meetup virtuale
+    note: _Switch è una fondazione privata svizzera fondata nel 1987, dedicata a rendere possibile un'infrastruttura di ricerca e formazione sicura e interconnessa per università e istituti di ricerca in Svizzera._
+
+- date: 2026-03-12
+  location: Faido, TI
+  en:
+    title: Guided visit at the Gotthard Base Tunnel
+    note: Exclusive technical tour. _(Fully booked)_
+  de:
+    title: Geführte Besichtigung des Gotthard-Basistunnels
+    note: Exklusive technische Führung. _(Ausgebucht)_
+  fr:
+    title: Visite guidée du tunnel de base du Gothard
+    note: Visite technique exclusive. _(Complet)_
+  it:
+    title: Visita guidata al Tunnel di base del Gottardo
+    note: Tour tecnico esclusivo. _(Completamente prenotato)_
+
+- date: 2026-02-25
+  start: "17:30"
+  open_end: true
+  title: Meetup / Get-together
+  en:
+    location: "[Simmentaler Brewhouse](https://www.simmentalerbrewhouse.ch/), directly at Bern main station"
+    note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
+  de:
+    location: "[Simmentaler Brewhouse](https://www.simmentalerbrewhouse.ch/), direkt am Bahnhof Bern"
+    note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
+  fr:
+    location: "[Simmentaler Brewhouse](https://www.simmentalerbrewhouse.ch/), directement à la gare centrale de Berne"
+    note: Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
+  it:
+    location: "[Simmentaler Brewhouse](https://www.simmentalerbrewhouse.ch/), direttamente alla stazione centrale di Berna"
+    note: Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS security.
+
+- date: 2026-01-20
+  start: "12:00"
+  end: "13:00"
+  online: true
+  en:
+    title: Virtual Meetup
+    location: Online — [Join Meeting](https://meet.google.com/vof-tddm-mnr)
+    note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
+  de:
+    title: Virtual Meetup
+    location: Online — [Join Meeting](https://meet.google.com/vof-tddm-mnr)
+    note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
+  fr:
+    title: Meetup virtuel
+    location: En ligne — [Join Meeting](https://meet.google.com/vof-tddm-mnr)
+    note: Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
+  it:
+    title: Meetup virtuale
+    location: Online — [Join Meeting](https://meet.google.com/vof-tddm-mnr)
+    note: Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS security.
+
+- date: 2025-12-03
+  start: "17:30"
+  open_end: true
+  title: Meetup / Get-together
+  en:
+    location: Lucerne ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))
+    note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
+  de:
+    location: Luzern ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))
+    note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
+  fr:
+    location: Lucerne ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))
+    note: Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
+  it:
+    location: Lucerna ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))
+    note: Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS security.
+
+- date: 2025-11-19
+  start: "16:00"
+  end: "17:00"
+  online: true
+  en:
+    title: Virtual Meetup
+    location: Online ([Google Meet](https://meet.google.com/vhu-rudm-abj))
+    note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
+  de:
+    title: Virtual Meetup
+    location: Online ([Google Meet](https://meet.google.com/vhu-rudm-abj))
+    note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
+  fr:
+    title: Meetup virtuel
+    location: En ligne ([Google Meet](https://meet.google.com/vhu-rudm-abj))
+    note: Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
+  it:
+    title: Meetup virtuale
+    location: Online ([Google Meet](https://meet.google.com/vhu-rudm-abj))
+    note: Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS security.

@@ -35,7 +35,6 @@ We serve as a **neutral, non-commercial platform** for knowledge exchange and co
 
 ## Upcoming Events
 
-📅 7 Sep. 2026, 4:00-5:00pm – Virtual Meetup: "Securing OPC-UA"<br>
-📅 15 Sep. 2026 – Meetup in Basel
+{% include events-teaser.html lang=page.lang %}
 
 ➡️ [See all events →](./events)

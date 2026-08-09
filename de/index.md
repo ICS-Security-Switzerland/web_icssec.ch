@@ -35,7 +35,6 @@ Wir verstehen uns als **neutrale, nicht-kommerzielle Plattform** für den Wissen
 
 ## Nächste Veranstaltungen
 
-📅 7. Sep 2026, 16:00-17:00 Uhr – Virtual Meetup: "Securing OPC-UA"<br>
-📅 15. Sep 2026 – Meetup in Basel
+{% include events-teaser.html lang=page.lang %}
 
 ➡️ [Alle Events →](./events)
