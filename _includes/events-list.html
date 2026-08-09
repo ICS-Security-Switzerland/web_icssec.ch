@@ -30,6 +30,6 @@ only move to the archive on the next push.
 {%- endif -%}
 {%- endfor -%}
 {%- if shown == 0 %}
-{{ t.none_upcoming }}
+<p class="event-empty">{{ t.none_upcoming }}</p>
 {% endif -%}
 {%- endif -%}
