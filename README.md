@@ -14,31 +14,41 @@ This repository is content-first and CI-first:
 
 Local Ruby is optional for day-to-day content work.
 
-## Quick Start (Codespaces)
+## Preview
 
-Fast preview (no Ruby/Jekyll processing):
+### With Docker (no local Ruby needed)
 
-```bash
-npm run preview:fast
-```
-
-Then open forwarded port `4173`.
-
-Full Jekyll preview (only when needed):
+Builds with the exact same image GitHub Actions uses, so what you see is what
+gets deployed:
 
 ```bash
-npm run preview:full
+docker run --rm --platform linux/amd64 -v "$PWD":/site -e GITHUB_WORKSPACE=/site -e INPUT_SOURCE=./ -e INPUT_DESTINATION=./_site ghcr.io/actions/jekyll-build-pages:latest
 ```
 
-Then open forwarded port `4000`.
+Then serve the result and open <http://localhost:4173>:
+
+```bash
+python3 -m http.server 4173 --directory _site
+```
+
+### With local Ruby (Codespaces / devcontainer)
+
+Requires a Ruby that can install the `github-pages` gem plus the Bundler version
+pinned in `Gemfile.lock`. The devcontainer provides this; macOS system Ruby does not.
+
+```bash
+npm run preview
+```
+
+Then open port `4000`.
 
 ## Scripts
 
 ```bash
-npm run preview:fast   # static preview for quick editing
-npm run preview:full   # full Jekyll preview (installs matching Bundler when needed)
-npm run check:full     # installs/checks full Ruby dependencies without serving
-npm run clean          # cleanup generated/cached artifacts
+npm run dev        # alias for preview
+npm run preview    # bundle install (if needed) + jekyll serve --livereload on :4000
+npm run check:full # install/check Ruby dependencies without serving
+npm run clean      # remove _site, .jekyll-cache, vendor, .ruby-lsp
 ```
 
 ## CI/CD
@@ -52,7 +62,7 @@ Site URL: https://www.icssec.ch
 
 ## Notes
 
-- Jekyll dependencies are managed through `github-pages` in `Gemfile` for Pages parity.
-- If you only edit markdown/content, `preview:fast` is usually enough.
-- Use `preview:full` for layout/liquid/plugin-sensitive checks.
+- Jekyll dependencies are declared through `github-pages` in `Gemfile` for Pages parity.
+  The deploy workflow does **not** use this Gemfile — `actions/jekyll-build-pages` ships its
+  own pinned bundle (currently Jekyll 3.10). The Gemfile only governs local previews.
 - Ruby LSP is disabled by default in this workspace. Opt in by setting `rubyLsp.enabled` to `true` in `.vscode/settings.json` when needed.
