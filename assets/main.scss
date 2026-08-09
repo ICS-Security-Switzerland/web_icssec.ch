@@ -38,6 +38,7 @@
   --color-accent: #d52b2b;
   --color-accent-hover: #b82222;
   --color-accent-light: #fdf0f0;
+  --color-on-accent: #ffffff;   /* 4.99:1 on #d52b2b */
 
   --color-header-bg: #ffffff;
   --color-header-text: #2d3748;
@@ -58,7 +59,48 @@
 
   --content-width: 800px;
   --wide-width: 1100px;
-  --header-height: 64px;
+  --header-height: 72px;
+
+  --logo-filter: none;
+}
+
+/* ---------- Dark theme ----------
+   The stylesheet had no prefers-color-scheme rules at all, so the site was
+   a bright white page for everyone. Only the tokens change below; no
+   component needs a dark-specific rule. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-bg: #0f1420;
+    --color-surface: #171d2b;
+    --color-surface-alt: #1e2534;
+    --color-border: #2a3345;
+
+    --color-text: #e2e8f0;
+    --color-text-secondary: #a4b0c0;
+    --color-text-muted: #7b8798;
+
+    /* Headings are the light end in dark mode, not the dark end. */
+    --color-primary: #f1f5f9;
+    /* #d52b2b only reaches 2.6:1 on a dark background; this reaches 6.1:1. */
+    --color-accent: #ff5c5c;
+    --color-accent-hover: #ff8080;
+    --color-accent-light: #2a1a1e;
+    --color-on-accent: #160b0d;  /* 6.26:1 on #ff5c5c; white would be 3.0:1 */
+
+    --color-header-bg: #131926;
+    --color-header-text: #e2e8f0;
+    --color-hero-bg: #0b101a;
+    --color-footer-bg: #0b101a;
+
+    --shadow-sm: 0 1px 3px rgba(0,0,0,0.4), 0 1px 2px rgba(0,0,0,0.3);
+    --shadow-md: 0 4px 12px rgba(0,0,0,0.45);
+    --shadow-lg: 0 10px 30px rgba(0,0,0,0.5);
+    --shadow-card: 0 2px 8px rgba(0,0,0,0.35);
+
+    /* The wordmark is black on transparent, i.e. invisible on a dark header.
+       Same treatment the footer logo already uses. */
+    --logo-filter: brightness(0) invert(1);
+  }
 }
 
 /* ---------- Reset & Base ---------- */
@@ -157,9 +199,15 @@ input:focus-visible,
   flex-shrink: 0;
 }
 .site-logo:hover { text-decoration: none; }
+/* The old asset was a 256x256 canvas in which the wordmark occupied only
+   71px of height, so `height: 72px` rendered a ~20px mark — and overflowed
+   a 64px header by 8px on top of that. The wordmark is now cropped to its
+   own bounds (216x79), so this height is the height you actually see. */
 .site-logo img {
-  height: 72px;
+  height: 38px;
   width: auto;
+  display: block;
+  filter: var(--logo-filter);
 }
 
 /* Navigation */
@@ -276,10 +324,12 @@ input:focus-visible,
 /* ============================================================
    HERO (Homepage)
    ============================================================ */
+/* Full-bleed. It used to render inside .container, which made the hero a
+   grey 800px box floating in the page instead of a band across the top. */
 .hero {
   background: var(--color-surface);
   border-bottom: 1px solid var(--color-border);
-  padding: 64px 24px 56px;
+  padding: 72px 24px 64px;
   text-align: center;
   position: relative;
 }
@@ -317,15 +367,22 @@ input:focus-visible,
 /* ============================================================
    MAIN CONTENT
    ============================================================ */
+/* No padding here — the hero has to sit flush under the header. The page
+   layouts carry their own spacing. */
 .main-content {
-  padding: 48px 0 72px;
+  padding: 0;
   min-height: calc(100vh - var(--header-height) - 240px);
+}
+
+.page-content {
+  padding-top: 48px;
+  padding-bottom: 72px;
 }
 
 .home-content {
   max-width: var(--content-width);
   margin: 0 auto;
-  padding: 36px 24px 72px;
+  padding: 40px 24px 72px;
 }
 
 /* ---------- Typography ---------- */
@@ -396,57 +453,181 @@ strong {
 }
 
 /* ============================================================
-   SECTION CARDS (Team, Members etc.)
+   SECTION HEADINGS (Team, Members etc.)
    ============================================================ */
-.page-content h3,
-.home-content h3 {
-  background: var(--color-surface);
-  border-radius: var(--radius-md);
-  padding: 14px 20px;
-  margin-top: 28px;
+/* Direct children only. This used to hit every h3 on the page, which is why
+   events, team sections and the membership call to action all rendered as
+   the same grey box. */
+.page-content > h3,
+.home-content > h3 {
+  margin-top: 36px;
   margin-bottom: 14px;
-  border: 1px solid var(--color-border);
+  padding-left: 14px;
   border-left: 3px solid var(--color-accent);
   font-size: 1.1rem;
 }
 
-/* ---------- Events: Past Events should be visually quieter ---------- */
-.events-past {
-  margin-top: 30px;
-  padding-top: 14px;
-  border-top: 1px dashed var(--color-border);
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn {
+  display: inline-block;
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 11px 22px;
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-sm);
+  transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+.btn:hover {
+  background: var(--color-accent-hover);
+  color: var(--color-on-accent);
+  text-decoration: none;
+  box-shadow: var(--shadow-md);
+}
+.btn:active { transform: translateY(1px); }
+
+.cta {
+  margin: 32px 0;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
   color: var(--color-text-secondary);
+}
+
+/* ============================================================
+   EVENT CARDS
+   ============================================================ */
+.event {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+  padding: 18px 20px;
+  margin: 14px 0;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.event:hover {
+  border-color: var(--color-accent);
+  box-shadow: var(--shadow-md);
+}
+
+.event-badge {
+  flex: 0 0 auto;
+  width: 58px;
+  text-align: center;
+  padding: 8px 0 7px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent);
+  color: var(--color-on-accent);
+  line-height: 1.1;
+}
+.event-badge-day {
+  display: block;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+.event-badge-month {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  opacity: 0.9;
+}
+
+.event-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.event-title {
+  margin: 0 0 3px;
+  font-size: 1.08rem;
+}
+
+.event-when {
+  margin: 0 0 10px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-text-secondary);
+}
+
+.event-fields {
+  margin: 0;
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+.event-field { display: block; }
+.event-label {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.event-note {
+  margin: 8px 0 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.event-empty {
+  margin: 14px 0;
+  color: var(--color-text-secondary);
+}
+
+/* ---------- Past events are quieter, not louder ---------- */
+.events-past {
+  margin-top: 44px;
+  padding-top: 18px;
+  border-top: 1px solid var(--color-border);
 }
 
 .events-past h2 {
-  margin: 0 0 12px;
-  font-size: 1rem;
-  letter-spacing: 0.04em;
+  margin: 0 0 14px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-text-muted);
-}
-
-.page-content .events-past h3,
-.home-content .events-past h3 {
-  background: none;
-  border: 0;
-  border-radius: 0;
-  padding: 0;
-  margin: 14px 0 6px;
-  font-size: 0.98rem;
-  font-weight: 600;
   color: var(--color-text-secondary);
 }
 
-.events-past p {
-  margin: 0 0 7px;
-  font-size: 0.95rem;
-  line-height: 1.6;
+.event--past {
+  background: none;
+  border-color: transparent;
+  box-shadow: none;
+  padding: 12px 0;
+  margin: 0;
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
 }
-
-.events-past strong {
-  color: var(--color-text);
+.events-past .event:last-of-type { border-bottom: 0; }
+.event--past:hover {
+  border-color: transparent;
+  border-bottom-color: var(--color-border);
+  box-shadow: none;
 }
+.event--past .event-badge {
+  background: var(--color-surface-alt);
+  color: var(--color-text-secondary);
+  width: 50px;
+  padding: 6px 0 5px;
+}
+.event--past .event-badge-day { font-size: 1.1rem; }
+.event--past .event-title {
+  font-size: 0.98rem;
+  color: var(--color-text-secondary);
+}
+.event--past .event-when,
+.event--past .event-fields,
+.event--past .event-note { font-size: 0.87rem; }
+.event--past .event-label { color: var(--color-text-secondary); }
 
 /* ============================================================
    FOOTER
@@ -492,10 +673,10 @@ strong {
 }
 
 .footer-logo {
-  height: 70px;
+  height: 42px;
   width: auto;
   filter: brightness(0) invert(1);
-  opacity: 0.45;
+  opacity: 0.5;
   transition: opacity 0.2s;
 }
 .footer-logo:hover {
