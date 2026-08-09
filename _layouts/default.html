@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
 
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-32.png' | relative_url }}" sizes="32x32">
@@ -17,10 +18,12 @@
 <body>
   {% include header.html %}
 
+  {%- comment -%}
+  The container lives in the page layouts, not here: the homepage hero needs
+  the full viewport width, and it cannot get that from inside a 800px box.
+  {%- endcomment -%}
   <main id="content" class="main-content" aria-label="Content">
-    <div class="container">
-      {{ content }}
-    </div>
+    {{ content }}
   </main>
 
   {% include footer.html %}
