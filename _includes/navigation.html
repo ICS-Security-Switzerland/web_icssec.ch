@@ -14,8 +14,14 @@ put the other one in front of it.
        alt="ICS Security Switzerland" width="256" height="256" decoding="async">
 </a>
 
-<input type="checkbox" id="nav-toggle" class="nav-toggle">
-<label class="nav-toggle-label" for="nav-toggle" aria-label="Toggle navigation">
+{%- comment -%}
+The checkbox stays (the menu must work without JavaScript), but it is no
+longer display:none — that took it out of the tab order and made the mobile
+menu impossible to open with a keyboard. It is now visually hidden and still
+focusable; see .nav-toggle in assets/main.scss.
+{%- endcomment -%}
+<input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="{{ t.a11y.menu }}">
+<label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
   <svg viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
 </label>
 
@@ -26,7 +32,8 @@ put the other one in front of it.
   <a href="{{ prefix }}contacts/" class="nav-link">{{ t.nav.contacts }}</a>
 
   <div class="lang-dropdown">
-    <button class="lang-btn" aria-label="Choose language">
+    <button type="button" class="lang-btn" aria-label="{{ t.a11y.language }}"
+            aria-haspopup="true" aria-expanded="false">
       <span class="lang-btn-flag">{{ t.flag }}</span>
       <span class="lang-btn-chevron">▾</span>
     </button>
@@ -51,14 +58,23 @@ put the other one in front of it.
 document.addEventListener('DOMContentLoaded', function() {
   var dropdown = document.querySelector('.lang-dropdown');
   var btn = dropdown && dropdown.querySelector('.lang-btn');
-  if (btn) {
-    btn.addEventListener('click', function(e) {
-      e.preventDefault();
-      dropdown.classList.toggle('open');
-    });
-    document.addEventListener('click', function(e) {
-      if (!dropdown.contains(e.target)) dropdown.classList.remove('open');
-    });
+  if (!btn) return;
+  function setOpen(open) {
+    dropdown.classList.toggle('open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
   }
+  btn.addEventListener('click', function(e) {
+    e.preventDefault();
+    setOpen(!dropdown.classList.contains('open'));
+  });
+  document.addEventListener('click', function(e) {
+    if (!dropdown.contains(e.target)) setOpen(false);
+  });
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && dropdown.classList.contains('open')) {
+      setOpen(false);
+      btn.focus();
+    }
+  });
 });
 </script>

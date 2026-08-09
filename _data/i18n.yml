@@ -22,6 +22,11 @@ en:
     privacy_path: /privacy/
     copyright: ICS Security Switzerland. All rights reserved.
     location: Bern, Switzerland
+  a11y:
+    skip: Skip to content
+    menu: Toggle navigation
+    language: Choose language
+    join_form: Membership application form
   events:
     label_end: ':'
     none_upcoming: No events scheduled right now — check back soon.
@@ -59,6 +64,11 @@ de:
     privacy_path: /de/privacy/
     copyright: ICS Security Switzerland. Alle Rechte vorbehalten.
     location: Bern, Schweiz
+  a11y:
+    skip: Zum Inhalt springen
+    menu: Navigation ein-/ausblenden
+    language: Sprache wählen
+    join_form: Formular für den Mitgliedschaftsantrag
   events:
     label_end: ':'
     none_upcoming: Aktuell sind keine Veranstaltungen geplant — schau bald wieder vorbei.
@@ -93,6 +103,11 @@ fr:
     privacy_path: /fr/privacy/
     copyright: ICS Security Switzerland. Tous droits réservés.
     location: Berne, Suisse
+  a11y:
+    skip: Aller au contenu
+    menu: Afficher/masquer la navigation
+    language: Choisir la langue
+    join_form: Formulaire de demande d'adhésion
   events:
     label_end: ' :'
     none_upcoming: Aucun événement prévu pour le moment — revenez bientôt.
@@ -128,6 +143,11 @@ it:
     privacy_path: /it/privacy/
     copyright: ICS Security Switzerland. Tutti i diritti riservati.
     location: Berna, Svizzera
+  a11y:
+    skip: Vai al contenuto
+    menu: Mostra/nascondi la navigazione
+    language: Scegli la lingua
+    join_form: Modulo di richiesta di adesione
   events:
     label_end: ':'
     none_upcoming: Al momento non ci sono eventi in programma — torna presto.
