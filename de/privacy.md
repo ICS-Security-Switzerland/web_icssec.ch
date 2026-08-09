@@ -5,7 +5,7 @@ lang: de
 permalink: /de/privacy/
 ---
 
-# ICS Security Switzerland
+## ICS Security Switzerland
 _Stand: 21. März 2026_
 
 Diese Datenschutzerklärung informiert darüber, wie der Verein **ICS Security Switzerland** Personendaten im Sinne des Schweizer Datenschutzgesetzes (DSG) bearbeitet.  

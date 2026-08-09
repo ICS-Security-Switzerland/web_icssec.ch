@@ -1,0 +1,67 @@
+{%- comment -%}
+Renders the date (and optionally the time) of an event in one language.
+
+  include.event    an entry from _data/events.yml
+  include.lang     'en' | 'de' | 'fr' | 'it'
+  include.weekday  true to prefix the weekday (used for upcoming events)
+  include.time     false to suppress the time (used for the homepage teaser)
+
+All wording comes from _data/i18n.yml — no language names are hard-coded here.
+{%- endcomment -%}
+{%- assign ev = include.event -%}
+{%- assign L = site.data.i18n[include.lang].date -%}
+
+{%- assign day = ev.date | date: '%-d' -%}
+{%- assign month_index = ev.date | date: '%-m' | minus: 1 -%}
+{%- assign month = L.months[month_index] -%}
+{%- assign year = ev.date | date: '%Y' -%}
+{%- assign weekday_index = ev.date | date: '%w' | plus: 0 -%}
+{%- assign weekday = L.weekdays[weekday_index] -%}
+
+{%- comment -%} Ordinal suffix: English 1st/2nd/3rd/4th, French only "1er". {%- endcomment -%}
+{%- assign ordinal = '' -%}
+{%- if L.ordinals == true -%}
+  {%- assign day_num = day | plus: 0 -%}
+  {%- assign mod100 = day_num | modulo: 100 -%}
+  {%- assign mod10 = day_num | modulo: 10 -%}
+  {%- if mod100 >= 11 and mod100 <= 13 -%}
+    {%- assign ordinal = 'th' -%}
+  {%- elsif mod10 == 1 -%}
+    {%- assign ordinal = 'st' -%}
+  {%- elsif mod10 == 2 -%}
+    {%- assign ordinal = 'nd' -%}
+  {%- elsif mod10 == 3 -%}
+    {%- assign ordinal = 'rd' -%}
+  {%- else -%}
+    {%- assign ordinal = 'th' -%}
+  {%- endif -%}
+{%- elsif L.ordinals == 'fr' and day == '1' -%}
+  {%- assign ordinal = 'er' -%}
+{%- endif -%}
+
+{%- if include.weekday -%}
+  {%- assign pattern = L.with_weekday -%}
+{%- else -%}
+  {%- assign pattern = L.without_weekday -%}
+{%- endif -%}
+{%- assign out = pattern | replace: '{weekday}', weekday | replace: '{day}', day | replace: '{ordinal}', ordinal | replace: '{month}', month | replace: '{year}', year -%}
+
+{%- if ev.start and include.time != false -%}
+  {%- assign date_iso = ev.date | date: '%Y-%m-%d' -%}
+  {%- assign start = date_iso | append: ' ' | append: ev.start | date: L.time_format -%}
+  {%- if ev.open_end -%}
+    {%- assign time = L.time_open_end | replace: '{start}', start -%}
+  {%- elsif ev.end -%}
+    {%- assign end = date_iso | append: ' ' | append: ev.end | date: L.time_format -%}
+    {%- if ev.end_approx -%}
+      {%- assign time = L.time_range_approx -%}
+    {%- else -%}
+      {%- assign time = L.time_range -%}
+    {%- endif -%}
+    {%- assign time = time | replace: '{start}', start | replace: '{end}', end -%}
+  {%- else -%}
+    {%- assign time = L.time_point | replace: '{start}', start -%}
+  {%- endif -%}
+  {%- assign out = out | append: ', ' | append: time -%}
+{%- endif -%}
+{{- out -}}

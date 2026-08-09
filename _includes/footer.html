@@ -1,62 +1,18 @@
-{% assign lang = page.lang | default: 'en' %}
-{% case lang %}
-  {% when 'de' %}
-    {% assign prefix = '/de/' %}
-    {% assign nav_label = 'Navigation' %}
-    {% assign connect_label = 'Kontakt' %}
-    {% assign about_label = 'Über uns' %}
-    {% assign events_label = 'Events' %}
-    {% assign members_label = 'Mitglied werden' %}
-    {% assign contacts_label = 'Kontakt' %}
-    {% assign copyright_text = 'ICS Security Switzerland. Alle Rechte vorbehalten.' %}
-    {% assign privacy_label = 'Datenschutz' %}
-    {% assign privacy_path = '/de/privacy/' %}
-  {% when 'fr' %}
-    {% assign prefix = '/fr/' %}
-    {% assign nav_label = 'Navigation' %}
-    {% assign connect_label = 'Contact' %}
-    {% assign about_label = 'À propos' %}
-    {% assign events_label = 'Événements' %}
-    {% assign members_label = 'Devenir membre' %}
-    {% assign contacts_label = 'Contacts' %}
-    {% assign copyright_text = 'ICS Security Switzerland. Tous droits réservés.' %}
-    {% assign privacy_label = 'Confidentialité' %}
-    {% assign privacy_path = '/fr/privacy/' %}
-  {% when 'it' %}
-    {% assign prefix = '/it/' %}
-    {% assign nav_label = 'Navigazione' %}
-    {% assign connect_label = 'Contatti' %}
-    {% assign about_label = 'Chi siamo' %}
-    {% assign events_label = 'Eventi' %}
-    {% assign members_label = 'Diventa membro' %}
-    {% assign contacts_label = 'Contatti' %}
-    {% assign copyright_text = 'ICS Security Switzerland. Tutti i diritti riservati.' %}
-    {% assign privacy_label = 'Privacy' %}
-    {% assign privacy_path = '/it/privacy/' %}
-  {% else %}
-    {% assign prefix = '/' %}
-    {% assign nav_label = 'Navigation' %}
-    {% assign connect_label = 'Connect' %}
-    {% assign about_label = 'About' %}
-    {% assign events_label = 'Events' %}
-    {% assign members_label = 'Join' %}
-    {% assign contacts_label = 'Contact' %}
-    {% assign copyright_text = 'ICS Security Switzerland. All rights reserved.' %}
-    {% assign privacy_label = 'Privacy Policy' %}
-    {% assign privacy_path = '/privacy/' %}
-{% endcase %}
+{%- assign lang = page.lang | default: 'en' -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign prefix = t.prefix -%}
 
 <footer class="site-footer">
   <div class="footer-inner">
     <div class="footer-col">
-      <h4>{{ nav_label }}</h4>
-      <a href="{{ prefix }}about/">{{ about_label }}</a>
-      <a href="{{ prefix }}events/">{{ events_label }}</a>
-      <a href="{{ prefix }}members/">{{ members_label }}</a>
-      <a href="{{ prefix }}contacts/">{{ contacts_label }}</a>
+      <h4>{{ t.footer.nav }}</h4>
+      <a href="{{ prefix }}about/">{{ t.nav.about }}</a>
+      <a href="{{ prefix }}events/">{{ t.nav.events }}</a>
+      <a href="{{ prefix }}members/">{{ t.nav.members }}</a>
+      <a href="{{ prefix }}contacts/">{{ t.nav.contacts }}</a>
     </div>
     <div class="footer-col">
-      <h4>{{ connect_label }}</h4>
+      <h4>{{ t.footer.connect }}</h4>
       <a href="mailto:info@icssec.ch">info@icssec.ch</a>
       <div class="social-links">
         <a href="https://www.linkedin.com/company/icssecurity/" aria-label="LinkedIn" rel="noopener noreferrer" target="_blank">
@@ -68,12 +24,12 @@
       </div>
     </div>
     <div class="footer-col" style="text-align: right;">
-      <img class="footer-logo" src="{{ '/assets/images/logo_ics_security_transparent.png' | relative_url }}"
-           alt="ICS Security Switzerland" width="256" height="256" loading="lazy" decoding="async">
-      <div style="font-size: 0.82rem; color: rgba(237,242,247,0.35);">Bern, Switzerland</div>
+      <img class="footer-logo" src="{{ '/assets/images/logo_ics_security_wordmark.png' | relative_url }}"
+           alt="ICS Security Switzerland" width="216" height="79" loading="lazy" decoding="async">
+      <div class="footer-location">{{ t.footer.location }}</div>
     </div>
   </div>
   <div class="footer-bottom">
-    &copy; {{ site.time | date: '%Y' }} {{ copyright_text }} &nbsp;&middot;&nbsp; <a href="{{ privacy_path }}">{{ privacy_label }}</a>
+    &copy; {{ site.time | date: '%Y' }} {{ t.footer.copyright }} &nbsp;&middot;&nbsp; <a href="{{ t.footer.privacy_path }}">{{ t.footer.privacy }}</a>
   </div>
 </footer>

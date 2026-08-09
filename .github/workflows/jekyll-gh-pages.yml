@@ -10,6 +10,13 @@ on:
   pull_request:
     branches: ["main"]
 
+  # The upcoming/past split on the events page is evaluated against the build
+  # date. Without a scheduled rebuild an event would stay under "Upcoming"
+  # until somebody happens to push. 03:17 UTC daily, shortly after midnight
+  # Europe/Zurich in both CET and CEST.
+  schedule:
+    - cron: "17 3 * * *"
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 

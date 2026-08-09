@@ -29,13 +29,13 @@ Wenn du neugierig bist oder einfach Gleichgesinnte treffen möchtest – schau g
 💡 *Unser Hauptziel ist es **nicht**, geschäftliche oder beratende Dienstleistungen zu vermitteln.*  
 Wir verstehen uns als **neutrale, nicht-kommerzielle Plattform** für den Wissensaustausch und die Zusammenarbeit – ein Ort, an dem Fachleute Erfahrungen und Best Practices in einem vertrauensvollen Umfeld teilen können.
 
-### 👉 [Werde Mitglied](./members), wenn es für dich passt
+[Werde Mitglied](./members){: .btn} wenn es für dich passt
+{: .cta}
 
 ---
 
 ## Nächste Veranstaltungen
 
-📅 7. Sep 2026, 16:00-17:00 Uhr – Virtual Meetup: "Securing OPC-UA"<br>
-📅 15. Sep 2026 – Meetup in Basel
+{% include events-teaser.html lang=page.lang %}
 
 ➡️ [Alle Events →](./events)

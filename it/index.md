@@ -29,13 +29,13 @@ Se sei curioso della sicurezza ICS o vuoi semplicemente incontrare persone con i
 💡 *Il nostro obiettivo principale non è facilitare affari o servizi di consulenza.*
 Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenze e la collaborazione — un luogo dove i professionisti possono condividere esperienze e best practice in un ambiente di fiducia.
 
-### 👉 [Diventa membro](./members) quando vuoi
+[Diventa membro](./members){: .btn} quando vuoi
+{: .cta}
 
 ---
 
 ## Prossimi eventi
 
-📅 7 set 2026, 16:00-17:00 – Meetup virtuale: "Securing OPC-UA"<br>
-📅 15 set 2026 – Meetup a Basilea
+{% include events-teaser.html lang=page.lang %}
 
 ➡️ [Vedi tutti gli eventi →](./events)

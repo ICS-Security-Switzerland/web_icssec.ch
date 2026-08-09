@@ -1,0 +1,20 @@
+{%- comment -%}
+Tells search engines that /events/, /de/events/, /fr/events/ and /it/events/
+are the same page in different languages. Without this the four language
+versions compete with each other instead of reinforcing one another.
+
+Only emitted for pages that declare a `lang` (404.html does not).
+{%- endcomment -%}
+{%- if page.lang -%}
+{%- assign page_key = page.url | replace_first: '/de/', '/' | replace_first: '/fr/', '/' | replace_first: '/it/', '/' -%}
+{%- for entry in site.data.i18n -%}
+{%- assign code = entry[0] -%}
+{%- if code == 'en' -%}
+{%- assign href = page_key -%}
+{%- else -%}
+{%- assign href = '/' | append: code | append: page_key -%}
+{%- endif %}
+  <link rel="alternate" hreflang="{{ code }}" href="{{ href | absolute_url }}">
+{%- endfor %}
+  <link rel="alternate" hreflang="x-default" href="{{ page_key | absolute_url }}">
+{%- endif -%}

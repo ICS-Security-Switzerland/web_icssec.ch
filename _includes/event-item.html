@@ -1,0 +1,50 @@
+{%- comment -%}
+Renders one event as a card.
+
+  include.event  an entry from _data/events.yml
+  include.lang   'en' | 'de' | 'fr' | 'it'
+  include.past   true for the archive
+
+The date sits in a badge, so the heading can be the thing the event actually
+is instead of a date string with the title tacked on the end. Inline Markdown
+in the data (links, emphasis) is rendered with `markdownify`; the wrapping <p>
+is stripped because these values are single lines.
+{%- endcomment -%}
+{%- assign ev = include.event -%}
+{%- assign l = ev[include.lang] -%}
+{%- assign t = site.data.i18n[include.lang].events -%}
+{%- assign L = site.data.i18n[include.lang].date -%}
+{%- assign title = l.title | default: ev.title -%}
+{%- assign topic = l.topic | default: ev.topic -%}
+{%- assign speaker = l.speaker | default: ev.speaker -%}
+{%- assign location = l.location | default: ev.location -%}
+{%- assign note = l.note | default: ev.note -%}
+{%- if include.past -%}
+  {%- assign show_weekday = false -%}
+{%- else -%}
+  {%- assign show_weekday = true -%}
+{%- endif -%}
+{%- assign badge_day = ev.date | date: '%-d' -%}
+{%- assign month_index = ev.date | date: '%-m' | minus: 1 -%}
+{%- assign badge_month = L.months[month_index] | slice: 0, 3 | capitalize -%}
+{%- capture meta -%}
+{%- if topic -%}<span class="event-field"><span class="event-label">{{ t.topic }}{{ t.label_end }}</span> {{ topic | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</span>{%- endif -%}
+{%- if speaker -%}<span class="event-field"><span class="event-label">{{ t.speaker }}{{ t.label_end }}</span> {{ speaker | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</span>{%- endif -%}
+{%- if location -%}<span class="event-field"><span class="event-label">{{ t.location }}{{ t.label_end }}</span> {{ location | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</span>{%- endif -%}
+{%- endcapture -%}
+<article class="event{% if include.past %} event--past{% endif %}{% if ev.online %} event--online{% endif %}">
+  <div class="event-badge" aria-hidden="true">
+    <span class="event-badge-day">{{ badge_day }}</span>
+    <span class="event-badge-month">{{ badge_month }}</span>
+  </div>
+  <div class="event-main">
+    <h3 class="event-title" id="event-{{ ev.date | date: '%Y-%m-%d' }}">{{ title }}</h3>
+    <p class="event-when">{% include event-when.html event=ev lang=include.lang weekday=show_weekday %}</p>
+    {%- if meta != '' %}
+    <p class="event-fields">{{ meta }}</p>
+    {%- endif -%}
+    {%- if note %}
+    <p class="event-note">{{ note | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</p>
+    {%- endif %}
+  </div>
+</article>

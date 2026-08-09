@@ -3,24 +3,27 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{% if page.title %}{{ page.title }} | {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 }}">
+  <meta name="color-scheme" content="light dark">
 
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="16x16 32x32 48x48">
   <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-32.png' | relative_url }}" sizes="32x32">
   <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}" sizes="180x180">
+{% include hreflang.html %}
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
   {% feed_meta %}
   {% seo %}
+  {%- if page.schema == 'events' %}{% include events-jsonld.html %}{% endif %}
 </head>
 <body>
   {% include header.html %}
 
-  <main class="main-content" aria-label="Content">
-    <div class="container">
-      {{ content }}
-    </div>
+  {%- comment -%}
+  The container lives in the page layouts, not here: the homepage hero needs
+  the full viewport width, and it cannot get that from inside a 800px box.
+  {%- endcomment -%}
+  <main id="content" class="main-content" aria-label="Content">
+    {{ content }}
   </main>
 
   {% include footer.html %}

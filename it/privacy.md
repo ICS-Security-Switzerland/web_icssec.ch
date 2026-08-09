@@ -5,7 +5,7 @@ lang: it
 permalink: /it/privacy/
 ---
 
-# ICS Security Switzerland
+## ICS Security Switzerland
 _Aggiornamento: 21 marzo 2026_
 
 La presente informativa sulla privacy descrive come l'associazione **ICS Security Switzerland** tratta i dati personali ai sensi della legge svizzera sulla protezione dei dati (LPD).  
