@@ -1,0 +1,147 @@
+# UI strings and locale formatting rules.
+#
+# Single source for every piece of chrome text that used to be duplicated in
+# {% case page.lang %} blocks across _includes/ and in the per-language pages.
+#
+# Adding a language means adding one block here — nothing else needs a new
+# {% when %} branch.
+
+en:
+  name: English
+  flag: 🇬🇧
+  prefix: /
+  nav:
+    about: About
+    events: Events
+    members: Join
+    contacts: Contact
+  footer:
+    nav: Navigation
+    connect: Connect
+    privacy: Privacy Policy
+    privacy_path: /privacy/
+    copyright: ICS Security Switzerland. All rights reserved.
+    location: Bern, Switzerland
+  events:
+    label_end: ':'
+    none_upcoming: No events scheduled right now — check back soon.
+    topic: Topic
+    speaker: Speaker
+    location: Location
+  date:
+    # %w index: 0 = Sunday
+    weekdays: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
+    months: [January, February, March, April, May, June, July, August, September, October, November, December]
+    # {weekday} {day} {ordinal} {month} {year} are substituted by _includes/event-when.html
+    with_weekday: "{weekday}, {day}{ordinal} {month} {year}"
+    without_weekday: "{day}{ordinal} {month} {year}"
+    ordinals: true
+    time_format: "%-I:%M%P"
+    # {start} and {end} are substituted with formatted times
+    time_open_end: "from {start}"
+    time_range: "{start}-{end}"
+    time_range_approx: "{start} - approx. {end}"
+    time_point: "{start}"
+
+de:
+  name: Deutsch
+  flag: 🇩🇪
+  prefix: /de/
+  nav:
+    about: Über uns
+    events: Events
+    members: Mitglied werden
+    contacts: Kontakt
+  footer:
+    nav: Navigation
+    connect: Kontakt
+    privacy: Datenschutz
+    privacy_path: /de/privacy/
+    copyright: ICS Security Switzerland. Alle Rechte vorbehalten.
+    location: Bern, Schweiz
+  events:
+    label_end: ':'
+    none_upcoming: Aktuell sind keine Veranstaltungen geplant — schau bald wieder vorbei.
+    topic: Thema
+    speaker: Speaker
+    location: Ort
+  date:
+    weekdays: [Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag]
+    months: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
+    with_weekday: "{weekday}, {day}. {month} {year}"
+    without_weekday: "{day}. {month} {year}"
+    ordinals: false
+    time_format: "%H:%M"
+    time_open_end: "ab {start} Uhr"
+    time_range: "{start}-{end} Uhr"
+    time_range_approx: "{start} - ca. {end} Uhr"
+    time_point: "{start} Uhr"
+
+fr:
+  name: Français
+  flag: 🇫🇷
+  prefix: /fr/
+  nav:
+    about: À propos
+    events: Événements
+    members: Devenir membre
+    contacts: Contacts
+  footer:
+    nav: Navigation
+    connect: Contact
+    privacy: Confidentialité
+    privacy_path: /fr/privacy/
+    copyright: ICS Security Switzerland. Tous droits réservés.
+    location: Berne, Suisse
+  events:
+    label_end: ' :'
+    none_upcoming: Aucun événement prévu pour le moment — revenez bientôt.
+    topic: Sujet
+    speaker: Intervenant
+    location: Lieu
+  date:
+    weekdays: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
+    months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
+    with_weekday: "{weekday} {day}{ordinal} {month} {year}"
+    without_weekday: "{day}{ordinal} {month} {year}"
+    # French only ordinalises the 1st ("1er"); handled in _includes/event-when.html
+    ordinals: fr
+    time_format: "%Hh%M"
+    time_open_end: "dès {start}"
+    time_range: "{start}-{end}"
+    time_range_approx: "{start} - env. {end}"
+    time_point: "{start}"
+
+it:
+  name: Italiano
+  flag: 🇮🇹
+  prefix: /it/
+  nav:
+    about: Chi siamo
+    events: Eventi
+    members: Diventa membro
+    contacts: Contatti
+  footer:
+    nav: Navigazione
+    connect: Contatti
+    privacy: Privacy
+    privacy_path: /it/privacy/
+    copyright: ICS Security Switzerland. Tutti i diritti riservati.
+    location: Berna, Svizzera
+  events:
+    label_end: ':'
+    none_upcoming: Al momento non ci sono eventi in programma — torna presto.
+    topic: Tema
+    speaker: Relatore
+    location: Luogo
+  date:
+    weekdays: [Domenica, Lunedì, Martedì, Mercoledì, Giovedì, Venerdì, Sabato]
+    months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]
+    with_weekday: "{weekday} {day} {month} {year}"
+    without_weekday: "{day} {month} {year}"
+    ordinals: false
+    time_format: "%H:%M"
+    time_open_end: "dalle {start}"
+    time_range: "{start}-{end}"
+    time_range_approx: "{start} - circa {end}"
+    time_point: "ore {start}"

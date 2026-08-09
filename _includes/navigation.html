@@ -1,41 +1,13 @@
+{%- assign lang = page.lang | default: 'en' -%}
+{%- assign t = site.data.i18n[lang] -%}
+{%- assign prefix = t.prefix -%}
 
-{% assign lang = page.lang | default: 'en' %}
-{% case lang %}
-  {% when 'de' %}
-    {% assign prefix = '/de/' %}
-    {% assign about_label = 'Über uns' %}
-    {% assign events_label = 'Events' %}
-    {% assign members_label = 'Mitglied werden' %}
-    {% assign contacts_label = 'Kontakt' %}
-  {% when 'fr' %}
-    {% assign prefix = '/fr/' %}
-    {% assign about_label = 'À propos' %}
-    {% assign events_label = 'Événements' %}
-    {% assign members_label = 'Devenir membre' %}
-    {% assign contacts_label = 'Contacts' %}
-  {% when 'it' %}
-    {% assign prefix = '/it/' %}
-    {% assign about_label = 'Chi siamo' %}
-    {% assign events_label = 'Eventi' %}
-    {% assign members_label = 'Diventa membro' %}
-    {% assign contacts_label = 'Contatti' %}
-  {% else %}
-    {% assign prefix = '/' %}
-    {% assign about_label = 'About' %}
-    {% assign events_label = 'Events' %}
-    {% assign members_label = 'Join' %}
-    {% assign contacts_label = 'Contact' %}
-{% endcase %}
-
-{% assign page_key = page.url | default: '/' %}
-{% assign page_key = page_key | replace_first: '/de/', '/' %}
-{% assign page_key = page_key | replace_first: '/fr/', '/' %}
-{% assign page_key = page_key | replace_first: '/it/', '/' %}
-
-{% assign en_link = page_key %}
-{% assign de_link = '/de' | append: page_key %}
-{% assign fr_link = '/fr' | append: page_key %}
-{% assign it_link = '/it' | append: page_key %}
+{%- comment -%}
+Same page, other language: strip the language prefix off the current URL and
+put the other one in front of it.
+{%- endcomment -%}
+{%- assign page_key = page.url | default: '/' -%}
+{%- assign page_key = page_key | replace_first: '/de/', '/' | replace_first: '/fr/', '/' | replace_first: '/it/', '/' -%}
 
 <a class="site-logo" href="{{ prefix | relative_url }}">
   <img src="{{ '/assets/images/logo_ics_security_transparent.png' | relative_url }}"
@@ -48,21 +20,29 @@
 </label>
 
 <nav class="site-nav">
-  <a href="{{ prefix }}about/" class="nav-link">{{ about_label }}</a>
-  <a href="{{ prefix }}events/" class="nav-link">{{ events_label }}</a>
-  <a href="{{ prefix }}members/" class="nav-link">{{ members_label }}</a>
-  <a href="{{ prefix }}contacts/" class="nav-link">{{ contacts_label }}</a>
+  <a href="{{ prefix }}about/" class="nav-link">{{ t.nav.about }}</a>
+  <a href="{{ prefix }}events/" class="nav-link">{{ t.nav.events }}</a>
+  <a href="{{ prefix }}members/" class="nav-link">{{ t.nav.members }}</a>
+  <a href="{{ prefix }}contacts/" class="nav-link">{{ t.nav.contacts }}</a>
 
   <div class="lang-dropdown">
     <button class="lang-btn" aria-label="Choose language">
-      <span class="lang-btn-flag">{% if lang == 'de' %}🇩🇪{% elsif lang == 'fr' %}🇫🇷{% elsif lang == 'it' %}🇮🇹{% else %}🇬🇧{% endif %}</span>
+      <span class="lang-btn-flag">{{ t.flag }}</span>
       <span class="lang-btn-chevron">▾</span>
     </button>
     <div class="lang-menu">
-      {% if lang != "en" %}<a href="{{ en_link | relative_url }}"><span class="flag">🇬🇧</span> English</a>{% endif %}
-      {% if lang != "de" %}<a href="{{ de_link | relative_url }}"><span class="flag">🇩🇪</span> Deutsch</a>{% endif %}
-      {% if lang != "fr" %}<a href="{{ fr_link | relative_url }}"><span class="flag">🇫🇷</span> Français</a>{% endif %}
-      {% if lang != "it" %}<a href="{{ it_link | relative_url }}"><span class="flag">🇮🇹</span> Italiano</a>{% endif %}
+      {%- for entry in site.data.i18n -%}
+        {%- assign code = entry[0] -%}
+        {%- assign l = entry[1] -%}
+        {%- if code != lang -%}
+          {%- if code == 'en' -%}
+            {%- assign href = page_key -%}
+          {%- else -%}
+            {%- assign href = '/' | append: code | append: page_key -%}
+          {%- endif %}
+      <a href="{{ href | relative_url }}"><span class="flag">{{ l.flag }}</span> {{ l.name }}</a>
+        {%- endif -%}
+      {%- endfor %}
     </div>
   </div>
 </nav>
