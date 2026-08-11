@@ -547,6 +547,39 @@ strong {
   color: var(--color-text-muted);
 }
 
+/* ---------- Key facts on the join page ----------
+   The 1px grid gap over a border-coloured background is what draws the
+   hairlines between the cells, so they stay a single pixel at any zoom and
+   there is no border to de-duplicate at the edges. */
+.join-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1px;
+  margin: 28px 0;
+  padding: 0;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.join-facts > div {
+  background: var(--color-surface);
+  padding: 16px 18px;
+}
+.join-facts dt {
+  font-size: 0.75rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 5px;
+}
+.join-facts dd {
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 /* ============================================================
    EVENT CARDS
    ============================================================ */
