@@ -1,0 +1,127 @@
+{%- comment -%}
+An RFC 5545 calendar built from the same _data/events.yml the pages render
+from, so the calendar cannot drift from what a visitor sees.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+
+Every event is included, past ones too: a subscriber's calendar should carry
+the association's history, and including everything makes the file independent
+of the build date.
+
+Times are written with TZID rather than converted to UTC, and the VTIMEZONE
+below carries the EU daylight-saving rules so a client can resolve them
+without guessing. Only DTSTAMP is in UTC, because RFC 5545 requires that.
+
+Known deviation: RFC 5545 section 3.1 says content lines longer than 75
+octets should be folded, and these are not — the longest DESCRIPTION runs to
+roughly 300 characters. Liquid can only slice by character, not by octet, so
+a fold implemented here would not be octet-correct for the accented text this
+file carries anyway. The output was checked against a conforming parser
+(python icalendar) and against the four language variants; every client the
+association is likely to meet accepts unfolded lines. If a strict consumer
+ever turns up, this is the thing to fix.
+{%- endcomment -%}
+{%- assign lang = include.lang -%}
+{%- assign t = site.data.i18n[lang].events -%}
+{%- assign prefix = site.data.i18n[lang].prefix -%}
+{%- assign page_url = prefix | append: 'events/' | absolute_url -%}
+{%- assign by_date = site.data.events | sort: 'date' -%}
+
+{%- comment -%}
+DTSTAMP must be UTC. site.time is in Europe/Zurich (see _config.yml), and
+formatting it with a literal "Z" would label local time as UTC — off by one or
+two hours depending on the season. So: take the absolute epoch, subtract the
+offset that applies at build time, and format the result.
+{%- endcomment -%}
+{%- assign off = site.time | date: '%z' -%}
+{%- assign off_sign = off | slice: 0 -%}
+{%- assign off_h = off | slice: 1, 2 | plus: 0 -%}
+{%- assign off_m = off | slice: 3, 2 | plus: 0 -%}
+{%- assign off_sec = off_h | times: 3600 -%}
+{%- assign off_m_sec = off_m | times: 60 -%}
+{%- assign off_sec = off_sec | plus: off_m_sec -%}
+{%- if off_sign == '-' -%}{%- assign off_sec = 0 | minus: off_sec -%}{%- endif -%}
+{%- assign stamp_epoch = site.time | date: '%s' | plus: 0 | minus: off_sec -%}
+{%- assign stamp = stamp_epoch | date: '%Y%m%dT%H%M%S' -%}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ICS Security Switzerland//icssec.ch//{{ lang | upcase }}
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:{{ t.calendar_name }}
+X-WR-TIMEZONE:Europe/Zurich
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+END:VTIMEZONE
+{% for ev in by_date -%}
+{%- assign l = ev[lang] -%}
+{%- assign title = l.title | default: ev.title -%}
+{%- assign topic = l.topic | default: ev.topic -%}
+{%- assign speaker = l.speaker | default: ev.speaker -%}
+{%- assign location = l.location | default: ev.location -%}
+{%- assign note = l.note | default: ev.note -%}
+{%- assign ymd = ev.date | date: '%Y%m%d' -%}
+{%- assign iso = ev.date | date: '%Y-%m-%d' -%}
+
+{%- comment -%} SUMMARY mirrors the heading on the card: what it is, plus the topic. {%- endcomment -%}
+{%- capture summary -%}{% include ics-escape.html text=title %}{% endcapture -%}
+{%- if topic -%}
+{%- capture topic_esc %}{% include ics-escape.html text=topic %}{% endcapture -%}
+{%- assign summary = summary | append: ': ' | append: topic_esc -%}
+{%- endif -%}
+
+{%- comment -%}
+The description carries what the card shows and the calendar has no other slot
+for: who is speaking, and the note. It ends with the page the entry came from.
+{%- endcomment -%}
+{%- assign desc = '' -%}
+{%- if speaker -%}
+{%- capture speaker_esc %}{% include ics-escape.html text=speaker %}{% endcapture -%}
+{%- assign desc = desc | append: t.speaker | append: t.label_end | append: ' ' | append: speaker_esc | append: '\n' -%}
+{%- endif -%}
+{%- if note -%}
+{%- capture note_esc %}{% include ics-escape.html text=note %}{% endcapture -%}
+{%- assign desc = desc | append: note_esc | append: '\n' -%}
+{%- endif -%}
+{%- assign desc = desc | append: page_url | append: '#event-' | append: iso -%}
+BEGIN:VEVENT
+UID:{{ ymd }}{% if ev.uid_suffix %}-{{ ev.uid_suffix }}{% endif %}@icssec.ch
+DTSTAMP:{{ stamp }}Z
+{% if ev.start -%}
+DTSTART;TZID=Europe/Zurich:{{ ymd }}T{{ ev.start | replace: ':', '' }}00
+{% if ev.end and ev.open_end != true -%}
+DTEND;TZID=Europe/Zurich:{{ ymd }}T{{ ev.end | replace: ':', '' }}00
+{% endif -%}
+{% else -%}
+{%- comment -%}
+No time given, so it is an all-day entry. DTEND is exclusive and must be the
+following day; the date is derived by adding 36 hours rather than 24 so the
+two daylight-saving nights per year cannot land it back on the same date.
+{%- endcomment -%}
+DTSTART;VALUE=DATE:{{ ymd }}
+DTEND;VALUE=DATE:{{ ev.date | date: '%s' | plus: 129600 | date: '%Y%m%d' }}
+{% endif -%}
+SUMMARY:{{ summary }}
+{% if location -%}
+LOCATION:{% include ics-escape.html text=location %}
+{% endif -%}
+DESCRIPTION:{{ desc }}
+URL:{{ page_url }}#event-{{ iso }}
+STATUS:CONFIRMED
+END:VEVENT
+{% endfor -%}
+END:VCALENDAR

@@ -13,6 +13,8 @@ Genaue Daten und Details werden zusätzlich über unsere [LinkedIn-Seite](https:
 
 ---
 
+{% include events-subscribe.html lang=page.lang %}
+
 {% include events-list.html lang=page.lang past=false %}
 
 ---

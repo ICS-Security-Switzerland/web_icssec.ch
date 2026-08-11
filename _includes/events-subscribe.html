@@ -1,0 +1,36 @@
+{%- comment -%}
+The two ways to get the events into a calendar app.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+
+Subscribing is the one that matters: webcal:// hands the URL to the calendar
+app, which then re-reads it on its own schedule, so an event added to
+_data/events.yml later shows up without anybody doing anything. The download
+is the fallback for people whose calendar cannot subscribe — it is a snapshot
+and does not update, which is what the hint underneath says.
+
+Both point at the file for the current language, so the entries arrive in the
+language the visitor was reading.
+{%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang].events -%}
+{%- assign prefix = site.data.i18n[include.lang].prefix -%}
+{%- assign ics_path = prefix | append: 'events.ics' -%}
+{%- assign webcal = ics_path | absolute_url | replace_first: 'https://', 'webcal://' -%}
+<div class="calendar-actions">
+  <div class="calendar-buttons">
+    <a class="btn btn--icon" href="{{ webcal }}">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <rect x="3" y="5" width="18" height="16" rx="2"/>
+        <line x1="3" y1="10" x2="21" y2="10"/>
+        <line x1="8" y1="3" x2="8" y2="7"/>
+        <line x1="16" y1="3" x2="16" y2="7"/>
+      </svg>{{ t.subscribe }}</a>
+    <a class="btn btn--ghost btn--icon" href="{{ ics_path | relative_url }}" download="icssec-events.ics">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+        <path d="M12 3v12"/>
+        <polyline points="7 11 12 16 17 11"/>
+        <line x1="4" y1="20" x2="20" y2="20"/>
+      </svg>{{ t.download_ics }}</a>
+  </div>
+  <p class="calendar-hint">{{ t.calendar_hint }}</p>
+</div>

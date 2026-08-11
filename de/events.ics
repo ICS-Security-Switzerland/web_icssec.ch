@@ -1,0 +1,6 @@
+---
+permalink: /de/events.ics
+layout: null
+sitemap: false
+---
+{%- include events-ics.html lang='de' -%}

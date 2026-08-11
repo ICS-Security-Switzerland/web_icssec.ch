@@ -33,6 +33,12 @@ en:
     topic: Topic
     speaker: Speaker
     location: Location
+    slides: Slides
+    recording: Recording
+    calendar_name: ICS Security Switzerland — Events
+    subscribe: Subscribe to calendar
+    download_ics: Download .ics file
+    calendar_hint: Subscribing keeps the dates up to date by itself. The download is a one-off snapshot.
   date:
     # %w index: 0 = Sunday
     weekdays: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
@@ -75,6 +81,12 @@ de:
     topic: Thema
     speaker: Speaker
     location: Ort
+    slides: Folien
+    recording: Aufzeichnung
+    calendar_name: ICS Security Switzerland — Veranstaltungen
+    subscribe: Kalender abonnieren
+    download_ics: .ics-Datei herunterladen
+    calendar_hint: Beim Abonnieren bleiben die Termine von selbst aktuell. Der Download ist eine einmalige Momentaufnahme.
   date:
     weekdays: [Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag]
     months: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
@@ -114,6 +126,12 @@ fr:
     topic: Sujet
     speaker: Intervenant
     location: Lieu
+    slides: Présentation
+    recording: Enregistrement
+    calendar_name: ICS Security Switzerland — Événements
+    subscribe: S'abonner au calendrier
+    download_ics: Télécharger le fichier .ics
+    calendar_hint: L'abonnement met les dates à jour automatiquement. Le téléchargement est un instantané unique.
   date:
     weekdays: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
     months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
@@ -154,6 +172,12 @@ it:
     topic: Tema
     speaker: Relatore
     location: Luogo
+    slides: Slide
+    recording: Registrazione
+    calendar_name: ICS Security Switzerland — Eventi
+    subscribe: Abbonati al calendario
+    download_ics: Scarica il file .ics
+    calendar_hint: Con l'abbonamento le date restano aggiornate da sole. Il download è un'istantanea singola.
   date:
     weekdays: [Domenica, Lunedì, Martedì, Mercoledì, Giovedì, Venerdì, Sabato]
     months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]
