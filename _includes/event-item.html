@@ -19,6 +19,8 @@ is stripped because these values are single lines.
 {%- assign speaker = l.speaker | default: ev.speaker -%}
 {%- assign location = l.location | default: ev.location -%}
 {%- assign note = l.note | default: ev.note -%}
+{%- assign slides = l.slides | default: ev.slides -%}
+{%- assign recording = l.recording | default: ev.recording -%}
 {%- if include.past -%}
   {%- assign show_weekday = false -%}
 {%- else -%}
@@ -45,6 +47,23 @@ is stripped because these values are single lines.
     {%- endif -%}
     {%- if note %}
     <p class="event-note">{{ note | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</p>
+    {%- endif -%}
+    {%- comment -%}
+    What the event left behind. Shown whenever the data carries it, upcoming or
+    past — a deck published in advance is as worth linking as one published
+    after.
+    {%- endcomment -%}
+    {%- if slides or recording %}
+    <p class="event-links">
+      {%- if slides %}
+      <a class="event-link" href="{{ slides }}">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="1.5"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>{{ t.slides }}</a>
+      {%- endif -%}
+      {%- if recording %}
+      <a class="event-link" href="{{ recording }}">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="9"/><polygon points="10 8.5 16 12 10 15.5"/></svg>{{ t.recording }}</a>
+      {%- endif %}
+    </p>
     {%- endif %}
   </div>
 </article>
