@@ -341,10 +341,51 @@ input:focus-visible,
   right: 0;
   height: 3px;
   background: linear-gradient(90deg, var(--color-accent) 0%, var(--color-accent-hover) 50%, var(--color-primary) 100%);
+  /* Above the motif below, which would otherwise paint over this line: both
+     are positioned in the same stacking context, so DOM order would win. */
+  z-index: 2;
 }
+
+/* ---------- Decorative motif behind the hero text ----------
+   Drawn in currentColor at a low opacity, so it inherits --color-primary and
+   flips with the theme without a second rule: dark marks on the light
+   surface, light marks on the dark one. The gradient mask fades it out
+   before it reaches the text.
+
+   Note the two scoped fill rules. A blanket `.hero-motif rect { fill: ... }`
+   would override the fill="url(#hero-dots)" presentation attribute on the
+   rect that paints the grid — CSS beats presentation attributes — and the
+   pattern would disappear. */
+.hero-motif {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  color: var(--color-primary);
+  opacity: 0.09;
+  pointer-events: none;
+  z-index: 0;
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), transparent 88%);
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,0.95), transparent 88%);
+}
+.hero-motif pattern circle { fill: currentColor; }
+.hero-motif-net line {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.2;
+}
+.hero-motif-net circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.6;
+}
+
 .hero-inner {
   max-width: var(--content-width);
   margin: 0 auto;
+  /* Lifts the text out of the motif's stacking context. */
+  position: relative;
+  z-index: 1;
 }
 
 .hero-title {
@@ -498,6 +539,90 @@ strong {
   color: var(--color-text-secondary);
 }
 
+/* ---------- Mission cards ----------
+   Still a <ul> underneath, so the two list resets have to be undone here:
+   ul gets padding-left: 22px and li gets margin-bottom: 6px further up. */
+.mission-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 16px;
+  margin: 26px 0 32px;
+  padding: 0;
+}
+.mission-card {
+  margin: 0;
+  padding: 22px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+.mission-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-bottom: 14px;
+  border-radius: var(--radius-sm);
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+}
+.mission-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+.mission-card-title {
+  margin: 0 0 6px;
+  font-size: 1rem;
+  color: var(--color-primary);
+}
+.mission-card-text {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+/* ---------- Key facts on the join page ----------
+   The 1px grid gap over a border-coloured background is what draws the
+   hairlines between the cells, so they stay a single pixel at any zoom and
+   there is no border to de-duplicate at the edges. */
+.join-facts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 1px;
+  margin: 28px 0;
+  padding: 0;
+  background: var(--color-border);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+.join-facts > div {
+  background: var(--color-surface);
+  padding: 16px 18px;
+}
+.join-facts dt {
+  font-size: 0.75rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+  margin-bottom: 5px;
+}
+.join-facts dd {
+  margin: 0;
+  color: var(--color-primary);
+  font-weight: 600;
+  line-height: 1.45;
+}
+
 /* ============================================================
    EVENT CARDS
    ============================================================ */
@@ -576,6 +701,31 @@ strong {
   font-size: 0.9rem;
   line-height: 1.6;
   color: var(--color-text-secondary);
+}
+
+/* ---------- Slides / recording links on an event card ---------- */
+.event-links {
+  margin: 11px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 18px;
+}
+.event-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.87rem;
+  font-weight: 500;
+}
+.event-link svg {
+  width: 15px;
+  height: 15px;
+  flex: none;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.8;
+  stroke-linecap: round;
+  stroke-linejoin: round;
 }
 
 .event-empty {

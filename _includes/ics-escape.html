@@ -1,0 +1,26 @@
+{%- comment -%}
+Turns one field from _data/events.yml into an RFC 5545 TEXT value.
+
+  include.text  the raw value, which may contain inline Markdown
+
+Two things have to happen and the order matters.
+
+Markdown first: the data carries links and emphasis meant for the website
+("[Il Fermento](https://...)", "_(tbd)_"). A calendar entry has nowhere to put
+a link, so the markup is rendered and then stripped down to its text.
+
+Escaping second, per RFC 5545 section 3.3.11: backslash, semicolon, comma and
+newline are the four characters a TEXT value cannot carry raw. Backslash goes
+first — escaping it after the others would double the backslashes they just
+added. This is not cosmetic: "Detecon (Schweiz) AG, Loewenstrasse 1, 8001
+Zurich" contains two commas, and an unescaped comma splits one LOCATION into
+three values.
+{%- endcomment -%}
+{%- assign v = include.text | markdownify | strip_html | strip -%}
+{%- comment -%} markdownify emits entities; a calendar wants the characters. {%- endcomment -%}
+{%- assign v = v | replace: '&amp;', '&' | replace: '&lt;', '<' | replace: '&gt;', '>' | replace: '&quot;', '"' | replace: '&#39;', "'" | replace: '&#8217;', "'" -%}
+{%- assign v = v | replace: '\', '\\' -%}
+{%- assign v = v | replace: ';', '\;' | replace: ',', '\,' -%}
+{%- comment -%} Real newlines become the two-character sequence \n. {%- endcomment -%}
+{%- assign v = v | newline_to_br | replace: '<br />', '\n' | replace: '<br/>', '\n' | replace: '<br>', '\n' | strip_newlines -%}
+{{- v -}}

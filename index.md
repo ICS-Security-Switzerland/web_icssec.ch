@@ -16,9 +16,7 @@ Members benefit from networking opportunities, educational events, and collabora
 
 As a community, we aim to:
 
-- Build a strong network among peers across Swiss industries.  
-- Foster education and career growth through workshops, talks, and events.  
-- Support local companies in aligning with global ISA/IEC standards.  
+{% include mission.html lang=page.lang %}
 
 ---
 

@@ -11,11 +11,19 @@
 #   open_end    true for get-togethers with no fixed end -> "from 17:30" / "ab 17:30 Uhr".
 #   end_approx  true -> "17:00 - approx. 18:00".
 #   online      true for virtual meetups.
-#   title, topic, speaker, location, note
+#   slides      optional URL to the deck. Rendered as a link on the card.
+#   recording   optional URL to a recording. Same.
+#   uid_suffix  optional. The UID of the downloadable calendar entry is built
+#               from the date, so two events on the same date would collide;
+#               give one of them a suffix.
+#   title, topic, speaker, location, note, slides, recording
 #               language-independent defaults; any of them can be overridden
-#               inside an en/de/fr/it block. Markdown is allowed.
+#               inside an en/de/fr/it block. Markdown is allowed in the text
+#               fields (not in slides/recording, which are plain URLs).
 #
-# Adding an event = one entry here. Nothing else needs touching.
+# Adding an event = one entry here. Nothing else needs touching. The events
+# pages, the homepage teaser, the schema.org markup and the per-event calendar
+# download all render from this file, so they cannot disagree with each other.
 
 - date: 2026-09-15
   start: "17:30"

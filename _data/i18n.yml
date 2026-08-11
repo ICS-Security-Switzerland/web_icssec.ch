@@ -33,6 +33,9 @@ en:
     topic: Topic
     speaker: Speaker
     location: Location
+    slides: Slides
+    recording: Recording
+    add_to_calendar: Add to calendar
   date:
     # %w index: 0 = Sunday
     weekdays: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
@@ -75,6 +78,9 @@ de:
     topic: Thema
     speaker: Speaker
     location: Ort
+    slides: Folien
+    recording: Aufzeichnung
+    add_to_calendar: Zum Kalender hinzufügen
   date:
     weekdays: [Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag]
     months: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
@@ -114,6 +120,9 @@ fr:
     topic: Sujet
     speaker: Intervenant
     location: Lieu
+    slides: Présentation
+    recording: Enregistrement
+    add_to_calendar: Ajouter au calendrier
   date:
     weekdays: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
     months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
@@ -154,6 +163,9 @@ it:
     topic: Tema
     speaker: Relatore
     location: Luogo
+    slides: Slide
+    recording: Registrazione
+    add_to_calendar: Aggiungi al calendario
   date:
     weekdays: [Domenica, Lunedì, Martedì, Mercoledì, Giovedì, Venerdì, Sabato]
     months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]

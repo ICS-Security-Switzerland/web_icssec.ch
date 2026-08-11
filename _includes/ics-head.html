@@ -1,0 +1,41 @@
+{%- comment -%}
+The VCALENDAR opening and the timezone definition for the per-event download.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'  (used for the PRODID language tag)
+
+It is a separate include rather than being inlined into event-item.html so
+that the markup of a card stays readable next to the calendar plumbing, and
+so a second consumer — a whole-series file, say — could be added without the
+timezone rules being written out a second time and drifting.
+
+Times are written with TZID rather than converted to UTC, and the rules below
+are the EU daylight-saving rules, so a client resolves CET and CEST itself
+instead of guessing.
+
+No X-WR-CALNAME or X-WR-TIMEZONE. Both are non-standard hints that tell a
+client what to call a subscribed calendar and which zone to assume for it.
+There is no subscription here, and every time carries an explicit TZID backed
+by the VTIMEZONE below, so neither would do anything.
+{%- endcomment -%}
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//ICS Security Switzerland//icssec.ch//{{ include.lang | upcase }}
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:Europe/Zurich
+BEGIN:STANDARD
+DTSTART:19701025T030000
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+BEGIN:DAYLIGHT
+DTSTART:19700329T020000
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+END:VTIMEZONE

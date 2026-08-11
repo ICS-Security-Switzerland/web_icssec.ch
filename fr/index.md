@@ -16,9 +16,7 @@ Les membres bénéficient d'opportunités de réseautage, d'événements éducat
 
 En tant que communauté, nous visons à :
 
-- Construire un réseau solide entre pairs dans les industries suisses.
-- Favoriser l'éducation et le développement de carrière grâce à des ateliers, des conférences et des événements.
-- Soutenir les entreprises locales dans l'alignement sur les normes ISA/IEC mondiales.
+{% include mission.html lang=page.lang %}
 
 ---
 

@@ -16,9 +16,7 @@ I membri beneficiano di opportunità di networking, eventi formativi e progetti 
 
 Come comunità, ci proponiamo di:
 
-- Costruire una solida rete tra colleghi nei settori svizzeri.
-- Promuovere l'istruzione e la crescita professionale attraverso workshop, conferenze ed eventi.
-- Supportare le aziende locali nell'allineamento agli standard ISA/IEC globali.
+{% include mission.html lang=page.lang %}
 
 ---
 

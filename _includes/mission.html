@@ -1,0 +1,29 @@
+{%- comment -%}
+The mission statements as cards instead of a bullet list.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+
+Still a list in the markup — it is a list of three things, and a screen reader
+should be told how many there are. The icons are decorative: each card's
+meaning is carried by its heading and text, so they are hidden from assistive
+technology rather than given labels that would only repeat the heading.
+{%- endcomment -%}
+{%- assign items = site.data.mission[include.lang] -%}
+<ul class="mission-grid">
+{%- for m in items %}
+  <li class="mission-card">
+    <span class="mission-icon" aria-hidden="true">
+      {%- case m.icon -%}
+      {%- when 'network' -%}
+      <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="18" r="2.5"/><circle cx="19" cy="18" r="2.5"/><line x1="10.4" y1="7.1" x2="6.6" y2="15.9"/><line x1="13.6" y1="7.1" x2="17.4" y2="15.9"/><line x1="7.5" y1="18" x2="16.5" y2="18"/></svg>
+      {%- when 'education' -%}
+      <svg viewBox="0 0 24 24" focusable="false"><path d="M12 4 2 9l10 5 10-5-10-5z"/><path d="M6 11.5V17c0 1.6 2.7 3 6 3s6-1.4 6-3v-5.5"/></svg>
+      {%- when 'standards' -%}
+      <svg viewBox="0 0 24 24" focusable="false"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><polyline points="14 3 14 8 19 8"/><polyline points="9 14.5 11 16.5 15 12.5"/></svg>
+      {%- endcase -%}
+    </span>
+    <h3 class="mission-card-title">{{ m.title }}</h3>
+    <p class="mission-card-text">{{ m.text }}</p>
+  </li>
+{%- endfor %}
+</ul>

@@ -1,0 +1,57 @@
+# The three mission statements on the homepage, one block per language.
+#
+# The sentences are the ones that were already on the page as a bullet list —
+# they are not rewritten here. Only the short heading above each one is new,
+# because a card needs something to be titled.
+#
+# Fields
+#   icon   which glyph _includes/mission.html draws: network | education | standards
+#   title  the card heading
+#   text   the mission statement itself
+#
+# Adding a language means adding a block here; the homepage include picks it
+# up by page.lang and needs no change.
+
+en:
+  - icon: network
+    title: Network
+    text: Build a strong network among peers across Swiss industries.
+  - icon: education
+    title: Education
+    text: Foster education and career growth through workshops, talks, and events.
+  - icon: standards
+    title: Standards
+    text: Support local companies in aligning with global ISA/IEC standards.
+
+de:
+  - icon: network
+    title: Netzwerk
+    text: Ein starkes Netzwerk zwischen Fachleuten aus verschiedenen Schweizer Branchen aufbauen.
+  - icon: education
+    title: Bildung
+    text: Bildung und berufliche Weiterentwicklung durch Workshops, Vorträge und Events fördern.
+  - icon: standards
+    title: Standards
+    text: Schweizer Unternehmen bei der Umsetzung internationaler ISA/IEC-Standards unterstützen.
+
+fr:
+  - icon: network
+    title: Réseau
+    text: Construire un réseau solide entre pairs dans les industries suisses.
+  - icon: education
+    title: Formation
+    text: Favoriser l'éducation et le développement de carrière grâce à des ateliers, des conférences et des événements.
+  - icon: standards
+    title: Normes
+    text: Soutenir les entreprises locales dans l'alignement sur les normes ISA/IEC mondiales.
+
+it:
+  - icon: network
+    title: Rete
+    text: Costruire una solida rete tra colleghi nei settori svizzeri.
+  - icon: education
+    title: Formazione
+    text: Promuovere l'istruzione e la crescita professionale attraverso workshop, conferenze ed eventi.
+  - icon: standards
+    title: Standard
+    text: Supportare le aziende locali nell'allineamento agli standard ISA/IEC globali.
