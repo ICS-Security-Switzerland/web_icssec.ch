@@ -11,7 +11,6 @@
 {% include hreflang.html %}
 
   <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
-  {% feed_meta %}
   {% seo %}
   {%- if page.schema == 'events' %}{% include events-jsonld.html %}{% endif %}
 </head>

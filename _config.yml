@@ -12,8 +12,11 @@ header_pages:
   - members.md
   - contacts.md
 
+# jekyll-feed is deliberately absent. It generates an Atom feed of posts, and
+# this site has no posts — it published /feed.xml with zero entries. The
+# calendar at /events.ics is the thing people can actually subscribe to. Put
+# jekyll-feed back the day there is a blog.
 plugins:
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-include-cache
