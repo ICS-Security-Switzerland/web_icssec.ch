@@ -5,8 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-scheme" content="light dark">
 
+  {%- comment -%}
+  Google Search picks one favicon per hostname, and requires a square icon whose
+  side is a multiple of 48px. The .ico genuinely carries 16/32/48 — its entry
+  table was read, not taken on trust from the sizes attribute — so it qualifies.
+  The PNG beside it used to be 32x32, which does not, meaning that whichever of
+  the two Google reached for, there was a coin flip on whether it passed.
+
+  Whether that is why no icon shows next to the search result is not something
+  this can prove; Google does not guarantee a favicon even when everything is
+  right, and the domain is young. It was the one rule the markup was breaking.
+  {%- endcomment -%}
   <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="16x16 32x32 48x48">
-  <link rel="icon" type="image/png" href="{{ '/assets/images/favicon-32.png' | relative_url }}" sizes="32x32">
+  <link rel="icon" type="image/png" href="{{ '/assets/images/icon-192.png' | relative_url }}" sizes="192x192">
   <link rel="apple-touch-icon" href="{{ '/assets/images/apple-touch-icon.png' | relative_url }}" sizes="180x180">
 {% include hreflang.html %}
 
