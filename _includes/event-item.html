@@ -21,6 +21,8 @@ is stripped because these values are single lines.
 {%- assign note = l.note | default: ev.note -%}
 {%- assign slides = l.slides | default: ev.slides -%}
 {%- assign recording = l.recording | default: ev.recording -%}
+{%- comment -%} Used for the anchor id, and for the download filename. {%- endcomment -%}
+{%- assign iso_date = ev.date | date: '%Y-%m-%d' -%}
 {%- if include.past -%}
   {%- assign show_weekday = false -%}
 {%- else -%}
@@ -40,7 +42,7 @@ is stripped because these values are single lines.
     <span class="event-badge-month">{{ badge_month }}</span>
   </div>
   <div class="event-main">
-    <h3 class="event-title" id="event-{{ ev.date | date: '%Y-%m-%d' }}">{{ title }}</h3>
+    <h3 class="event-title" id="event-{{ iso_date }}">{{ title }}</h3>
     <p class="event-when">{% include event-when.html event=ev lang=include.lang weekday=show_weekday %}</p>
     {%- if meta != '' %}
     <p class="event-fields">{{ meta }}</p>
@@ -49,12 +51,35 @@ is stripped because these values are single lines.
     <p class="event-note">{{ note | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</p>
     {%- endif -%}
     {%- comment -%}
-    What the event left behind. Shown whenever the data carries it, upcoming or
-    past — a deck published in advance is as worth linking as one published
-    after.
+    What you can take away from the event: the single-event calendar file while
+    it is still ahead, and whatever it left behind once it is over.
+
+    The .ics is a data: URI rather than a file, because Jekyll on GitHub Pages
+    cannot write one output file per entry in _data/events.yml — that needs a
+    generator plugin, and Pages builds in safe mode. The content is assembled
+    from the same two includes the subscribable calendar uses, so a single
+    download and the series cannot disagree; the UID is identical, which means
+    importing one after subscribing updates that entry instead of duplicating
+    it.
+
+    url_encode is the form encoding, which writes a space as "+". In a data:
+    URI "+" is a literal plus, not a space, so it has to become %20 — safely,
+    because a real plus in the text was already turned into %2B by then.
+
+    Only for events still ahead: adding a meetup from last winter to your
+    calendar helps nobody, and it would put a couple of kilobytes of encoded
+    text into the page for each one.
     {%- endcomment -%}
-    {%- if slides or recording %}
+    {%- assign show_cal = false -%}
+    {%- unless include.past -%}{%- assign show_cal = true -%}{%- endunless -%}
+    {%- if slides or recording or show_cal %}
     <p class="event-links">
+      {%- if show_cal -%}
+      {%- capture ics_single %}{% include ics-head.html lang=include.lang %}{% include ics-vevent.html event=ev lang=include.lang %}END:VCALENDAR
+{% endcapture -%}
+      <a class="event-link" href="data:text/calendar;charset=utf-8,{{ ics_single | url_encode | replace: '+', '%20' }}" download="icssec-{{ iso_date }}.ics">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="12" y1="13" x2="12" y2="18"/><line x1="9.5" y1="15.5" x2="14.5" y2="15.5"/></svg>{{ t.add_to_calendar }}</a>
+      {%- endif -%}
       {%- if slides %}
       <a class="event-link" href="{{ slides }}">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="4" width="18" height="12" rx="1.5"/><line x1="12" y1="16" x2="12" y2="20"/><line x1="8" y1="20" x2="16" y2="20"/></svg>{{ t.slides }}</a>

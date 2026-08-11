@@ -13,9 +13,9 @@ Les dates et détails exacts seront également annoncés via notre [page LinkedI
 
 ---
 
-{% include events-subscribe.html lang=page.lang %}
-
 {% include events-list.html lang=page.lang past=false %}
+
+{% include events-subscribe.html lang=page.lang %}
 
 ---
 
