@@ -56,11 +56,9 @@ is stripped because these values are single lines.
 
     The .ics is a data: URI rather than a file, because Jekyll on GitHub Pages
     cannot write one output file per entry in _data/events.yml — that needs a
-    generator plugin, and Pages builds in safe mode. The content is assembled
-    from the same two includes the subscribable calendar uses, so a single
-    download and the series cannot disagree; the UID is identical, which means
-    importing one after subscribing updates that entry instead of duplicating
-    it.
+    generator plugin, and Pages builds in safe mode. It is assembled from
+    ics-head.html and ics-vevent.html, which keeps the timezone rules in one
+    place rather than inline in the middle of a card.
 
     url_encode is the form encoding, which writes a space as "+". In a data:
     URI "+" is a literal plus, not a space, so it has to become %20 — safely,

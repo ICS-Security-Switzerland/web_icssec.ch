@@ -539,55 +539,6 @@ strong {
   color: var(--color-text-secondary);
 }
 
-/* A button with an icon in front of the label. inline-flex rather than the
-   inline-block of .btn, so the icon and the text share a baseline box. */
-.btn--icon {
-  display: inline-flex;
-  align-items: center;
-  gap: 9px;
-}
-.btn--icon svg {
-  width: 17px;
-  height: 17px;
-  flex: none;
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 2;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-/* The quiet sibling of .btn, for the secondary action next to it. Both of
-   these rules must stay after .btn / .btn:hover — they win on source order,
-   not on specificity. */
-.btn--ghost {
-  background: transparent;
-  color: var(--color-text-secondary);
-  border: 1px solid var(--color-border);
-  box-shadow: none;
-}
-.btn--ghost:hover {
-  background: var(--color-surface);
-  color: var(--color-text);
-  border-color: var(--color-text-muted);
-  box-shadow: none;
-}
-
-/* ---------- Subscribe / download the calendar ---------- */
-.calendar-actions {
-  margin: 0 0 28px;
-}
-.calendar-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.calendar-hint {
-  margin: 10px 0 0;
-  font-size: 0.85rem;
-  color: var(--color-text-muted);
-}
-
 /* ---------- Mission cards ----------
    Still a <ul> underneath, so the two list resets have to be undone here:
    ul gets padding-left: 22px and li gets margin-bottom: 6px further up. */

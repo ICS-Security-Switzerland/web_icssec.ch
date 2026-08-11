@@ -35,10 +35,7 @@ en:
     location: Location
     slides: Slides
     recording: Recording
-    calendar_name: ICS Security Switzerland — Events
-    subscribe: Subscribe to calendar
     add_to_calendar: Add to calendar
-    calendar_hint: Subscribing keeps the dates up to date by itself — new events appear without you doing anything.
   date:
     # %w index: 0 = Sunday
     weekdays: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
@@ -83,10 +80,7 @@ de:
     location: Ort
     slides: Folien
     recording: Aufzeichnung
-    calendar_name: ICS Security Switzerland — Veranstaltungen
-    subscribe: Kalender abonnieren
     add_to_calendar: Zum Kalender hinzufügen
-    calendar_hint: Beim Abonnieren bleiben die Termine von selbst aktuell — neue Events erscheinen ohne dein Zutun.
   date:
     weekdays: [Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag]
     months: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
@@ -128,10 +122,7 @@ fr:
     location: Lieu
     slides: Présentation
     recording: Enregistrement
-    calendar_name: ICS Security Switzerland — Événements
-    subscribe: S'abonner au calendrier
     add_to_calendar: Ajouter au calendrier
-    calendar_hint: L'abonnement met les dates à jour automatiquement — les nouveaux événements apparaissent sans rien faire.
   date:
     weekdays: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
     months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
@@ -174,10 +165,7 @@ it:
     location: Luogo
     slides: Slide
     recording: Registrazione
-    calendar_name: ICS Security Switzerland — Eventi
-    subscribe: Abbonati al calendario
     add_to_calendar: Aggiungi al calendario
-    calendar_hint: Con l'abbonamento le date restano aggiornate da sole — i nuovi eventi compaiono senza fare nulla.
   date:
     weekdays: [Domenica, Lunedì, Martedì, Mercoledì, Giovedì, Venerdì, Sabato]
     months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]

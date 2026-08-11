@@ -4,9 +4,9 @@ One event as an RFC 5545 VEVENT.
   include.event  an entry from _data/events.yml
   include.lang   'en' | 'de' | 'fr' | 'it'
 
-Used both by the full calendar and by the per-event download, so an event
-imported on its own is byte-for-byte the event the subscriber already has —
-same UID, so importing one after subscribing updates rather than duplicates.
+The UID is derived from the event date rather than from anything that varies
+per language, so downloading the same meetup from the German page after the
+English one updates that calendar entry instead of adding a second copy.
 {%- endcomment -%}
 {%- assign ev = include.event -%}
 {%- assign lang = include.lang -%}

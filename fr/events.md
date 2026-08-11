@@ -15,8 +15,6 @@ Les dates et détails exacts seront également annoncés via notre [page LinkedI
 
 {% include events-list.html lang=page.lang past=false %}
 
-{% include events-subscribe.html lang=page.lang %}
-
 ---
 
 Restez à l'écoute — d'autres événements seront bientôt annoncés !
