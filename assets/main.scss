@@ -1133,7 +1133,10 @@ a.event--teaser:hover {
     display: flex;
   }
   /* Dims the page behind the open menu, so the panel ends where the shade
-     begins instead of floating over fully-legible content. */
+     begins instead of floating over fully-legible content. Negative z-index
+     children paint OVER their stacking context's own background, so the
+     shade would dim the panel too; ::after re-paints the panel background
+     one layer above the shade, below the content. */
   .nav-toggle:checked ~ .site-nav::before {
     content: '';
     position: fixed;
@@ -1142,6 +1145,13 @@ a.event--teaser:hover {
     top: var(--header-height);
     bottom: 0;
     background: rgba(15, 23, 36, 0.45);
+    z-index: -2;
+  }
+  .nav-toggle:checked ~ .site-nav::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-header-bg);
     z-index: -1;
   }
   .nav-link {
