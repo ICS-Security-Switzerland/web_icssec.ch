@@ -234,6 +234,23 @@ input:focus-visible,
   stroke-width: 2;
   stroke-linecap: round;
 }
+/* The three bars morph into an X while the menu is open, so the same control
+   reads as "close". Each line rotates about its own centre first, then slides
+   onto the middle line (CSS transform lists apply right to left). */
+.nav-toggle-label svg line {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.2s ease, opacity 0.15s ease;
+}
+.nav-toggle:checked ~ .nav-toggle-label svg line:nth-of-type(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.nav-toggle:checked ~ .nav-toggle-label svg line:nth-of-type(2) {
+  opacity: 0;
+}
+.nav-toggle:checked ~ .nav-toggle-label svg line:nth-of-type(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
 
 .site-nav {
   display: flex;
@@ -268,12 +285,16 @@ input:focus-visible,
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  font-size: 1.1rem;
-  padding: 4px 10px;
+  padding: 7px 10px;
   cursor: pointer;
   color: var(--color-header-text);
   transition: background 0.2s, border-color 0.2s;
   line-height: 1;
+}
+.lang-btn-code {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
 }
 .lang-btn:hover {
   background: var(--color-surface-alt);
@@ -317,8 +338,16 @@ input:focus-visible,
   color: var(--color-text);
   text-decoration: none;
 }
-.lang-menu .flag {
-  font-size: 1.2rem;
+.lang-menu .lang-code {
+  min-width: 26px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  background: var(--color-surface-alt);
+  border-radius: 4px;
+  padding: 3px 4px;
 }
 
 /* ============================================================
@@ -905,6 +934,10 @@ strong {
     top: var(--header-height);
     left: 0;
     right: 0;
+    /* Below the sticky header (100), above the page — and a stacking context
+       of its own, so the backdrop's z-index: -1 stays inside it instead of
+       dropping behind the page content. */
+    z-index: 90;
     background: var(--color-header-bg);
     border-top: 1px solid var(--color-border);
     flex-direction: column;
@@ -914,6 +947,18 @@ strong {
   }
   .nav-toggle:checked ~ .site-nav {
     display: flex;
+  }
+  /* Dims the page behind the open menu, so the panel ends where the shade
+     begins instead of floating over fully-legible content. */
+  .nav-toggle:checked ~ .site-nav::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: var(--header-height);
+    bottom: 0;
+    background: rgba(15, 23, 36, 0.45);
+    z-index: -1;
   }
   .nav-link {
     padding: 10px 12px;

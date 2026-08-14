@@ -34,7 +34,7 @@ focusable; see .nav-toggle in assets/main.scss.
   <div class="lang-dropdown">
     <button type="button" class="lang-btn" aria-label="{{ t.a11y.language }}"
             aria-haspopup="true" aria-expanded="false">
-      <span class="lang-btn-flag">{{ t.flag }}</span>
+      <span class="lang-btn-code">{{ lang | upcase }}</span>
       <span class="lang-btn-chevron">▾</span>
     </button>
     <div class="lang-menu">
@@ -47,7 +47,7 @@ focusable; see .nav-toggle in assets/main.scss.
           {%- else -%}
             {%- assign href = '/' | append: code | append: page_key -%}
           {%- endif %}
-      <a href="{{ href | relative_url }}"><span class="flag">{{ l.flag }}</span> {{ l.name }}</a>
+      <a href="{{ href | relative_url }}"><span class="lang-code">{{ code | upcase }}</span> {{ l.name }}</a>
         {%- endif -%}
       {%- endfor %}
     </div>

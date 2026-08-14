@@ -8,7 +8,6 @@
 
 en:
   name: English
-  flag: 🇬🇧
   prefix: /
   nav:
     about: About
@@ -53,7 +52,6 @@ en:
 
 de:
   name: Deutsch
-  flag: 🇩🇪
   prefix: /de/
   nav:
     about: Über uns
@@ -95,7 +93,6 @@ de:
 
 fr:
   name: Français
-  flag: 🇫🇷
   prefix: /fr/
   nav:
     about: À propos
@@ -138,7 +135,6 @@ fr:
 
 it:
   name: Italiano
-  flag: 🇮🇹
   prefix: /it/
   nav:
     about: Chi siamo
