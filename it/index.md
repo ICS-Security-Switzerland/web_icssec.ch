@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Benvenuti a ICS Security Switzerland
+title: La comunità svizzera per la sicurezza OT
 subtitle: Colleghiamo esperti in Svizzera per promuovere la cybersicurezza industriale e l'adozione dello standard IEC 62443.
 lang: it
 permalink: /it/
@@ -24,8 +24,9 @@ Siamo una comunità aperta a chiunque sia interessato alla **sicurezza OT (tecno
 
 Se sei curioso della sicurezza ICS o vuoi semplicemente incontrare persone con interessi simili, partecipa a uno dei nostri eventi per scoprire chi siamo.
 
-💡 *Il nostro obiettivo principale non è facilitare affari o servizi di consulenza.*
+*Il nostro obiettivo principale non è facilitare affari o servizi di consulenza.*
 Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenze e la collaborazione — un luogo dove i professionisti possono condividere esperienze e best practice in un ambiente di fiducia.
+{: .callout}
 
 [Diventa membro](./members){: .btn} quando vuoi
 {: .cta}
@@ -36,4 +37,4 @@ Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenz
 
 {% include events-teaser.html lang=page.lang %}
 
-➡️ [Vedi tutti gli eventi →](./events)
+[Vedi tutti gli eventi →](./events)

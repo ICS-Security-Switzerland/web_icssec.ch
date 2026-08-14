@@ -14,6 +14,8 @@ en:
     events: Events
     members: Join
     contacts: Contact
+  hero:
+    events: See our events
   footer:
     nav: Navigation
     connect: Connect
@@ -58,6 +60,8 @@ de:
     events: Events
     members: Mitglied werden
     contacts: Kontakt
+  hero:
+    events: Zu unseren Events
   footer:
     nav: Navigation
     connect: Kontakt
@@ -99,6 +103,8 @@ fr:
     events: Événements
     members: Devenir membre
     contacts: Contacts
+  hero:
+    events: Voir nos événements
   footer:
     nav: Navigation
     connect: Contact
@@ -141,6 +147,8 @@ it:
     events: Eventi
     members: Diventa membro
     contacts: Contatti
+  hero:
+    events: Scopri i nostri eventi
   footer:
     nav: Navigazione
     connect: Contatti

@@ -434,6 +434,10 @@ input:focus-visible,
   line-height: 1.65;
 }
 
+.hero-actions {
+  margin: 28px 0 0;
+}
+
 /* ============================================================
    MAIN CONTENT
    ============================================================ */
@@ -507,6 +511,30 @@ blockquote {
   color: var(--color-text);
 }
 
+/* ---------- Callout ----------
+   The "neutral, non-commercial" note on the homepage. Blockquote's visual
+   language plus an info glyph; the glyph is a mask so it takes the accent
+   colour in both themes without a second asset. */
+.callout {
+  position: relative;
+  margin: 24px 0;
+  padding: 14px 20px 14px 50px;
+  background: var(--color-accent-light);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.callout::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 17px;
+  width: 19px;
+  height: 19px;
+  background: var(--color-accent);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cline x1='12' y1='11' x2='12' y2='16'/%3E%3Cline x1='12' y1='7.6' x2='12' y2='7.61'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cline x1='12' y1='11' x2='12' y2='16'/%3E%3Cline x1='12' y1='7.6' x2='12' y2='7.61'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
 /* ---------- Code ---------- */
 code {
   font-family: var(--font-mono);
@@ -558,6 +586,21 @@ strong {
   box-shadow: var(--shadow-md);
 }
 .btn:active { transform: translateY(1px); }
+
+/* Quiet variant for places where the red button would shout — a club invites,
+   it does not upsell. Used for the events link in the hero. */
+.btn--ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  box-shadow: none;
+}
+.btn--ghost:hover {
+  background: var(--color-bg);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  box-shadow: none;
+}
 
 .cta {
   margin: 32px 0;
@@ -761,6 +804,37 @@ strong {
   margin: 14px 0;
   color: var(--color-text-secondary);
 }
+
+/* ---------- Homepage teaser cards ----------
+   The event card, one size down, as a single link. Colours are pinned back
+   to the text tokens because the whole card is an <a>. */
+.events-teaser {
+  margin: 20px 0 18px;
+}
+a.event--teaser {
+  color: inherit;
+  text-decoration: none;
+  padding: 14px 16px;
+  margin: 10px 0;
+  align-items: center;
+}
+a.event--teaser:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.event--teaser .event-badge {
+  width: 52px;
+  padding: 7px 0 6px;
+}
+.event--teaser .event-badge-day { font-size: 1.15rem; }
+.event-teaser-title {
+  display: block;
+  margin: 0 0 2px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.event--teaser .event-when { margin: 0; display: block; }
 
 /* ---------- Past events are quieter, not louder ---------- */
 .events-past {
