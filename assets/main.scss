@@ -630,7 +630,8 @@ strong {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
 }
-.mission-icon {
+.mission-icon,
+.contact-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -641,7 +642,8 @@ strong {
   background: var(--color-accent-light);
   color: var(--color-accent);
 }
-.mission-icon svg {
+.mission-icon svg,
+.contact-icon svg {
   width: 20px;
   height: 20px;
   fill: none;
@@ -649,6 +651,11 @@ strong {
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+/* For brand marks that are filled shapes, not strokes (LinkedIn). */
+.contact-icon svg.icon-fill {
+  fill: currentColor;
+  stroke: none;
 }
 .mission-card-title {
   margin: 0 0 6px;
@@ -699,6 +706,38 @@ strong {
   color: var(--color-primary);
   font-weight: 600;
   line-height: 1.45;
+}
+
+/* ---------- Contact cards ----------
+   The three ways to reach the club, in the mission cards' language. */
+.contact-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 16px;
+  margin: 26px 0 32px;
+  padding: 0;
+}
+.contact-card {
+  margin: 0;
+  padding: 22px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+.contact-label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.contact-value {
+  font-weight: 500;
+  overflow-wrap: anywhere;
 }
 
 /* ---------- Team cards ----------

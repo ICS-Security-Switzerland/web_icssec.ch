@@ -28,6 +28,8 @@ en:
     menu: Toggle navigation
     language: Choose language
     join_form: Membership application form
+  contact:
+    based: Based in
   events:
     label_end: ':'
     none_upcoming: No events scheduled right now — check back soon.
@@ -74,6 +76,8 @@ de:
     menu: Navigation ein-/ausblenden
     language: Sprache wählen
     join_form: Formular für den Mitgliedschaftsantrag
+  contact:
+    based: Vereinssitz
   events:
     label_end: ':'
     none_upcoming: Aktuell sind keine Veranstaltungen geplant — schau bald wieder vorbei.
@@ -117,6 +121,8 @@ fr:
     menu: Afficher/masquer la navigation
     language: Choisir la langue
     join_form: Formulaire de demande d'adhésion
+  contact:
+    based: Basé à
   events:
     label_end: ' :'
     none_upcoming: Aucun événement prévu pour le moment — revenez bientôt.
@@ -161,6 +167,8 @@ it:
     menu: Mostra/nascondi la navigazione
     language: Scegli la lingua
     join_form: Modulo di richiesta di adesione
+  contact:
+    based: Sede
   events:
     label_end: ':'
     none_upcoming: Al momento non ci sono eventi in programma — torna presto.
