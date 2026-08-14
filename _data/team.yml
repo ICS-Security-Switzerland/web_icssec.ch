@@ -1,0 +1,82 @@
+# Board and auditors, shown as cards on the about pages.
+#
+# One entry per card. Names, LinkedIn links and initials are shared across
+# languages; role and blurb are per-language. The auditors share one card —
+# they hold the office jointly, and the blurb is about the pair.
+- people:
+    - name: Mathias Pfister
+      initials: MP
+      linkedin: https://www.linkedin.com/in/mathias-pfister/
+  role:
+    en: President
+    de: Präsident
+    fr: Président
+    it: Presidente
+  blurb:
+    en: Brings people together and steers the club in the right direction.
+    de: Bringt Menschen zusammen und lenkt den Verein in die richtige Richtung.
+    fr: Rassemble les gens et guide l'association dans la bonne direction.
+    it: Riunisce le persone e guida l'associazione nella giusta direzione.
+
+- people:
+    - name: Raphael Rotondari
+      initials: RR
+      linkedin: https://www.linkedin.com/in/riscona/
+  role:
+    en: Treasurer
+    de: Finanzvorstand/Quästor
+    fr: Trésorier
+    it: Tesoriere
+  blurb:
+    en: Makes sure the numbers add up (and the beer fund doesn't run dry).
+    de: Sorgt dafür, dass die Zahlen stimmen (und das Bierbudget nicht versiegt).
+    fr: S'assure que les comptes sont justes (et que le fonds pour les bières ne s'épuise pas).
+    it: Si assicura che i conti tornino (e che il fondo birra non si esaurisca).
+
+- people:
+    - name: Andreas Bernhard
+      initials: AB
+      linkedin: https://www.linkedin.com/in/andreas-n-bernhard/
+  role:
+    en: Secretary
+    de: Schriftführer/Aktuar
+    fr: Secrétaire
+    it: Segretario
+  blurb:
+    en: Takes notes, writes things down, and keeps the words flowing.
+    de: Führt Protokoll, schreibt Dinge auf und hält den Informationsfluss am Laufen.
+    fr: Prend des notes, rédige les comptes rendus et veille à la bonne circulation de l'information.
+    it: Prende appunti, redige i verbali e mantiene la comunicazione.
+
+- people:
+    - name: Martin Scheu
+      initials: MS
+      linkedin: https://www.linkedin.com/in/martin-scheu/
+  role:
+    en: Content Manager
+    de: Content Manager
+    fr: Responsable contenu
+    it: Responsabile contenuti
+  blurb:
+    en: Plans, curates, and serves knowledge so every workshop and training hits the mark.
+    de: Plant, konzipiert und serviert Wissen – damit jeder Workshop und jedes Training genau ins Schwarze trifft.
+    fr: Planifie, conçoit et sert le savoir pour que chaque atelier et chaque formation fasse mouche.
+    it: Pianifica, progetta e serve conoscenza, così ogni workshop e ogni formazione centra il bersaglio.
+
+- people:
+    - name: Pasquale Quaranta
+      initials: PQ
+      linkedin: https://www.linkedin.com/in/pasquale-quaranta-/
+    - name: Ruedi Kubli
+      initials: RK
+      linkedin: https://www.linkedin.com/in/ruedi-k-78700b7/
+  role:
+    en: Auditors (Revisoren)
+    de: Revisoren
+    fr: Auditeurs (Réviseurs)
+    it: Revisori
+  blurb:
+    en: Together they ensure transparency, correctness, and spotless bookkeeping.
+    de: Sorgen im Doppelpack für Transparenz, Korrektheit und eine lupenreine Buchführung.
+    fr: En duo, ils garantissent la transparence, la justesse et une comptabilité irréprochable.
+    it: In coppia garantiscono trasparenza, correttezza e una contabilità impeccabile.

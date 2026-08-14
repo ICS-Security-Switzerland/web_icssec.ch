@@ -662,11 +662,14 @@ strong {
   color: var(--color-text-secondary);
 }
 
-/* ---------- Key facts on the join page ----------
+/* ---------- Key facts (join page, about page) ----------
    The 1px grid gap over a border-coloured background is what draws the
    hairlines between the cells, so they stay a single pixel at any zoom and
-   there is no border to de-duplicate at the edges. */
-.join-facts {
+   there is no border to de-duplicate at the edges.
+   .facts is the same component under its page-neutral name; .join-facts
+   stays for the markup that already uses it. */
+.join-facts,
+.facts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 1px;
@@ -677,22 +680,90 @@ strong {
   border-radius: var(--radius-md);
   overflow: hidden;
 }
-.join-facts > div {
+.join-facts > div,
+.facts > div {
   background: var(--color-surface);
   padding: 16px 18px;
 }
-.join-facts dt {
+.join-facts dt,
+.facts dt {
   font-size: 0.75rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--color-text-secondary);
   margin-bottom: 5px;
 }
-.join-facts dd {
+.join-facts dd,
+.facts dd {
   margin: 0;
   color: var(--color-primary);
   font-weight: 600;
   line-height: 1.45;
+}
+
+/* ---------- Team cards ----------
+   Same card language as the mission grid. The initials disc stands in for a
+   portrait; a pair of office-holders shares a card, their discs overlap. */
+.team-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 22px 0 32px;
+  padding: 0;
+}
+.team-card {
+  margin: 0;
+  padding: 22px 20px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+.team-avatars {
+  display: flex;
+  margin-bottom: 12px;
+}
+.team-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border: 2px solid var(--color-surface);
+}
+.team-avatar + .team-avatar {
+  margin-left: -10px;
+}
+.team-name {
+  margin: 0 0 3px;
+  font-weight: 600;
+}
+.team-name a {
+  color: var(--color-primary);
+}
+.team-name a:hover {
+  color: var(--color-accent);
+}
+.team-role {
+  margin: 0 0 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.team-blurb {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
 }
 
 /* ============================================================
