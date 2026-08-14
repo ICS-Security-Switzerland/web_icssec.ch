@@ -8,13 +8,14 @@
 
 en:
   name: English
-  flag: 🇬🇧
   prefix: /
   nav:
     about: About
     events: Events
     members: Join
     contacts: Contact
+  hero:
+    events: See our events
   footer:
     nav: Navigation
     connect: Connect
@@ -27,6 +28,8 @@ en:
     menu: Toggle navigation
     language: Choose language
     join_form: Membership application form
+  contact:
+    based: Based in
   events:
     label_end: ':'
     none_upcoming: No events scheduled right now — check back soon.
@@ -53,13 +56,14 @@ en:
 
 de:
   name: Deutsch
-  flag: 🇩🇪
   prefix: /de/
   nav:
     about: Über uns
     events: Events
     members: Mitglied werden
     contacts: Kontakt
+  hero:
+    events: Zu unseren Events
   footer:
     nav: Navigation
     connect: Kontakt
@@ -72,6 +76,8 @@ de:
     menu: Navigation ein-/ausblenden
     language: Sprache wählen
     join_form: Formular für den Mitgliedschaftsantrag
+  contact:
+    based: Vereinssitz
   events:
     label_end: ':'
     none_upcoming: Aktuell sind keine Veranstaltungen geplant — schau bald wieder vorbei.
@@ -95,13 +101,14 @@ de:
 
 fr:
   name: Français
-  flag: 🇫🇷
   prefix: /fr/
   nav:
     about: À propos
     events: Événements
     members: Devenir membre
     contacts: Contacts
+  hero:
+    events: Voir nos événements
   footer:
     nav: Navigation
     connect: Contact
@@ -114,6 +121,8 @@ fr:
     menu: Afficher/masquer la navigation
     language: Choisir la langue
     join_form: Formulaire de demande d'adhésion
+  contact:
+    based: Basé à
   events:
     label_end: ' :'
     none_upcoming: Aucun événement prévu pour le moment — revenez bientôt.
@@ -138,13 +147,14 @@ fr:
 
 it:
   name: Italiano
-  flag: 🇮🇹
   prefix: /it/
   nav:
     about: Chi siamo
     events: Eventi
     members: Diventa membro
     contacts: Contatti
+  hero:
+    events: Scopri i nostri eventi
   footer:
     nav: Navigazione
     connect: Contatti
@@ -157,6 +167,8 @@ it:
     menu: Mostra/nascondi la navigazione
     language: Scegli la lingua
     join_form: Modulo di richiesta di adesione
+  contact:
+    based: Sede
   events:
     label_end: ':'
     none_upcoming: Al momento non ci sono eventi in programma — torna presto.

@@ -1,18 +1,23 @@
 {%- comment -%}
-Short list of the next few events for the homepage, from the same data as the
-events page.
+The next few events for the homepage, as compact cards, from the same data as
+the events page.
 
   include.lang   'en' | 'de' | 'fr' | 'it'
   include.limit  how many to show (default 3)
 
-Uses the optional per-language `teaser` field when present, otherwise the title.
+Each card links to its full entry on the events page (event-item.html gives
+every card an id of the form event-YYYY-MM-DD). Uses the optional
+per-language `teaser` field when present, otherwise the title. The label is
+rendered as plain text on purpose: the card is one <a>, so the label must not
+bring links of its own.
 {%- endcomment -%}
-{%- assign t = site.data.i18n[include.lang].events -%}
+{%- assign t = site.data.i18n[include.lang] -%}
+{%- assign L = t.date -%}
 {%- assign today = site.time | date: '%Y%m%d' | plus: 0 -%}
 {%- assign by_date = site.data.events | sort: 'date' -%}
 {%- assign limit = include.limit | default: 3 | plus: 0 -%}
-{%- assign lines = '' -%}
 {%- assign shown = 0 -%}
+{%- capture cards -%}
 {%- for ev in by_date -%}
 {%- assign day = ev.date | date: '%Y%m%d' | plus: 0 -%}
 {%- if day >= today and shown < limit -%}
@@ -24,14 +29,20 @@ Uses the optional per-language `teaser` field when present, otherwise the title.
 {%- else -%}
 {%- assign show_time = false -%}
 {%- endif -%}
-{%- capture when -%}{%- include event-when.html event=ev lang=include.lang weekday=false time=show_time -%}{%- endcapture -%}
-{%- assign lines = lines | append: '📅 ' | append: when | append: ' – ' | append: label | append: '|;|' -%}
+{%- assign iso_date = ev.date | date: '%Y-%m-%d' -%}
+{%- assign badge_day = ev.date | date: '%-d' -%}
+{%- assign month_index = ev.date | date: '%-m' | minus: 1 -%}
+{%- assign badge_month = L.months[month_index] | slice: 0, 3 | capitalize -%}
+<a class="event event--teaser" href="{{ t.prefix }}events/#event-{{ iso_date }}">
+<span class="event-badge" aria-hidden="true"><span class="event-badge-day">{{ badge_day }}</span><span class="event-badge-month">{{ badge_month }}</span></span>
+<span class="event-main"><span class="event-teaser-title">{{ label }}</span><span class="event-when">{% include event-when.html event=ev lang=include.lang weekday=false time=show_time %}</span></span>
+</a>
 {%- assign shown = shown | plus: 1 -%}
 {%- endif -%}
 {%- endfor -%}
+{%- endcapture -%}
 {%- if shown == 0 -%}
-{{ t.none_upcoming }}
+{{ t.events.none_upcoming }}
 {%- else -%}
-{{ lines | split: '|;|' | join: '<br>
-' }}
+<div class="events-teaser">{{ cards }}</div>
 {%- endif -%}

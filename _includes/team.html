@@ -1,0 +1,25 @@
+{%- comment -%}
+The board as cards instead of a bullet list, from _data/team.yml.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+
+Still a list in the markup, for the same reason mission.html is one. The
+initials stand in for portraits until there are any; they repeat the name
+right below them, so they are hidden from assistive technology.
+{%- endcomment -%}
+<ul class="team-grid">
+{%- for m in site.data.team %}
+  <li class="team-card">
+    <span class="team-avatars" aria-hidden="true">
+      {%- for p in m.people %}<span class="team-avatar">{{ p.initials }}</span>{% endfor %}
+    </span>
+    <p class="team-name">
+      {%- for p in m.people -%}
+      <a href="{{ p.linkedin }}">{{ p.name }}</a>{% unless forloop.last %} &amp; {% endunless %}
+      {%- endfor -%}
+    </p>
+    <p class="team-role">{{ m.role[include.lang] }}</p>
+    <p class="team-blurb">{{ m.blurb[include.lang] }}</p>
+  </li>
+{%- endfor %}
+</ul>

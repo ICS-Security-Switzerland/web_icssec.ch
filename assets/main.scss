@@ -234,6 +234,23 @@ input:focus-visible,
   stroke-width: 2;
   stroke-linecap: round;
 }
+/* The three bars morph into an X while the menu is open, so the same control
+   reads as "close". Each line rotates about its own centre first, then slides
+   onto the middle line (CSS transform lists apply right to left). */
+.nav-toggle-label svg line {
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: transform 0.2s ease, opacity 0.15s ease;
+}
+.nav-toggle:checked ~ .nav-toggle-label svg line:nth-of-type(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+.nav-toggle:checked ~ .nav-toggle-label svg line:nth-of-type(2) {
+  opacity: 0;
+}
+.nav-toggle:checked ~ .nav-toggle-label svg line:nth-of-type(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
 
 .site-nav {
   display: flex;
@@ -268,12 +285,16 @@ input:focus-visible,
   background: var(--color-surface);
   border: 1px solid var(--color-border);
   border-radius: var(--radius-sm);
-  font-size: 1.1rem;
-  padding: 4px 10px;
+  padding: 7px 10px;
   cursor: pointer;
   color: var(--color-header-text);
   transition: background 0.2s, border-color 0.2s;
   line-height: 1;
+}
+.lang-btn-code {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
 }
 .lang-btn:hover {
   background: var(--color-surface-alt);
@@ -317,8 +338,16 @@ input:focus-visible,
   color: var(--color-text);
   text-decoration: none;
 }
-.lang-menu .flag {
-  font-size: 1.2rem;
+.lang-menu .lang-code {
+  min-width: 26px;
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--color-text-muted);
+  background: var(--color-surface-alt);
+  border-radius: 4px;
+  padding: 3px 4px;
 }
 
 /* ============================================================
@@ -405,6 +434,10 @@ input:focus-visible,
   line-height: 1.65;
 }
 
+.hero-actions {
+  margin: 28px 0 0;
+}
+
 /* ============================================================
    MAIN CONTENT
    ============================================================ */
@@ -478,6 +511,30 @@ blockquote {
   color: var(--color-text);
 }
 
+/* ---------- Callout ----------
+   The "neutral, non-commercial" note on the homepage. Blockquote's visual
+   language plus an info glyph; the glyph is a mask so it takes the accent
+   colour in both themes without a second asset. */
+.callout {
+  position: relative;
+  margin: 24px 0;
+  padding: 14px 20px 14px 50px;
+  background: var(--color-accent-light);
+  border-left: 3px solid var(--color-accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+}
+.callout::before {
+  content: '';
+  position: absolute;
+  left: 18px;
+  top: 17px;
+  width: 19px;
+  height: 19px;
+  background: var(--color-accent);
+  -webkit-mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cline x1='12' y1='11' x2='12' y2='16'/%3E%3Cline x1='12' y1='7.6' x2='12' y2='7.61'/%3E%3C/svg%3E") center / contain no-repeat;
+  mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2' stroke-linecap='round'%3E%3Ccircle cx='12' cy='12' r='9'/%3E%3Cline x1='12' y1='11' x2='12' y2='16'/%3E%3Cline x1='12' y1='7.6' x2='12' y2='7.61'/%3E%3C/svg%3E") center / contain no-repeat;
+}
+
 /* ---------- Code ---------- */
 code {
   font-family: var(--font-mono);
@@ -530,6 +587,21 @@ strong {
 }
 .btn:active { transform: translateY(1px); }
 
+/* Quiet variant for places where the red button would shout — a club invites,
+   it does not upsell. Used for the events link in the hero. */
+.btn--ghost {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-border);
+  box-shadow: none;
+}
+.btn--ghost:hover {
+  background: var(--color-bg);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+  box-shadow: none;
+}
+
 .cta {
   margin: 32px 0;
   display: flex;
@@ -558,7 +630,8 @@ strong {
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-card);
 }
-.mission-icon {
+.mission-icon,
+.contact-icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -569,7 +642,8 @@ strong {
   background: var(--color-accent-light);
   color: var(--color-accent);
 }
-.mission-icon svg {
+.mission-icon svg,
+.contact-icon svg {
   width: 20px;
   height: 20px;
   fill: none;
@@ -577,6 +651,11 @@ strong {
   stroke-width: 1.8;
   stroke-linecap: round;
   stroke-linejoin: round;
+}
+/* For brand marks that are filled shapes, not strokes (LinkedIn). */
+.contact-icon svg.icon-fill {
+  fill: currentColor;
+  stroke: none;
 }
 .mission-card-title {
   margin: 0 0 6px;
@@ -590,11 +669,14 @@ strong {
   color: var(--color-text-secondary);
 }
 
-/* ---------- Key facts on the join page ----------
+/* ---------- Key facts (join page, about page) ----------
    The 1px grid gap over a border-coloured background is what draws the
    hairlines between the cells, so they stay a single pixel at any zoom and
-   there is no border to de-duplicate at the edges. */
-.join-facts {
+   there is no border to de-duplicate at the edges.
+   .facts is the same component under its page-neutral name; .join-facts
+   stays for the markup that already uses it. */
+.join-facts,
+.facts {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
   gap: 1px;
@@ -605,22 +687,122 @@ strong {
   border-radius: var(--radius-md);
   overflow: hidden;
 }
-.join-facts > div {
+.join-facts > div,
+.facts > div {
   background: var(--color-surface);
   padding: 16px 18px;
 }
-.join-facts dt {
+.join-facts dt,
+.facts dt {
   font-size: 0.75rem;
   letter-spacing: 0.07em;
   text-transform: uppercase;
   color: var(--color-text-secondary);
   margin-bottom: 5px;
 }
-.join-facts dd {
+.join-facts dd,
+.facts dd {
   margin: 0;
   color: var(--color-primary);
   font-weight: 600;
   line-height: 1.45;
+}
+
+/* ---------- Contact cards ----------
+   The three ways to reach the club, in the mission cards' language. */
+.contact-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(215px, 1fr));
+  gap: 16px;
+  margin: 26px 0 32px;
+  padding: 0;
+}
+.contact-card {
+  margin: 0;
+  padding: 22px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+.contact-label {
+  display: block;
+  margin-bottom: 3px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.contact-value {
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Team cards ----------
+   Same card language as the mission grid. The initials disc stands in for a
+   portrait; a pair of office-holders shares a card, their discs overlap. */
+.team-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin: 22px 0 32px;
+  padding: 0;
+}
+.team-card {
+  margin: 0;
+  padding: 22px 20px 20px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+}
+.team-avatars {
+  display: flex;
+  margin-bottom: 12px;
+}
+.team-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--color-accent-light);
+  color: var(--color-accent);
+  font-size: 0.92rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border: 2px solid var(--color-surface);
+}
+.team-avatar + .team-avatar {
+  margin-left: -10px;
+}
+.team-name {
+  margin: 0 0 3px;
+  font-weight: 600;
+}
+.team-name a {
+  color: var(--color-primary);
+}
+.team-name a:hover {
+  color: var(--color-accent);
+}
+.team-role {
+  margin: 0 0 10px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+}
+.team-blurb {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
 }
 
 /* ============================================================
@@ -732,6 +914,37 @@ strong {
   margin: 14px 0;
   color: var(--color-text-secondary);
 }
+
+/* ---------- Homepage teaser cards ----------
+   The event card, one size down, as a single link. Colours are pinned back
+   to the text tokens because the whole card is an <a>. */
+.events-teaser {
+  margin: 20px 0 18px;
+}
+a.event--teaser {
+  color: inherit;
+  text-decoration: none;
+  padding: 14px 16px;
+  margin: 10px 0;
+  align-items: center;
+}
+a.event--teaser:hover {
+  color: inherit;
+  text-decoration: none;
+}
+.event--teaser .event-badge {
+  width: 52px;
+  padding: 7px 0 6px;
+}
+.event--teaser .event-badge-day { font-size: 1.15rem; }
+.event-teaser-title {
+  display: block;
+  margin: 0 0 2px;
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.event--teaser .event-when { margin: 0; display: block; }
 
 /* ---------- Past events are quieter, not louder ---------- */
 .events-past {
@@ -905,6 +1118,10 @@ strong {
     top: var(--header-height);
     left: 0;
     right: 0;
+    /* Below the sticky header (100), above the page — and a stacking context
+       of its own, so the backdrop's z-index: -1 stays inside it instead of
+       dropping behind the page content. */
+    z-index: 90;
     background: var(--color-header-bg);
     border-top: 1px solid var(--color-border);
     flex-direction: column;
@@ -914,6 +1131,28 @@ strong {
   }
   .nav-toggle:checked ~ .site-nav {
     display: flex;
+  }
+  /* Dims the page behind the open menu, so the panel ends where the shade
+     begins instead of floating over fully-legible content. Negative z-index
+     children paint OVER their stacking context's own background, so the
+     shade would dim the panel too; ::after re-paints the panel background
+     one layer above the shade, below the content. */
+  .nav-toggle:checked ~ .site-nav::before {
+    content: '';
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: var(--header-height);
+    bottom: 0;
+    background: rgba(15, 23, 36, 0.45);
+    z-index: -2;
+  }
+  .nav-toggle:checked ~ .site-nav::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--color-header-bg);
+    z-index: -1;
   }
   .nav-link {
     padding: 10px 12px;

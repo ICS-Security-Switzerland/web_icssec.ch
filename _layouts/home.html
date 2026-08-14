@@ -42,6 +42,10 @@ leaving the dot grid — which is the intended behaviour, not a fallback.
   <div class="hero-inner">
     <h1 class="hero-title">{{ page.title }}</h1>
     <p class="hero-subtitle">{{ page.subtitle | default: site.description }}</p>
+    {%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+    <p class="hero-actions">
+      <a class="btn btn--ghost" href="{{ t.prefix }}events/">{{ t.hero.events }} <span aria-hidden="true">→</span></a>
+    </p>
   </div>
 </section>
 

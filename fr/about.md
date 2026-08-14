@@ -12,26 +12,15 @@ Nous sommes un petit groupe motivé de professionnels qui croient en la collabor
 ---
 
 ### Notre équipe
-- **[Mathias Pfister](https://www.linkedin.com/in/mathias-pfister/)** — *Président*  
-  Rassemble les gens et guide l'association dans la bonne direction.
 
-- **[Raphael Rotondari](https://www.linkedin.com/in/riscona/)** — *Trésorier*  
-  S'assure que les comptes sont justes (et que le fonds pour les bières ne s'épuise pas).
-
-- **[Andreas Bernhard](https://www.linkedin.com/in/andreas-n-bernhard/)** — *Secrétaire*  
-  Prend des notes, rédige les comptes rendus et veille à la bonne circulation de l'information.
-
-- **[Martin Scheu](https://www.linkedin.com/in/martin-scheu/)** — *Responsable contenu*  
-  Planifie, conçoit et sert le savoir pour que chaque atelier et chaque formation fasse mouche.
-
-- **[Pasquale Quaranta](https://www.linkedin.com/in/pasquale-quaranta-/)** & **[Ruedi Kubli](https://www.linkedin.com/in/ruedi-k-78700b7/)** — *Auditeurs (Réviseurs)*  
-  En duo, ils garantissent la transparence, la justesse et une comptabilité irréprochable.
+{% include team.html lang=page.lang %}
 
 ---
 
 ### Nos membres
 
-Notre atout le plus important 💪  
+Notre atout le plus important.
+
 - Experts, apprenants et esprits curieux de tous secteurs  
 - Ouverts au partage de connaissances et d'expériences  
 - Animés par la collaboration, pas la concurrence  
@@ -39,5 +28,7 @@ Notre atout le plus important 💪
 
 ---
 
-**Fondé :** 9 septembre 2025<br>
-**Basé à :** Berne, Suisse
+<dl class="facts">
+  <div><dt>Fondé</dt><dd>9 septembre 2025</dd></div>
+  <div><dt>Basé à</dt><dd>Berne, Suisse</dd></div>
+</dl>
