@@ -30,16 +30,16 @@
   open_end: true
   title: Meetup / Get-together
   en:
-    location: Basel _(tbd – near the train station)_
+    location: Basel ([Bierrevier / Markthalle](https://maps.app.goo.gl/ULN9qMdCdiFnSfaBA))
     teaser: Meetup in Basel
   de:
-    location: Basel _(tbd – Nähe Bahnhof)_
+    location: Basel ([Bierrevier / Markthalle](https://maps.app.goo.gl/ULN9qMdCdiFnSfaBA))
     teaser: Meetup in Basel
   fr:
-    location: Bâle _(à confirmer – près de la gare)_
+    location: Bâle ([Bierrevier / Markthalle](https://maps.app.goo.gl/ULN9qMdCdiFnSfaBA))
     teaser: Meetup à Bâle
   it:
-    location: Basilea _(da confermare – vicino alla stazione)_
+    location: Basilea ([Bierrevier / Markthalle](https://maps.app.goo.gl/ULN9qMdCdiFnSfaBA))
     teaser: Meetup a Basilea
 
 - date: 2026-09-07
