@@ -25,6 +25,46 @@
 # pages, the homepage teaser, the schema.org markup and the per-event calendar
 # download all render from this file, so they cannot disagree with each other.
 
+- date: 2026-12-10
+  start: "17:30"
+  open_end: true
+  title: Meetup / Get-together
+  en:
+    location: Lucerne ([just a little brewpub](https://maps.app.goo.gl/prqviWsjjDi9szDL9))
+    teaser: Meetup in Lucerne
+  de:
+    location: Luzern ([just a little brewpub](https://maps.app.goo.gl/prqviWsjjDi9szDL9))
+    teaser: Meetup in Basel
+  fr:
+    location: Lucerne ([just a little brewpub](https://maps.app.goo.gl/prqviWsjjDi9szDL9))
+    teaser: Meetup à Lucerne
+  it:
+    location: Lucerna ([just a little brewpub](https://maps.app.goo.gl/prqviWsjjDi9szDL9))
+    teaser: Meetup a Lucerna
+
+- date: 2026-10-22
+  start: "16:00"
+  end: "16:30"
+  online: true
+  topic: '"ACSSA (ISA/IEC 62443) Security Level Assessment"'
+  speaker: "[Arun Rajagopal](https://www.linkedin.com/in/arajagopal/)"
+  en:
+    title: Virtual Session
+    location: Online — Join Meeting (TBD)
+    teaser: 'Virtual Session: "ACSSA (ISA/IEC 62443) Security Level Assessment"'
+  de:
+    title: Virtuelle Session
+    location: Online — Join Meeting (TBD)
+    teaser: 'Virtuelle Session: "ACSSA (ISA/IEC 62443) Security Level Assessment"'
+  fr:
+    title: Session virtuelle
+    location: En ligne — Join Meeting (TBD)
+    teaser: 'Session virtuelle : "ACSSA (ISA/IEC 62443) Security Level Assessment"'
+  it:
+    title: Sessione virtuale
+    location: Online — Join Meeting (TBD)
+    teaser: 'Sessione virtuale: "ACSSA (ISA/IEC 62443) Security Level Assessment"'
+
 - date: 2026-09-15
   start: "17:30"
   open_end: true
