@@ -46,24 +46,24 @@
   start: "16:00"
   end: "16:30"
   online: true
-  topic: '"ACSSA (ISA/IEC 62443) Security Level Assessment"'
+  topic: '"How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
   speaker: "[Arun Rajagopal](https://www.linkedin.com/in/arajagopal/)"
   en:
-    title: Virtual Session
+    title: 'How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners'
     location: Online — Join Meeting (TBD)
-    teaser: 'Virtual Session: "ACSSA (ISA/IEC 62443) Security Level Assessment"'
+    teaser: 'Virtual Session: "How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
   de:
-    title: Virtuelle Session
+    title: 'How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners'
     location: Online — Join Meeting (TBD)
-    teaser: 'Virtuelle Session: "ACSSA (ISA/IEC 62443) Security Level Assessment"'
+    teaser: 'Virtuelle Session: "How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
   fr:
-    title: Session virtuelle
+    title: 'How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners'
     location: En ligne — Join Meeting (TBD)
-    teaser: 'Session virtuelle : "ACSSA (ISA/IEC 62443) Security Level Assessment"'
+    teaser: 'Session virtuelle : "How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
   it:
-    title: Sessione virtuale
+    title: 'How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners'
     location: Online — Join Meeting (TBD)
-    teaser: 'Sessione virtuale: "ACSSA (ISA/IEC 62443) Security Level Assessment"'
+    teaser: 'Sessione virtuale: "How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
 
 - date: 2026-09-15
   start: "17:30"
