@@ -42,6 +42,33 @@
     location: Lucerna ([just a little brewpub](https://maps.app.goo.gl/prqviWsjjDi9szDL9))
     teaser: Meetup a Lucerna
 
+- date: 2026-11-02
+  start: "16:00"
+  end: "17:00"
+  online: true
+  topic: '"Der GRC-Feedbackloop"'
+  speaker: "[Simon Dejung](https://www.linkedin.com/in/simon-dejung/)"
+  en:
+    title: Virtual Meetup
+    location: Online — Join Meeting (TBD)
+    note: "How governance, risk management and compliance become one steerable loop. Starting from the BIA, crown jewels and loss scenarios are quantified in francs and days of downtime instead of heatmaps, measured control effectiveness and recovery times feed back into the model, and the loop ends in a documented risk decision. Context: ISG, NIS2, CRA, DORA and the AI Act."
+    teaser: 'Virtual Meetup: "Der GRC-Feedbackloop"'
+  de:
+    title: Virtual Meetup
+    location: Online — Join Meeting (TBD)
+    note: "Wie Governance, Risikomanagement und Compliance zu einem steuerbaren Loop werden. Ausgehend von der BIA werden Crown Jewels und Verlustszenarien in Franken und Ausfalltagen quantifiziert statt in Heatmaps, gemessene Kontrollwirksamkeit und Wiederanlaufzeiten fliessen zurück ins Modell, und der Loop endet bei einer dokumentierten Risikoentscheidung. Hintergrund: ISG, NIS2, CRA, DORA und AI Act."
+    teaser: 'Virtual Meetup: "Der GRC-Feedbackloop"'
+  fr:
+    title: Meetup virtuel
+    location: En ligne — Join Meeting (TBD)
+    note: "Comment la gouvernance, la gestion des risques et la conformité forment une boucle pilotable. À partir de la BIA, les joyaux de la couronne et les scénarios de perte sont quantifiés en francs et en jours d'arrêt plutôt qu'en heatmaps, l'efficacité mesurée des contrôles et les temps de reprise alimentent le modèle, et la boucle aboutit à une décision de risque documentée. Contexte : ISG, NIS2, CRA, DORA et AI Act."
+    teaser: 'Meetup virtuel : "Der GRC-Feedbackloop"'
+  it:
+    title: Meetup virtuale
+    location: Online — Join Meeting (TBD)
+    note: "Come governance, gestione del rischio e compliance diventano un ciclo governabile. Partendo dalla BIA, crown jewels e scenari di perdita vengono quantificati in franchi e giorni di fermo invece che in heatmap, l'efficacia misurata dei controlli e i tempi di ripristino rientrano nel modello, e il ciclo si conclude con una decisione di rischio documentata. Contesto: ISG, NIS2, CRA, DORA e AI Act."
+    teaser: 'Meetup virtuale: "Der GRC-Feedbackloop"'
+
 - date: 2026-10-22
   start: "16:00"
   end: "16:30"
