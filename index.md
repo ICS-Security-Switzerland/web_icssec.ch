@@ -6,7 +6,7 @@ lang: en
 permalink: /
 ---
 
-**ICS Security Switzerland** is a newly founded initiative that brings together cybersecurity practitioners and organisations with a shared interest in industrial automation and control systems (IACS/OT) security, standards, and innovation.
+**ICS Security Switzerland** is an association founded in September 2025. Today it brings together more than 60 cybersecurity practitioners and organisations with a shared interest in industrial automation and control systems (IACS/OT) security, standards, and innovation.
 
 We promote awareness, knowledge exchange, and the adoption of the [**ISA/IEC 62443**](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) standards and related best practices for securing **critical infrastructure** and **industrial sectors** — including energy, water, transportation, and manufacturing.
 
