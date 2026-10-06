@@ -19,6 +19,8 @@ Genaue Daten und Details werden zusätzlich über unsere [LinkedIn-Seite](https:
 
 Bleib auf dem Laufenden — weitere Veranstaltungen werden bald bekanntgegeben!
 
+{% include call-for-talks.html lang=page.lang %}
+
 <section class="events-past" markdown="1">
 
 ## Vergangene Veranstaltungen

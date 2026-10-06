@@ -19,6 +19,8 @@ Les dates et détails exacts seront également annoncés via notre [page LinkedI
 
 Restez à l'écoute — d'autres événements seront bientôt annoncés !
 
+{% include call-for-talks.html lang=page.lang %}
+
 <section class="events-past" markdown="1">
 
 ## Événements passés
