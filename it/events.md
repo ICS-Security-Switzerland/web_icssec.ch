@@ -19,6 +19,8 @@ Le date e i dettagli esatti saranno annunciati anche tramite la nostra [pagina L
 
 Restate sintonizzati — altri eventi saranno annunciati presto!
 
+{% include call-for-talks.html lang=page.lang %}
+
 <section class="events-past" markdown="1">
 
 ## Eventi passati

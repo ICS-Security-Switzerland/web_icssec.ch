@@ -19,6 +19,8 @@ Exact dates and details will also be announced via our [LinkedIn page](https://w
 
 Stay tuned — more events will be announced soon!
 
+{% include call-for-talks.html lang=page.lang %}
+
 <section class="events-past" markdown="1">
 
 ## Past Events

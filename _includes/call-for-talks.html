@@ -1,0 +1,47 @@
+{%- comment -%}
+The invitation to propose a talk, between the upcoming events and the archive.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+
+Text and guidelines come from _data/talks.yml. The address is the same in
+every language, so it lives here, as it does in contact-cards.html.
+
+A mailto link rather than a form: there is nothing to host, and a proposal
+turns into a conversation anyway. Subject and a short template are filled in,
+so that a proposal arrives with what is needed to judge it. Encoded like the
+calendar link in event-item.html (url_encode writes a space as "+", which is
+a literal plus in a URI), and with CRLF line breaks, which is what RFC 6068
+asks for in a mailto body. The bare address stays visible next to the button
+for anyone whose browser has no mail client to hand the link to.
+
+The guidelines sit in a <details>: published and one click away, without
+turning an invitation into a wall of rules.
+
+The text fields go through markdownify, as the event fields do: links and
+emphasis work in the data, and apostrophes come out typographic, like those
+in the Markdown around the box. The wrapping <p> is stripped because the
+values are single lines.
+{%- endcomment -%}
+{%- assign c = site.data.talks[include.lang] -%}
+{%- assign label_end = site.data.i18n[include.lang].events.label_end -%}
+{%- assign email = 'info@icssec.ch' -%}
+{%- assign subject = c.mail_subject | url_encode | replace: '+', '%20' -%}
+{%- assign body = c.mail_body | url_encode | replace: '+', '%20' | replace: '%0A', '%0D%0A' -%}
+{%- assign mail_alt = c.mail_alt | replace: '{email}', email -%}
+<section class="talks-cta" aria-labelledby="talks-cta-title">
+  <h2 class="talks-cta-title" id="talks-cta-title">{{ c.title | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</h2>
+  <p class="talks-cta-text">{{ c.text | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</p>
+  <p class="cta talks-cta-action">
+    <a class="btn btn--ghost" href="mailto:{{ email }}?subject={{ subject }}&amp;body={{ body }}">
+      <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7.5 12 13.5 21 7.5"/></svg>{{ c.button }}</a>
+    <span>{{ mail_alt }}</span>
+  </p>
+  <details class="talks-rules">
+    <summary>{{ c.rules_summary | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</summary>
+    <ul>
+    {%- for r in c.rules %}
+      <li><strong>{{ r.label | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}{{ label_end }}</strong> {{ r.text | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</li>
+    {%- endfor %}
+    </ul>
+  </details>
+</section>

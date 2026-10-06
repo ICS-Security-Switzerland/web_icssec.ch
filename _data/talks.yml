@@ -1,0 +1,119 @@
+# The call for talks on the events page, one block per language.
+#
+# Rendered by _includes/call-for-talks.html, between the upcoming events and
+# the archive. The guidelines are what the association asks of its speakers;
+# change them here, not in the pages.
+#
+# Fields
+#   title          heading of the box
+#   text           the invitation itself
+#   button         label of the mail button
+#   mail_alt       the line next to the button; {email} becomes the address
+#   mail_subject   subject line the mail client opens with
+#   mail_body      template for the mail body, one field per paragraph
+#   rules_summary  the line that opens the guidelines
+#   rules          the guidelines; the label is set in bold and closed with
+#                  the language's label_end from _data/i18n.yml
+#
+# Adding a language means adding a block here; the include picks it up by
+# page.lang and needs no change.
+
+en:
+  title: Got something to say?
+  text: We're always glad to hear about interesting topics from ICS/OT security practice. If you'd like to give a talk at one of our events, send us a short e-mail with your topic and a rough abstract.
+  button: Propose a topic
+  mail_alt: "or write to {email}"
+  mail_subject: Talk proposal
+  mail_body: |
+    Topic:
+
+    Abstract (max. 200 words):
+
+    About me:
+  rules_summary: Our guidelines for talks
+  rules:
+    - label: Vendor-neutral
+      text: No commercial talks that promote a product or a service.
+    - label: Practical value
+      text: Ideally, the talk gives the ICS community something it can put into practice.
+    - label: Format
+      text: Online we are flexible. A 30–45 minute talk followed by at least 15 minutes of questions has worked well.
+    - label: No fees
+      text: We don't pay speakers. As an association, our programme lives on members sharing what they know.
+    - label: Abstract
+      text: A rough abstract (under 200 words) helps us see which part of the wide field of ICS security you'd like to explore.
+
+de:
+  title: Du hast auch etwas zu sagen?
+  text: Wir freuen uns jederzeit über spannende Themen aus der ICS/OT-Security-Praxis. Wenn du an einem unserer Events einen Vortrag halten möchtest, schick uns eine kurze E-Mail mit deinem Thema und einem groben Abstract.
+  button: Thema vorschlagen
+  mail_alt: "oder direkt an {email}"
+  mail_subject: Themenvorschlag
+  mail_body: |
+    Thema:
+
+    Abstract (max. 200 Wörter):
+
+    Kurz zu mir:
+  rules_summary: Unsere Richtlinien für Vorträge
+  rules:
+    - label: Vendor-neutral
+      text: Keine kommerziellen Vorträge, die ein Produkt oder eine Dienstleistung bewerben.
+    - label: Praxisrelevant
+      text: Der Vortrag soll der ICS-Community idealerweise einen praktischen Mehrwert liefern.
+    - label: Format
+      text: Im virtuellen Format sind wir flexibel. Bewährt haben sich 30–45 Minuten Vortrag und eine anschliessende Fragerunde von mindestens 15 Minuten.
+    - label: Keine Honorare
+      text: Wir bezahlen keine Honorare für Vortragende. Als Verein lebt unser Programm davon, dass Mitglieder ihr Wissen teilen.
+    - label: Abstract
+      text: Ein grobes Abstract (unter 200 Wörtern) hilft uns zu verstehen, welchen Bereich des grossen ICS-Security-Feldes du beleuchten möchtest.
+
+fr:
+  title: Vous avez quelque chose à partager ?
+  text: Les sujets intéressants issus de la pratique de la sécurité ICS/OT sont toujours les bienvenus. Si vous souhaitez donner une présentation lors de l'un de nos événements, envoyez-nous un court e-mail avec votre sujet et un bref résumé.
+  button: Proposer un sujet
+  mail_alt: "ou directement à {email}"
+  mail_subject: Proposition de sujet
+  mail_body: |
+    Sujet :
+
+    Résumé (200 mots max.) :
+
+    Quelques mots sur moi :
+  rules_summary: Nos lignes directrices pour les présentations
+  rules:
+    - label: Neutralité
+      text: Pas de présentations commerciales faisant la promotion d'un produit ou d'un service.
+    - label: Utilité pratique
+      text: Idéalement, la présentation apporte à la communauté ICS une valeur concrète et applicable.
+    - label: Format
+      text: En ligne, nous sommes flexibles. 30 à 45 minutes de présentation suivies d'au moins 15 minutes de questions ont fait leurs preuves.
+    - label: Pas d'honoraires
+      text: Nous ne rémunérons pas les intervenants. En tant qu'association, notre programme vit du partage de connaissances de nos membres.
+    - label: Résumé
+      text: Un bref résumé (moins de 200 mots) nous aide à comprendre quel domaine de la sécurité ICS vous souhaitez aborder.
+
+it:
+  title: Hai qualcosa da raccontare?
+  text: Siamo sempre felici di scoprire temi interessanti dalla pratica della sicurezza ICS/OT. Se vuoi tenere un intervento in occasione di uno dei nostri eventi, inviaci una breve e-mail con il tuo tema e un abstract sommario.
+  button: Proponi un tema
+  mail_alt: "oppure direttamente a {email}"
+  mail_subject: Proposta di tema
+  mail_body: |
+    Tema:
+
+    Abstract (max. 200 parole):
+
+    Due parole su di me:
+  rules_summary: Le nostre linee guida per gli interventi
+  rules:
+    - label: Neutralità
+      text: Niente interventi commerciali che promuovono un prodotto o un servizio.
+    - label: Utilità pratica
+      text: Idealmente, l'intervento offre alla community ICS un valore concreto e applicabile.
+    - label: Formato
+      text: Online siamo flessibili. Si sono rivelati efficaci 30–45 minuti di presentazione seguiti da almeno 15 minuti di domande.
+    - label: Nessun compenso
+      text: Non paghiamo compensi ai relatori. Come associazione, il nostro programma vive della condivisione di conoscenze da parte dei membri.
+    - label: Abstract
+      text: Un abstract sommario (meno di 200 parole) ci aiuta a capire quale ambito della sicurezza ICS vorresti approfondire.
