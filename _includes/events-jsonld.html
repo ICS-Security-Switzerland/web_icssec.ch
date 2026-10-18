@@ -40,7 +40,7 @@ is filled in to satisfy the schema.
 ,"endDate":{{ end_iso | jsonify }}
 {%- endif -%}
 {%- if ev.online -%}
-,"eventAttendanceMode":"https://schema.org/OnlineEventAttendanceMode","location":{"@type":"VirtualLocation","url":{{ page_url | jsonify }}}
+,"eventAttendanceMode":"https://schema.org/OnlineEventAttendanceMode","location":{"@type":"VirtualLocation","url":{{ ev.join_url | default: page_url | jsonify }}}
 {%- elsif location -%}
 {%- assign place = location | markdownify | strip_html | strip -%}
 ,"eventAttendanceMode":"https://schema.org/OfflineEventAttendanceMode","location":{"@type":"Place","name":{{ place | jsonify }},"address":{{ place | jsonify }}}
@@ -48,7 +48,7 @@ is filled in to satisfy the schema.
 {%- if note -%}
 ,"description":{{ note | markdownify | strip_html | strip | jsonify }}
 {%- endif -%}
-,"inLanguage":{{ page.lang | jsonify }},"url":{{ page_url | jsonify }},"organizer":{"@type":"Organization","name":"ICS Security Switzerland","url":"https://www.icssec.ch"}}
+,"url":{{ page_url | jsonify }},"organizer":{"@type":"Organization","name":"ICS Security Switzerland","url":"https://www.icssec.ch"}}
 {%- endif -%}
 {%- endfor -%}
 {%- endcapture -%}

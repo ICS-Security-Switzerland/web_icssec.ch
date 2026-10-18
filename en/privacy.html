@@ -1,0 +1,24 @@
+---
+layout: null
+permalink: /en/privacy/
+sitemap: false
+---
+{%- comment -%}
+Redirect for a link this site does not control: the English membership form
+in Webling points its privacy link at /en/privacy/, but the English privacy
+policy is at /privacy/. Until the form is corrected in Webling, this keeps
+that link from ending on a 404. Kept out of the sitemap and not indexed.
+{%- endcomment -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Privacy Policy – ICS Security Switzerland</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="{{ '/privacy/' | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ '/privacy/' | relative_url }}">
+</head>
+<body>
+  <p>The privacy policy is at <a href="{{ '/privacy/' | relative_url }}">{{ '/privacy/' | absolute_url }}</a>.</p>
+</body>
+</html>

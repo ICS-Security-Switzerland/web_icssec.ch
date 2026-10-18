@@ -18,6 +18,13 @@ is stripped because these values are single lines.
 {%- assign topic = l.topic | default: ev.topic -%}
 {%- assign speaker = l.speaker | default: ev.speaker -%}
 {%- assign location = l.location | default: ev.location -%}
+{%- comment -%}
+Online events need no location in the data: they read "Online" in every
+language. The meeting link is not part of the location any more but its own
+field, join_url, so it can be offered as the way to take part while the event
+is ahead and dropped once it is over.
+{%- endcomment -%}
+{%- if ev.online -%}{%- assign location = t.online -%}{%- endif -%}
 {%- assign note = l.note | default: ev.note -%}
 {%- assign slides = l.slides | default: ev.slides -%}
 {%- assign recording = l.recording | default: ev.recording -%}
@@ -72,6 +79,14 @@ is stripped because these values are single lines.
     {%- unless include.past -%}{%- assign show_cal = true -%}{%- endunless -%}
     {%- if slides or recording or show_cal %}
     <p class="event-links">
+      {%- if show_cal and ev.online -%}
+      {%- if ev.join_url %}
+      <a class="event-link event-link--join" href="{{ ev.join_url }}">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="2.5" y="6" width="13" height="12" rx="2"/><polyline points="15.5 10.5 21.5 7 21.5 17 15.5 13.5"/></svg>{{ t.join }}</a>
+      {%- else %}
+      <span class="event-link event-link--pending">{{ t.join_pending }}</span>
+      {%- endif -%}
+      {%- endif -%}
       {%- if show_cal -%}
       {%- capture ics_single %}{% include ics-head.html lang=include.lang %}{% include ics-vevent.html event=ev lang=include.lang %}END:VCALENDAR
 {% endcapture -%}

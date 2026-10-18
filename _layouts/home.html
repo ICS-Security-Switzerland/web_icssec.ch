@@ -7,8 +7,15 @@ layout: default
     <h1 class="hero-title">{{ page.title }}</h1>
     <p class="hero-subtitle">{{ page.subtitle | default: site.description }}</p>
     {%- assign t = site.data.i18n[page.lang] | default: site.data.i18n.en %}
+    {%- comment -%}
+    The two things a first-time visitor can do: come to an event, or join.
+    The fee sits next to the join button so nobody has to click to find out
+    what membership costs.
+    {%- endcomment %}
     <p class="hero-actions">
-      <a class="btn btn--ghost" href="{{ t.prefix }}events/">{{ t.hero.events }} <span aria-hidden="true">→</span></a>
+      <a class="btn" href="{{ t.prefix }}events/">{{ t.hero.events }}</a>
+      <a class="btn btn--ghost" href="{{ t.prefix }}members/">{{ t.hero.join }}</a>
+      <span class="hero-fee">{{ t.join.fee }}</span>
     </p>
   </div>
 </section>

@@ -397,6 +397,45 @@ input:focus-visible,
 
 .hero-actions {
   margin: 30px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px 14px;
+}
+/* The fee belongs to the join button beside it, so it sits right after it
+   in the same row and wraps with it on a phone. */
+.hero-fee {
+  font-size: 0.92rem;
+  color: var(--color-text-secondary);
+}
+
+/* "All events", "More about the association": one plain link that closes a
+   section, set apart from the paragraph above it. */
+.more-link {
+  margin: 14px 0 0;
+  font-weight: 600;
+}
+.more-link a::after {
+  content: " \2192";
+}
+
+/* Who the association is for: a short list in two columns on wide screens,
+   one on a phone. */
+.audience {
+  columns: 2 16em;
+  column-gap: 32px;
+  margin: 12px 0 18px;
+}
+.audience li {
+  break-inside: avoid;
+}
+
+/* The home page sections sit closer to each other than long-form pages. */
+.home-content > h2 {
+  margin-top: 52px;
+}
+.home-content > h2:first-child {
+  margin-top: 0;
 }
 
 /* ============================================================
@@ -770,6 +809,15 @@ strong {
   font-size: 0.87rem;
   font-weight: 500;
 }
+/* The way to take part comes first in the row and in the text colour's
+   weight, so it reads as the action; "link to follow" is plain text, not a
+   link that goes nowhere. */
+.event-link--join {
+  font-weight: 600;
+}
+.event-link--pending {
+  color: var(--color-text-secondary);
+}
 .event-link svg {
   width: 15px;
   height: 15px;
@@ -820,6 +868,35 @@ a.event--teaser:hover .event-teaser-title {
 .event--teaser .event-when { margin: 0; display: block; }
 
 /* ---------- Past events are quieter, not louder ---------- */
+.events-questions {
+  margin: 18px 0 0;
+  padding-top: 14px;
+  border-top: 1px solid var(--color-border);
+  font-size: 0.93rem;
+  color: var(--color-text-secondary);
+}
+
+/* Membership page: the note on the statutes and the privacy line right above
+   the embedded form. */
+.join-note,
+.join-privacy {
+  font-size: 0.93rem;
+  color: var(--color-text-secondary);
+}
+.join-privacy {
+  margin: 0 0 12px;
+}
+
+/* 404 */
+.not-found {
+  padding: 56px 0 72px;
+}
+.not-found ul {
+  list-style: none;
+  padding: 0;
+  margin: 24px 0 0;
+}
+
 .events-past {
   margin-top: 44px;
   padding-top: 18px;

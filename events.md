@@ -6,24 +6,19 @@ permalink: /events/
 schema: events
 ---
 
-## Upcoming Events
+## Upcoming events
 
-Below is an overview of our planned activities and meetings.  
-Exact dates and details will also be announced via our [LinkedIn page](https://www.linkedin.com/company/icssecurity/).
-
----
+Talks online and meetups in different Swiss cities. Dates are also announced on our [LinkedIn page](https://www.linkedin.com/company/icssecurity/).
 
 {% include events-list.html lang=page.lang past=false %}
 
----
-
-Stay tuned — more events will be announced soon!
+{% include events-questions.html lang=page.lang %}
 
 {% include call-for-talks.html lang=page.lang %}
 
 <section class="events-past" markdown="1">
 
-## Past Events
+## Past events
 
 {% include events-list.html lang=page.lang past=true %}
 

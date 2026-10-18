@@ -44,6 +44,10 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      # Broken internal links and anchors fail the build, on pull requests too,
+      # before anything reaches GitHub Pages. Standard library only.
+      - name: Check internal links
+        run: python3 scripts/check_site.py _site
       - name: Upload artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3

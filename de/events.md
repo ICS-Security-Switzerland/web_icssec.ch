@@ -8,16 +8,11 @@ schema: events
 
 ## Kommende Veranstaltungen
 
-Nachfolgend findest du eine Übersicht unserer geplanten Aktivitäten und Treffen.  
-Genaue Daten und Details werden zusätzlich über unsere [LinkedIn-Seite](https://www.linkedin.com/company/icssecurity/) bekanntgegeben.
-
----
+Vorträge online und Meetups in verschiedenen Schweizer Städten. Termine kündigen wir zusätzlich auf unserer [LinkedIn-Seite](https://www.linkedin.com/company/icssecurity/) an.
 
 {% include events-list.html lang=page.lang past=false %}
 
----
-
-Bleib auf dem Laufenden — weitere Veranstaltungen werden bald bekanntgegeben!
+{% include events-questions.html lang=page.lang %}
 
 {% include call-for-talks.html lang=page.lang %}
 

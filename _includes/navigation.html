@@ -8,6 +8,8 @@ put the other one in front of it.
 {%- endcomment -%}
 {%- assign page_key = page.url | default: '/' -%}
 {%- assign page_key = page_key | replace_first: '/de/', '/' | replace_first: '/fr/', '/' | replace_first: '/it/', '/' -%}
+{%- comment -%} The 404 page exists once, not per language: switch to the home pages. {%- endcomment -%}
+{%- if page_key == '/404.html' -%}{%- assign page_key = '/' -%}{%- endif -%}
 
 <a class="site-logo" href="{{ prefix | relative_url }}">
   <img src="{{ '/assets/images/logo_ics_security_wordmark.png' | relative_url }}"

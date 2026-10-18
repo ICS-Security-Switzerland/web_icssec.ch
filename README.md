@@ -51,6 +51,12 @@ npm run check:full # install/check Ruby dependencies without serving
 npm run clean      # remove _site, .jekyll-cache, vendor, .ruby-lsp
 ```
 
+After a build, check internal links and anchors (CI runs the same):
+
+```bash
+python3 scripts/check_site.py _site
+```
+
 ## CI/CD
 
 Workflow file: `.github/workflows/jekyll-gh-pages.yml`
