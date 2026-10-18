@@ -1,0 +1,13 @@
+{%- comment -%}
+A working link to the privacy policy right above the embedded membership
+form. The form itself lives in Webling and carries its own privacy link,
+which this site cannot edit: the English form points to /en/privacy/, a page
+that never existed (English sits at the root, /privacy/). /en/privacy/ now
+redirects (en/privacy.html), and this line does not depend on the form at all.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+{%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang] -%}
+{%- capture link -%}<a href="{{ t.footer.privacy_path | relative_url }}">{{ t.footer.privacy }}</a>{%- endcapture -%}
+{%- assign line = t.join.privacy_note | replace: '{link}', link -%}
+<p class="join-privacy">{{ line }}</p>

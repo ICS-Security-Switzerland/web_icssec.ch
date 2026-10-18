@@ -1,0 +1,11 @@
+{%- comment -%}
+One line under the upcoming events for everything the event data does not
+say: whether to register, which language, who may come. Nothing is promised
+here; it points to the address that can answer.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+{%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang].events -%}
+{%- assign mail = '<a href="mailto:info@icssec.ch">info@icssec.ch</a>' -%}
+{%- assign line = t.questions | replace: '{email}', mail -%}
+<p class="events-questions">{{ line }}</p>

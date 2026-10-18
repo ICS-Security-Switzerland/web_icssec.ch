@@ -8,16 +8,11 @@ schema: events
 
 ## Prossimi eventi
 
-Di seguito una panoramica delle nostre attività e incontri previsti.  
-Le date e i dettagli esatti saranno annunciati anche tramite la nostra [pagina LinkedIn](https://www.linkedin.com/company/icssecurity/).
-
----
+Presentazioni online e meetup in diverse città svizzere. Le date vengono annunciate anche sulla nostra [pagina LinkedIn](https://www.linkedin.com/company/icssecurity/).
 
 {% include events-list.html lang=page.lang past=false %}
 
----
-
-Restate sintonizzati — altri eventi saranno annunciati presto!
+{% include events-questions.html lang=page.lang %}
 
 {% include call-for-talks.html lang=page.lang %}
 

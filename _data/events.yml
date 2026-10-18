@@ -10,7 +10,13 @@
 #   start, end  optional "HH:MM" (24h). Rendered per language: 4:00pm / 16:00 / 16h00.
 #   open_end    true for get-togethers with no fixed end -> "from 17:30" / "ab 17:30 Uhr".
 #   end_approx  true -> "17:00 - approx. 18:00".
-#   online      true for virtual meetups.
+#   online      true for virtual meetups. The location then reads "Online" in
+#               every language; no location field is needed.
+#   join_url    optional, online events only: the meeting link. Shown as the
+#               join action while the event is ahead and hidden once it is
+#               over, so an old meeting link never looks like an invitation.
+#               Leave it out until the link is known; the card then says the
+#               link will follow and points to info@icssec.ch.
 #   slides      optional URL to the deck. Rendered as a link on the card.
 #   recording   optional URL to a recording. Same.
 #   uid_suffix  optional. The UID of the downloadable calendar entry is built
@@ -46,28 +52,16 @@
   start: "16:00"
   end: "17:00"
   online: true
-  topic: '"Der GRC-Feedbackloop"'
+  title: Der GRC-Feedbackloop
   speaker: "[Simon Dejung](https://www.linkedin.com/in/simon-dejung/)"
   en:
-    title: Virtual Meetup
-    location: Online — Join Meeting (TBD)
     note: "How governance, risk management and compliance become one steerable loop. Starting from the BIA, crown jewels and loss scenarios are quantified in francs and days of downtime instead of heatmaps, measured control effectiveness and recovery times feed back into the model, and the loop ends in a documented risk decision. Context: ISG, NIS2, CRA, DORA and the AI Act."
-    teaser: 'Virtual Meetup: "Der GRC-Feedbackloop"'
   de:
-    title: Virtual Meetup
-    location: Online — Join Meeting (TBD)
     note: "Wie Governance, Risikomanagement und Compliance zu einem steuerbaren Loop werden. Ausgehend von der BIA werden Crown Jewels und Verlustszenarien in Franken und Ausfalltagen quantifiziert statt in Heatmaps, gemessene Kontrollwirksamkeit und Wiederanlaufzeiten fliessen zurück ins Modell, und der Loop endet bei einer dokumentierten Risikoentscheidung. Hintergrund: ISG, NIS2, CRA, DORA und AI Act."
-    teaser: 'Virtual Meetup: "Der GRC-Feedbackloop"'
   fr:
-    title: Meetup virtuel
-    location: En ligne — Join Meeting (TBD)
     note: "Comment la gouvernance, la gestion des risques et la conformité forment une boucle pilotable. À partir de la BIA, les joyaux de la couronne et les scénarios de perte sont quantifiés en francs et en jours d'arrêt plutôt qu'en heatmaps, l'efficacité mesurée des contrôles et les temps de reprise alimentent le modèle, et la boucle aboutit à une décision de risque documentée. Contexte : ISG, NIS2, CRA, DORA et AI Act."
-    teaser: 'Meetup virtuel : "Der GRC-Feedbackloop"'
   it:
-    title: Meetup virtuale
-    location: Online — Join Meeting (TBD)
     note: "Come governance, gestione del rischio e compliance diventano un ciclo governabile. Partendo dalla BIA, crown jewels e scenari di perdita vengono quantificati in franchi e giorni di fermo invece che in heatmap, l'efficacia misurata dei controlli e i tempi di ripristino rientrano nel modello, e il ciclo si conclude con una decisione di rischio documentata. Contesto: ISG, NIS2, CRA, DORA e AI Act."
-    teaser: 'Meetup virtuale: "Der GRC-Feedbackloop"'
 
 - date: 2026-10-22
   start: "16:00"
@@ -75,22 +69,15 @@
   online: true
   topic: '"How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
   speaker: "[Arun Rajagopal](https://www.linkedin.com/in/arajagopal/)"
+  join_url: https://meet.google.com/caz-mpwm-fvj
   en:
-    title: 'How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners'
-    location: Online — [Join Meeting](https://meet.google.com/caz-mpwm-fvj)
-    teaser: 'Virtual Session: "How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
+    title: "IEC 62443 for asset owners: the ACSSA ISA Secure certification scheme"
   de:
-    title: 'How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners'
-    location: Online — [Join Meeting](https://meet.google.com/caz-mpwm-fvj)
-    teaser: 'Virtuelle Session: "How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
+    title: "IEC 62443 für Asset Owner: das ACSSA-Zertifizierungsschema von ISA Secure"
   fr:
-    title: 'How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners'
-    location: En ligne — [Join Meeting](https://meet.google.com/caz-mpwm-fvj)
-    teaser: 'Session virtuelle : "How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
+    title: "L'IEC 62443 pour les exploitants : le schéma de certification ACSSA d'ISA Secure"
   it:
-    title: 'How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners'
-    location: Online — [Join Meeting](https://meet.google.com/caz-mpwm-fvj)
-    teaser: 'Sessione virtuale: "How IEC 62443 enables Asset Owners demonstrate Cyber Maturity: ACSSA ISA Secure Certification Scheme for Asset Owners"'
+    title: "IEC 62443 per gli asset owner: lo schema di certificazione ACSSA di ISA Secure"
 
 - date: 2026-09-15
   start: "17:30"
@@ -113,24 +100,8 @@
   start: "16:00"
   end: "17:00"
   online: true
-  topic: '"Securing OPC-UA: Case Studies"'
+  title: "Securing OPC-UA: case studies"
   speaker: "[Benedict Simlinger](https://www.linkedin.com/in/benedictsimlinger/)"
-  en:
-    title: Virtual Meetup
-    location: Online — [Join Meeting](https://meet.google.com/dss-xrbg-aab)
-    teaser: 'Virtual Meetup: "Securing OPC-UA"'
-  de:
-    title: Virtual Meetup
-    location: Online — [Join Meeting](https://meet.google.com/dss-xrbg-aab)
-    teaser: 'Virtual Meetup: "Securing OPC-UA"'
-  fr:
-    title: Meetup virtuel
-    location: En ligne — [Join Meeting](https://meet.google.com/dss-xrbg-aab)
-    teaser: 'Meetup virtuel : "Securing OPC-UA"'
-  it:
-    title: Meetup virtuale
-    location: Online — [Join Meeting](https://meet.google.com/dss-xrbg-aab)
-    teaser: 'Meetup virtuale: "Securing OPC-UA"'
 
 - date: 2026-06-09
   start: "17:30"
@@ -162,19 +133,15 @@
   end: "18:00"
   end_approx: true
   online: true
-  topic: Use of Containerlab to Simulate OT Environments
+  title: Using Containerlab to simulate OT environments
   speaker: "[Martin Scheu](https://www.linkedin.com/in/martin-scheu/), [Switch](https://www.switch.ch)"
   en:
-    title: Virtual Meetup
     note: _Switch is a private Swiss foundation established in 1987, dedicated to enabling a secure and networked research and education infrastructure for universities and research institutions across Switzerland._
   de:
-    title: Virtual Meetup
     note: _Switch ist eine private Schweizer Stiftung, die 1987 gegründet wurde und eine sichere sowie vernetzte Forschungs- und Bildungsinfrastruktur für Hochschulen und Forschungseinrichtungen in der Schweiz ermöglicht._
   fr:
-    title: Meetup virtuel
     note: _Switch est une fondation privée suisse, créée en 1987, qui se consacre à une infrastructure de recherche et d'éducation sécurisée et connectée pour les universités et les institutions de recherche en Suisse._
   it:
-    title: Meetup virtuale
     note: _Switch è una fondazione privata svizzera fondata nel 1987, dedicata a rendere possibile un'infrastruttura di ricerca e formazione sicura e interconnessa per università e istituti di ricerca in Svizzera._
 
 - date: 2026-03-12
@@ -215,19 +182,15 @@
   online: true
   en:
     title: Virtual Meetup
-    location: Online — [Join Meeting](https://meet.google.com/vof-tddm-mnr)
     note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
   de:
     title: Virtual Meetup
-    location: Online — [Join Meeting](https://meet.google.com/vof-tddm-mnr)
     note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
   fr:
     title: Meetup virtuel
-    location: En ligne — [Join Meeting](https://meet.google.com/vof-tddm-mnr)
     note: Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
   it:
     title: Meetup virtuale
-    location: Online — [Join Meeting](https://meet.google.com/vof-tddm-mnr)
     note: Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS security.
 
 - date: 2025-12-03
@@ -253,17 +216,13 @@
   online: true
   en:
     title: Virtual Meetup
-    location: Online ([Google Meet](https://meet.google.com/vhu-rudm-abj))
     note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
   de:
     title: Virtual Meetup
-    location: Online ([Google Meet](https://meet.google.com/vhu-rudm-abj))
     note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
   fr:
     title: Meetup virtuel
-    location: En ligne ([Google Meet](https://meet.google.com/vhu-rudm-abj))
     note: Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
   it:
     title: Meetup virtuale
-    location: Online ([Google Meet](https://meet.google.com/vhu-rudm-abj))
     note: Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS security.

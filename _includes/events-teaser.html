@@ -35,7 +35,7 @@ bring links of its own.
 {%- assign badge_month = L.months[month_index] | slice: 0, 3 | capitalize -%}
 <a class="event event--teaser" href="{{ t.prefix }}events/#event-{{ iso_date }}">
 <span class="event-badge" aria-hidden="true"><span class="event-badge-day">{{ badge_day }}</span><span class="event-badge-month">{{ badge_month }}</span></span>
-<span class="event-main"><span class="event-teaser-title">{{ label }}</span><span class="event-when">{% include event-when.html event=ev lang=include.lang weekday=false time=show_time %}</span></span>
+<span class="event-main"><span class="event-teaser-title">{{ label }}</span><span class="event-when">{% include event-when.html event=ev lang=include.lang weekday=false time=show_time %}{% if ev.online %} · {{ t.events.online }}{% endif %}</span></span>
 </a>
 {%- assign shown = shown | plus: 1 -%}
 {%- endif -%}

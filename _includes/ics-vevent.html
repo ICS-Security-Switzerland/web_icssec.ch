@@ -18,6 +18,7 @@ English one updates that calendar entry instead of adding a second copy.
 {%- assign topic = l.topic | default: ev.topic -%}
 {%- assign speaker = l.speaker | default: ev.speaker -%}
 {%- assign location = l.location | default: ev.location -%}
+{%- if ev.online -%}{%- assign location = ev.join_url | default: t.online -%}{%- endif -%}
 {%- assign note = l.note | default: ev.note -%}
 {%- assign ymd = ev.date | date: '%Y%m%d' -%}
 {%- assign iso = ev.date | date: '%Y-%m-%d' -%}

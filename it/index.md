@@ -1,40 +1,63 @@
 ---
 layout: home
 title: La comunità svizzera per la sicurezza OT
-subtitle: Colleghiamo esperti in Svizzera per promuovere la cybersicurezza industriale e l'adozione dello standard IEC 62443.
+subtitle: Riuniamo le persone che si occupano di sicurezza OT in Svizzera, per scambiare esperienze e imparare insieme.
 lang: it
 permalink: /it/
----
-
-**ICS Security Switzerland** è un'associazione fondata nel settembre 2025. Oggi riunisce oltre 60 professionisti e organizzazioni della cybersicurezza con un interesse comune per la sicurezza, gli standard e l'innovazione nei sistemi di automazione e controllo industriale (IACS/OT).
-
-Promuoviamo la consapevolezza, lo scambio di conoscenze e l'adozione degli standard [**ISA/IEC 62443**](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) e delle migliori pratiche correlate per la protezione delle **infrastrutture critiche** e dei **settori industriali** — tra cui energia, acqua, trasporti e manifattura.
-
-I membri beneficiano di opportunità di networking, eventi formativi e progetti collaborativi che favoriscono l'innovazione nella sicurezza IACS.
-
-## La nostra missione
-
-Come comunità, ci proponiamo di:
-
-{% include mission.html lang=page.lang %}
-
----
-
-Siamo una comunità aperta a chiunque sia interessato alla **sicurezza OT (tecnologie operative)** e all'**automazione industriale** in Svizzera.
-
-Se sei curioso della sicurezza ICS o vuoi semplicemente incontrare persone con interessi simili, partecipa a uno dei nostri eventi per scoprire chi siamo.
-
-*Il nostro obiettivo principale non è facilitare affari o servizi di consulenza.*
-Siamo una **piattaforma neutrale e non commerciale** per lo scambio di conoscenze e la collaborazione — un luogo dove i professionisti possono condividere esperienze e best practice in un ambiente di fiducia.
-{: .callout}
-
-[Diventa membro](./members){: .btn} quando vuoi
-{: .cta}
-
 ---
 
 ## Prossimi eventi
 
 {% include events-teaser.html lang=page.lang %}
 
-[Vedi tutti gli eventi →](./events)
+[Tutti gli eventi e quelli passati](./events/)
+{: .more-link}
+
+## Per chi siamo
+
+Per chiunque in Svizzera si occupi della sicurezza degli impianti industriali, o voglia avvicinarsi al tema:
+
+- Gestori e asset owner
+- Engineering e automazione
+- Integratori
+- Responsabili della sicurezza
+- Curiosi che vogliono conoscere il settore
+{: .audience}
+
+Se sei curioso, partecipa a uno dei nostri eventi e vieni a conoscerci.
+
+## Cosa facciamo
+
+<ul class="mission-grid">
+  <li class="mission-card">
+    <h3 class="mission-card-title">Presentazioni online</h3>
+    <p class="mission-card-text">Interventi tecnici con domande, per esempio sulla protezione di OPC UA o su ambienti di test OT con Containerlab.</p>
+  </li>
+  <li class="mission-card">
+    <h3 class="mission-card-title">Meetup dal vivo</h3>
+    <p class="mission-card-text">Scambi informali dopo il lavoro, finora a Berna, Lucerna, Basilea e Lugano.</p>
+  </li>
+  <li class="mission-card">
+    <h3 class="mission-card-title">Visita e AG</h3>
+    <p class="mission-card-text">Una visita tecnica al tunnel di base del Gottardo e l'assemblea generale dei membri.</p>
+  </li>
+</ul>
+
+**Indipendente e non commerciale.** Da noi non si vende nulla e l'associazione non procura né incarichi né consulenze. Gli interventi sono neutrali rispetto ai fornitori ([le nostre linee guida](./events/#talks-cta-title)). Così i professionisti possono parlare apertamente di esperienze e buone pratiche.
+{: .callout}
+
+## Diventa membro
+
+Con la quota di **{{ site.data.i18n[page.lang].join.fee }}** sostieni un'associazione professionale indipendente e rendi possibili eventi neutrali e non commerciali. Come membro sei invitato all'assemblea generale.
+
+[Diventa membro](./members/){: .btn} Iscrizione con un breve modulo
+{: .cta}
+
+## Che cosa ci muove
+
+ICS Security Switzerland è un'associazione senza scopo di lucro fondata nel settembre 2025, che oggi riunisce oltre 60 professionisti e organizzazioni. Promuoviamo lo scambio di conoscenze e l'adozione degli standard [ISA/IEC 62443](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) per la protezione delle infrastrutture critiche e dei settori industriali come energia, acqua, trasporti e manifattura.
+
+{% include mission.html lang=page.lang %}
+
+[Scopri di più sull'associazione e sul comitato](./about/)
+{: .more-link}

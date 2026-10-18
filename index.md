@@ -1,40 +1,63 @@
 ---
 layout: home
 title: The Swiss community for OT security
-subtitle: Connecting experts in Switzerland to advance industrial cybersecurity and IEC 62443 adoption.
+subtitle: We bring together people who work on OT security in Switzerland, to share experience and learn from each other.
 lang: en
 permalink: /
 ---
 
-**ICS Security Switzerland** is an association founded in September 2025. Today it brings together more than 60 cybersecurity practitioners and organisations with a shared interest in industrial automation and control systems (IACS/OT) security, standards, and innovation.
-
-We promote awareness, knowledge exchange, and the adoption of the [**ISA/IEC 62443**](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) standards and related best practices for securing **critical infrastructure** and **industrial sectors** — including energy, water, transportation, and manufacturing.
-
-Members benefit from networking opportunities, educational events, and collaborative projects that drive innovation in IACS security.
-
-## Our Mission
-
-As a community, we aim to:
-
-{% include mission.html lang=page.lang %}
-
----
-
-We’re an open community for anyone interested in **operational technology (OT) security** and **industrial automation** in Switzerland. 
-
-If you’re curious about ICS security or just want to meet like-minded people — feel free to join one of our events and see what we’re about.  
-
-*Our primary goal is not to facilitate business or consultancy services.*  
-We serve as a **neutral, non-commercial platform** for knowledge exchange and collaboration — a place where professionals can share experiences and best practices in a trusted environment.
-{: .callout}
-
-[Become a member](./members){: .btn} whenever it feels right
-{: .cta}
-
----
-
-## Upcoming Events
+## Upcoming events
 
 {% include events-teaser.html lang=page.lang %}
 
-[See all events →](./events)
+[All events and past events](./events/)
+{: .more-link}
+
+## Who we are for
+
+Anyone in Switzerland who deals with the security of industrial systems, or wants to:
+
+- Operators and asset owners
+- Engineering and automation
+- Integrators
+- People responsible for security
+- Anyone curious to get to know the field
+{: .audience}
+
+If you’re curious, feel free to join one of our events and see what we’re about.
+
+## What happens here
+
+<ul class="mission-grid">
+  <li class="mission-card">
+    <h3 class="mission-card-title">Online talks</h3>
+    <p class="mission-card-text">Technical talks with time for questions, for example on securing OPC UA or on OT test environments built with Containerlab.</p>
+  </li>
+  <li class="mission-card">
+    <h3 class="mission-card-title">Meetups in person</h3>
+    <p class="mission-card-text">Informal after-work exchange, so far in Bern, Lucerne, Basel and Lugano.</p>
+  </li>
+  <li class="mission-card">
+    <h3 class="mission-card-title">Site visit and AGM</h3>
+    <p class="mission-card-text">A technical tour of the Gotthard Base Tunnel, and the general assembly of members.</p>
+  </li>
+</ul>
+
+**Independent and non-commercial.** Nothing is sold here, and the association does not broker contracts or consulting. Talks are vendor-neutral ([our guidelines](./events/#talks-cta-title)). That lets practitioners talk openly about experience and good practice.
+{: .callout}
+
+## Become a member
+
+Your fee of **{{ site.data.i18n[page.lang].join.fee }}** supports an independent professional association and makes neutral, non-commercial events possible. As a member you are invited to the general assembly.
+
+[Become a member](./members/){: .btn} Sign up with a short form
+{: .cta}
+
+## What we stand for
+
+ICS Security Switzerland is a non-profit association founded in September 2025, today with more than 60 practitioners and organisations. We promote knowledge exchange and the adoption of the [ISA/IEC 62443](https://www.isa.org/standards-and-publications/isa-standards/isa-iec-62443-series-of-standards) standards for securing critical infrastructure and industrial sectors such as energy, water, transport and manufacturing.
+
+{% include mission.html lang=page.lang %}
+
+[More about the association and the board](./about/)
+{: .more-link}

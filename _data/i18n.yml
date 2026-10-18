@@ -15,7 +15,8 @@ en:
     members: Join
     contacts: Contact
   hero:
-    events: See our events
+    events: See upcoming events
+    join: Become a member
   footer:
     nav: Navigation
     connect: Connect
@@ -30,6 +31,9 @@ en:
     join_form: Membership application form
   contact:
     based: Based in
+  join:
+    fee: "CHF 50 per year"
+    privacy_note: "How we handle your data: {link}."
   events:
     label_end: ':'
     none_upcoming: No events scheduled right now — check back soon.
@@ -39,6 +43,11 @@ en:
     slides: Slides
     recording: Recording
     add_to_calendar: Add to calendar
+    online: "Online"
+    join_label: "Taking part"
+    join: "Join the online meeting"
+    join_pending: "Meeting link to follow"
+    questions: "Questions about taking part, registration or the language of an event? Write to {email}."
   date:
     # %w index: 0 = Sunday
     weekdays: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
@@ -53,6 +62,9 @@ en:
     time_range: "{start}-{end}"
     time_range_approx: "{start} - approx. {end}"
     time_point: "{start}"
+    # zone abbreviation appended to every time; {tz} is CET or CEST resolved per date
+    tz_cet: CET
+    tz_cest: CEST
 
 de:
   name: Deutsch
@@ -63,7 +75,8 @@ de:
     members: Mitglied werden
     contacts: Kontakt
   hero:
-    events: Zu unseren Events
+    events: Zu den Veranstaltungen
+    join: Mitglied werden
   footer:
     nav: Navigation
     connect: Kontakt
@@ -78,6 +91,9 @@ de:
     join_form: Formular für den Mitgliedschaftsantrag
   contact:
     based: Vereinssitz
+  join:
+    fee: "CHF 50 pro Jahr"
+    privacy_note: "So gehen wir mit deinen Daten um: {link}."
   events:
     label_end: ':'
     none_upcoming: Aktuell sind keine Veranstaltungen geplant — schau bald wieder vorbei.
@@ -87,6 +103,11 @@ de:
     slides: Folien
     recording: Aufzeichnung
     add_to_calendar: Zum Kalender hinzufügen
+    online: "Online"
+    join_label: "Teilnahme"
+    join: "Zum Online-Meeting"
+    join_pending: "Der Meeting-Link folgt"
+    questions: "Fragen zur Teilnahme, zur Anmeldung oder zur Sprache eines Anlasses? Schreib uns an {email}."
   date:
     weekdays: [Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag]
     months: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
@@ -98,6 +119,9 @@ de:
     time_range: "{start}-{end} Uhr"
     time_range_approx: "{start} - ca. {end} Uhr"
     time_point: "{start} Uhr"
+    # zone abbreviation appended to every time; {tz} is CET or CEST resolved per date
+    tz_cet: MEZ
+    tz_cest: MESZ
 
 fr:
   name: Français
@@ -108,7 +132,8 @@ fr:
     members: Devenir membre
     contacts: Contacts
   hero:
-    events: Voir nos événements
+    events: Voir les prochains événements
+    join: Devenir membre
   footer:
     nav: Navigation
     connect: Contact
@@ -123,6 +148,9 @@ fr:
     join_form: Formulaire de demande d'adhésion
   contact:
     based: Basé à
+  join:
+    fee: "50 CHF par an"
+    privacy_note: "Comment nous traitons vos données : {link}."
   events:
     label_end: ' :'
     none_upcoming: Aucun événement prévu pour le moment — revenez bientôt.
@@ -132,6 +160,11 @@ fr:
     slides: Présentation
     recording: Enregistrement
     add_to_calendar: Ajouter au calendrier
+    online: "En ligne"
+    join_label: "Participation"
+    join: "Rejoindre la réunion en ligne"
+    join_pending: "Lien de réunion à venir"
+    questions: "Des questions sur la participation, l'inscription ou la langue d'un événement ? Écrivez-nous à {email}."
   date:
     weekdays: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
     months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
@@ -144,6 +177,9 @@ fr:
     time_range: "{start}-{end}"
     time_range_approx: "{start} - env. {end}"
     time_point: "{start}"
+    # zone abbreviation appended to every time; {tz} is CET or CEST resolved per date
+    tz_cet: HEC
+    tz_cest: HAEC
 
 it:
   name: Italiano
@@ -154,7 +190,8 @@ it:
     members: Diventa membro
     contacts: Contatti
   hero:
-    events: Scopri i nostri eventi
+    events: Vedi i prossimi eventi
+    join: Diventa membro
   footer:
     nav: Navigazione
     connect: Contatti
@@ -169,6 +206,9 @@ it:
     join_form: Modulo di richiesta di adesione
   contact:
     based: Sede
+  join:
+    fee: "50 CHF all'anno"
+    privacy_note: "Come trattiamo i tuoi dati: {link}."
   events:
     label_end: ':'
     none_upcoming: Al momento non ci sono eventi in programma — torna presto.
@@ -178,6 +218,11 @@ it:
     slides: Slide
     recording: Registrazione
     add_to_calendar: Aggiungi al calendario
+    online: "Online"
+    join_label: "Partecipazione"
+    join: "Partecipa alla riunione online"
+    join_pending: "Link alla riunione in arrivo"
+    questions: "Domande su partecipazione, iscrizione o lingua di un evento? Scrivici a {email}."
   date:
     weekdays: [Domenica, Lunedì, Martedì, Mercoledì, Giovedì, Venerdì, Sabato]
     months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]
@@ -189,3 +234,6 @@ it:
     time_range: "{start}-{end}"
     time_range_approx: "{start} - circa {end}"
     time_point: "ore {start}"
+    # zone abbreviation appended to every time; {tz} is CET or CEST resolved per date
+    tz_cet: CET
+    tz_cest: CEST

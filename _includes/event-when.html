@@ -62,6 +62,16 @@ All wording comes from _data/i18n.yml — no language names are hard-coded here.
   {%- else -%}
     {%- assign time = L.time_point | replace: '{start}', start -%}
   {%- endif -%}
+  {%- comment -%}
+  The zone is named on every time, because a talk at 16:00 means nothing to
+  someone reading from abroad without it. %Z resolves to CET or CEST for that
+  very date (the build runs in Europe/Zurich, see _config.yml), so the label
+  follows daylight saving instead of being hard-coded; i18n gives each
+  language its own abbreviation (MEZ/MESZ in German).
+  {%- endcomment -%}
+  {%- assign zone = date_iso | append: ' ' | append: ev.start | date: '%Z' -%}
+  {%- if zone == 'CEST' -%}{%- assign zone = L.tz_cest -%}{%- else -%}{%- assign zone = L.tz_cet -%}{%- endif -%}
+  {%- assign time = time | append: ' ' | append: zone -%}
   {%- assign out = out | append: ', ' | append: time -%}
 {%- endif -%}
 {{- out -}}
