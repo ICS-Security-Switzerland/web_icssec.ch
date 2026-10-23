@@ -54,6 +54,7 @@
   online: true
   title: Der GRC-Feedbackloop
   speaker: "[Simon Dejung](https://www.linkedin.com/in/simon-dejung/)"
+  join_url: https://meet.google.com/art-zwtg-kvh
   en:
     note: "How governance, risk management and compliance become one steerable loop. Starting from the BIA, crown jewels and loss scenarios are quantified in francs and days of downtime instead of heatmaps, measured control effectiveness and recovery times feed back into the model, and the loop ends in a documented risk decision. Context: ISG, NIS2, CRA, DORA and the AI Act."
   de:
