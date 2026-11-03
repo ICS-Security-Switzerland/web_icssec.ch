@@ -48,6 +48,10 @@ en:
     join: "Join the online meeting"
     join_pending: "Meeting link to follow"
     questions: "Questions about taking part, registration or the language of an event? Write to {email}."
+    language: "Language"
+    languages: { de: "German", en: "English", fr: "French", it: "Italian" }
+    subscribe: "Subscribe to all events in your calendar"
+    subscribe_hint: "Or add this address to your calendar app: {url}"
   date:
     # %w index: 0 = Sunday
     weekdays: [Sunday, Monday, Tuesday, Wednesday, Thursday, Friday, Saturday]
@@ -108,6 +112,10 @@ de:
     join: "Zum Online-Meeting"
     join_pending: "Der Meeting-Link folgt"
     questions: "Fragen zur Teilnahme, zur Anmeldung oder zur Sprache eines Anlasses? Schreib uns an {email}."
+    language: "Sprache"
+    languages: { de: "Deutsch", en: "Englisch", fr: "Französisch", it: "Italienisch" }
+    subscribe: "Alle Termine im Kalender abonnieren"
+    subscribe_hint: "Oder diese Adresse in deiner Kalender-App hinzufügen: {url}"
   date:
     weekdays: [Sonntag, Montag, Dienstag, Mittwoch, Donnerstag, Freitag, Samstag]
     months: [Januar, Februar, März, April, Mai, Juni, Juli, August, September, Oktober, November, Dezember]
@@ -165,6 +173,10 @@ fr:
     join: "Rejoindre la réunion en ligne"
     join_pending: "Lien de réunion à venir"
     questions: "Des questions sur la participation, l'inscription ou la langue d'un événement ? Écrivez-nous à {email}."
+    language: "Langue"
+    languages: { de: "allemand", en: "anglais", fr: "français", it: "italien" }
+    subscribe: "S'abonner à tous les événements dans votre agenda"
+    subscribe_hint: "Ou ajoutez cette adresse dans votre application d'agenda : {url}"
   date:
     weekdays: [Dimanche, Lundi, Mardi, Mercredi, Jeudi, Vendredi, Samedi]
     months: [janvier, février, mars, avril, mai, juin, juillet, août, septembre, octobre, novembre, décembre]
@@ -223,6 +235,10 @@ it:
     join: "Partecipa alla riunione online"
     join_pending: "Link alla riunione in arrivo"
     questions: "Domande su partecipazione, iscrizione o lingua di un evento? Scrivici a {email}."
+    language: "Lingua"
+    languages: { de: "tedesco", en: "inglese", fr: "francese", it: "italiano" }
+    subscribe: "Abbonati a tutti gli eventi nel tuo calendario"
+    subscribe_hint: "Oppure aggiungi questo indirizzo alla tua app di calendario: {url}"
   date:
     weekdays: [Domenica, Lunedì, Martedì, Mercoledì, Giovedì, Venerdì, Sabato]
     months: [gennaio, febbraio, marzo, aprile, maggio, giugno, luglio, agosto, settembre, ottobre, novembre, dicembre]

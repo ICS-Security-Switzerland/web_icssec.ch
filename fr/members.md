@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Devenir membre
+description: "Devenir membre d'ICS Security Switzerland pour 50 CHF par an : déroulement de l'adhésion et formulaire."
 lang: fr
 permalink: /fr/members/
 ---
@@ -29,7 +30,5 @@ permalink: /fr/members/
   src="https://icssec.webling.ch/forms/memberform/36c081034a3dd874bf52"
   title="{{ site.data.i18n[page.lang].a11y.join_form }}"
   loading="lazy"
-  style="overflow: hidden; min-height: 1200px; width: 100%; border: 0"
-  height="1200px"
-  width="100%"
+  class="join-form"
 ></iframe>

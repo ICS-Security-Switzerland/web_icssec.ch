@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Events
+description: "Online talks and meetups on OT and ICS security in Switzerland: upcoming dates, past events and how to take part."
 lang: en
 permalink: /events/
 schema: events
@@ -9,6 +10,8 @@ schema: events
 ## Upcoming events
 
 Talks online and meetups in different Swiss cities. Dates are also announced on our [LinkedIn page](https://www.linkedin.com/company/icssecurity/).
+
+{% include events-subscribe.html lang=page.lang %}
 
 {% include events-list.html lang=page.lang past=false %}
 

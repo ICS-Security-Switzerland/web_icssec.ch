@@ -1,0 +1,19 @@
+{%- comment -%}
+The calendar subscription under the intro of the events page.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+
+webcal:// is what makes a click open the calendar app's "subscribe" dialog
+(Apple Calendar, Outlook). Google Calendar and others only take a pasted
+https:// address, so that is printed beside it.
+{%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang] -%}
+{%- assign feed = t.prefix | append: 'events.ics' | absolute_url -%}
+{%- assign webcal = feed | replace_first: 'https://', 'webcal://' | replace_first: 'http://', 'webcal://' -%}
+{%- capture url_html -%}<code>{{ feed }}</code>{%- endcapture -%}
+{%- assign hint = t.events.subscribe_hint | replace: '{url}', url_html -%}
+<p class="events-subscribe">
+  <a class="event-link" href="{{ webcal }}">
+    <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/><polyline points="9 15 11 17 15 13"/></svg>{{ t.events.subscribe }}</a>
+  <span class="events-subscribe-hint">{{ hint }}</span>
+</p>

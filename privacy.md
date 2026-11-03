@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Privacy Policy
+description: "How ICS Security Switzerland handles personal data under the Swiss Federal Act on Data Protection (FADP)."
 lang: en
 permalink: /privacy/
 ---

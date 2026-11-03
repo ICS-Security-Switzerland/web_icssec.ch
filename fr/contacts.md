@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contacts
+description: "Comment joindre ICS Security Switzerland : e-mail, LinkedIn et siège à Berne."
 lang: fr
 permalink: /fr/contacts/
 ---

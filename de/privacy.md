@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Datenschutzerklärung
+description: "Wie ICS Security Switzerland Personendaten nach dem Schweizer Datenschutzgesetz (DSG) bearbeitet."
 lang: de
 permalink: /de/privacy/
 ---

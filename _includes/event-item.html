@@ -42,6 +42,7 @@ is ahead and dropped once it is over.
 {%- if topic -%}<span class="event-field"><span class="event-label">{{ t.topic }}{{ t.label_end }}</span> {{ topic | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</span>{%- endif -%}
 {%- if speaker -%}<span class="event-field"><span class="event-label">{{ t.speaker }}{{ t.label_end }}</span> {{ speaker | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</span>{%- endif -%}
 {%- if location -%}<span class="event-field"><span class="event-label">{{ t.location }}{{ t.label_end }}</span> {{ location | markdownify | replace: '<p>', '' | replace: '</p>', '' | strip }}</span>{%- endif -%}
+{%- if ev.language -%}<span class="event-field"><span class="event-label">{{ t.language }}{{ t.label_end }}</span> {{ t.languages[ev.language] | default: ev.language }}</span>{%- endif -%}
 {%- endcapture -%}
 <article class="event{% if include.past %} event--past{% endif %}{% if ev.online %} event--online{% endif %}">
   <div class="event-badge" aria-hidden="true">
@@ -70,6 +71,7 @@ is ahead and dropped once it is over.
     url_encode is the form encoding, which writes a space as "+". In a data:
     URI "+" is a literal plus, not a space, so it has to become %20 — safely,
     because a real plus in the text was already turned into %2B by then.
+    Line breaks become CRLF, the line ending RFC 5545 prescribes.
 
     Only for events still ahead: adding a meetup from last winter to your
     calendar helps nobody, and it would put a couple of kilobytes of encoded
@@ -90,7 +92,7 @@ is ahead and dropped once it is over.
       {%- if show_cal -%}
       {%- capture ics_single %}{% include ics-head.html lang=include.lang %}{% include ics-vevent.html event=ev lang=include.lang %}END:VCALENDAR
 {% endcapture -%}
-      <a class="event-link" href="data:text/calendar;charset=utf-8,{{ ics_single | url_encode | replace: '+', '%20' }}" download="icssec-{{ iso_date }}.ics">
+      <a class="event-link" href="data:text/calendar;charset=utf-8,{{ ics_single | url_encode | replace: '+', '%20' | replace: '%0A', '%0D%0A' }}" download="icssec-{{ iso_date }}.ics">
         <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="5" width="18" height="16" rx="2"/><line x1="3" y1="10" x2="21" y2="10"/><line x1="8" y1="3" x2="8" y2="7"/><line x1="16" y1="3" x2="16" y2="7"/><line x1="12" y1="13" x2="12" y2="18"/><line x1="9.5" y1="15.5" x2="14.5" y2="15.5"/></svg>{{ t.add_to_calendar }}</a>
       {%- endif -%}
       {%- if slides %}

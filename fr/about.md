@@ -1,6 +1,7 @@
 ---
 layout: page
 title: À propos de nous
+description: "Qui se cache derrière ICS Security Switzerland : une association neutre à but non lucratif basée à Berne, son comité et ses membres."
 lang: fr
 permalink: /fr/about/
 ---

@@ -2,6 +2,7 @@
 layout: home
 title: La comunità svizzera per la sicurezza OT
 subtitle: Riuniamo le persone che si occupano di sicurezza OT in Svizzera, per scambiare esperienze e imparare insieme.
+description: "Riuniamo le persone che si occupano di sicurezza OT in Svizzera, per scambiare esperienze e imparare insieme."
 lang: it
 permalink: /it/
 ---
