@@ -17,6 +17,9 @@
 #               over, so an old meeting link never looks like an invitation.
 #               Leave it out until the link is known; the card then says the
 #               link will follow and points to info@icssec.ch.
+#   language    optional, the language the event is held in: de | en | fr | it.
+#               Shown on the card and in the schema.org markup only when set;
+#               leave it out rather than guess.
 #   slides      optional URL to the deck. Rendered as a link on the card.
 #   recording   optional URL to a recording. Same.
 #   uid_suffix  optional. The UID of the downloadable calendar entry is built
@@ -34,19 +37,18 @@
 - date: 2026-12-10
   start: "17:30"
   open_end: true
-  title: Meetup / Get-together
   en:
+    title: Meetup in Lucerne
     location: Lucerne ([just a little brewpub](https://maps.app.goo.gl/prqviWsjjDi9szDL9))
-    teaser: Meetup in Lucerne
   de:
+    title: Meetup in Luzern
     location: Luzern ([just a little brewpub](https://maps.app.goo.gl/prqviWsjjDi9szDL9))
-    teaser: Meetup in Luzern
   fr:
+    title: Meetup à Lucerne
     location: Lucerne ([just a little brewpub](https://maps.app.goo.gl/prqviWsjjDi9szDL9))
-    teaser: Meetup à Lucerne
   it:
+    title: Meetup a Lucerna
     location: Lucerna ([just a little brewpub](https://maps.app.goo.gl/prqviWsjjDi9szDL9))
-    teaser: Meetup a Lucerna
 
 - date: 2026-11-02
   start: "16:00"
@@ -83,19 +85,18 @@
 - date: 2026-09-15
   start: "17:30"
   open_end: true
-  title: Meetup / Get-together
   en:
+    title: Meetup in Basel
     location: Basel ([Bierrevier / Markthalle](https://maps.app.goo.gl/ULN9qMdCdiFnSfaBA))
-    teaser: Meetup in Basel
   de:
+    title: Meetup in Basel
     location: Basel ([Bierrevier / Markthalle](https://maps.app.goo.gl/ULN9qMdCdiFnSfaBA))
-    teaser: Meetup in Basel
   fr:
+    title: Meetup à Bâle
     location: Bâle ([Bierrevier / Markthalle](https://maps.app.goo.gl/ULN9qMdCdiFnSfaBA))
-    teaser: Meetup à Bâle
   it:
+    title: Meetup a Basilea
     location: Basilea ([Bierrevier / Markthalle](https://maps.app.goo.gl/ULN9qMdCdiFnSfaBA))
-    teaser: Meetup a Basilea
 
 - date: 2026-09-07
   start: "16:00"
@@ -107,8 +108,12 @@
 - date: 2026-06-09
   start: "17:30"
   open_end: true
-  title: Meetup / Get-together
+  title: Meetup in Lugano
   location: "[Il Fermento](https://share.google/aXYhMi83xBcOHhMd4), Lugano"
+  fr:
+    title: Meetup à Lugano
+  it:
+    title: Meetup a Lugano
 
 - date: 2026-05-06
   start: "19:00"
@@ -163,17 +168,20 @@
 - date: 2026-02-25
   start: "17:30"
   open_end: true
-  title: Meetup / Get-together
   en:
+    title: Meetup in Bern
     location: "[Simmentaler Brewhouse](https://www.simmentalerbrewhouse.ch/), directly at Bern main station"
     note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
   de:
+    title: Meetup in Bern
     location: "[Simmentaler Brewhouse](https://www.simmentalerbrewhouse.ch/), direkt am Bahnhof Bern"
     note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
   fr:
+    title: Meetup à Berne
     location: "[Simmentaler Brewhouse](https://www.simmentalerbrewhouse.ch/), directement à la gare centrale de Berne"
     note: Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
   it:
+    title: Meetup a Berna
     location: "[Simmentaler Brewhouse](https://www.simmentalerbrewhouse.ch/), direttamente alla stazione centrale di Berna"
     note: Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS security.
 
@@ -185,7 +193,7 @@
     title: Virtual Meetup
     note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
   de:
-    title: Virtual Meetup
+    title: Virtuelles Meetup
     note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
   fr:
     title: Meetup virtuel
@@ -197,17 +205,20 @@
 - date: 2025-12-03
   start: "17:30"
   open_end: true
-  title: Meetup / Get-together
   en:
+    title: Meetup in Lucerne
     location: Lucerne ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))
     note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
   de:
+    title: Meetup in Luzern
     location: Luzern ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))
     note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
   fr:
+    title: Meetup à Lucerne
     location: Lucerne ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))
     note: Networking informel, Q&A ouvert sur l'association et échanges autour de la cybersécurité ICS.
   it:
+    title: Meetup a Lucerna
     location: Lucerna ([Penthouse Roof Top Bar](https://maps.app.goo.gl/7WE3nM3Q4UfaMS1fA))
     note: Networking informale, Q&A aperto sull'associazione e confronto sui temi ICS security.
 
@@ -219,7 +230,7 @@
     title: Virtual Meetup
     note: Informal networking, open Q&A about the association, and exchange on ICS security topics.
   de:
-    title: Virtual Meetup
+    title: Virtuelles Meetup
     note: Informelles Networking, offenes Q&A zum Verein und Austausch zu ICS-Security-Themen.
   fr:
     title: Meetup virtuel

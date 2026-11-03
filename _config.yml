@@ -35,6 +35,23 @@ defaults:
       path: ""
     values:
       image: /assets/images/og-image.png
+      locale: en_GB
+  - scope:
+      path: "de"
+    values:
+      locale: de_CH
+  - scope:
+      path: "fr"
+    values:
+      locale: fr_CH
+  - scope:
+      path: "it"
+    values:
+      locale: it_CH
+
+# Dot-directories are skipped by default; this one carries security.txt.
+include:
+  - .well-known
 
 exclude:
   - README.md

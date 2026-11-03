@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Informativa sulla privacy
+description: "Come ICS Security Switzerland tratta i dati personali secondo la legge svizzera sulla protezione dei dati (LPD)."
 lang: it
 permalink: /it/privacy/
 ---

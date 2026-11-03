@@ -1,0 +1,7 @@
+---
+layout: null
+permalink: /de/events.ics
+sitemap: false
+---
+{%- comment -%} Subscribable calendar; everything is in _includes/ics-feed.html. {%- endcomment -%}
+{%- include ics-feed.html lang="de" -%}

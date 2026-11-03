@@ -2,6 +2,7 @@
 layout: home
 title: Die Schweizer Community für OT-Security
 subtitle: Wir bringen Menschen aus der Schweizer OT-Security-Praxis zusammen, um Erfahrungen auszutauschen und gemeinsam zu lernen.
+description: "Wir bringen Menschen aus der Schweizer OT-Security-Praxis zusammen, um Erfahrungen auszutauschen und gemeinsam zu lernen."
 lang: de
 permalink: /de/
 ---

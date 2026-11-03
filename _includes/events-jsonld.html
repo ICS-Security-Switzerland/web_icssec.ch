@@ -48,7 +48,7 @@ is filled in to satisfy the schema.
 {%- if note -%}
 ,"description":{{ note | markdownify | strip_html | strip | jsonify }}
 {%- endif -%}
-,"url":{{ page_url | jsonify }},"organizer":{"@type":"Organization","name":"ICS Security Switzerland","url":"https://www.icssec.ch"}}
+{%- if ev.language -%},"inLanguage":{{ ev.language | jsonify }}{%- endif -%},"url":{{ page_url | jsonify }},"organizer":{"@type":"Organization","name":"ICS Security Switzerland","url":"https://www.icssec.ch"}}
 {%- endif -%}
 {%- endfor -%}
 {%- endcapture -%}

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Über uns
+description: "Wer hinter ICS Security Switzerland steht: ein neutraler, gemeinnütziger Verein mit Sitz in Bern, sein Vorstand und seine Mitglieder."
 lang: de
 permalink: /de/about/
 ---

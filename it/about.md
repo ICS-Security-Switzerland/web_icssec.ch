@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Chi siamo
+description: "Chi c'è dietro ICS Security Switzerland: un'associazione neutrale senza scopo di lucro con sede a Berna, il suo comitato e i suoi membri."
 lang: it
 permalink: /it/about/
 ---

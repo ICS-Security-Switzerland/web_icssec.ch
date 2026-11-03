@@ -1,0 +1,30 @@
+{%- comment -%}
+All events as one calendar a client can subscribe to, in one language.
+
+  include.lang  'en' | 'de' | 'fr' | 'it'
+
+Rendered by events.ics, de/events.ics, fr/events.ics and it/events.ics, and
+built from the same head and VEVENT includes as the per-event download, so
+an entry looks the same whether it was downloaded or subscribed — and has
+the same UID, so a client can tell it is the same event.
+
+Past events stay in: a subscribed calendar that loses last month's talk would
+be wrong, not tidier. The site is rebuilt daily (see the workflow), which is
+also what keeps the feed current.
+
+RFC 5545 wants CRLF line endings. Jekyll writes plain newlines, so the whole
+body is converted at the end; url_decode is the one way to get a carriage
+return out of Liquid without hiding one in the template.
+{%- endcomment -%}
+{%- assign by_date = site.data.events | sort: 'date' -%}
+{%- capture body -%}
+{% include ics-head.html lang=include.lang feed=true %}
+{%- for ev in by_date %}
+{% include ics-vevent.html event=ev lang=include.lang %}
+{%- endfor %}
+END:VCALENDAR
+{% endcapture -%}
+{%- assign lf = '%0A' | url_decode -%}
+{%- assign crlf = '%0D%0A' | url_decode -%}
+{%- assign body = body | strip | append: lf -%}
+{{- body | replace: lf, crlf -}}

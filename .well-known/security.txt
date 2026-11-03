@@ -1,0 +1,21 @@
+---
+layout: null
+permalink: /.well-known/security.txt
+sitemap: false
+---
+{%- comment -%}
+RFC 9116. Where to report a security problem with icssec.ch.
+
+Expires is required and should be less than a year ahead. It is computed
+from the build date (180 days ahead), and the site is rebuilt daily by the
+workflow, so it never runs out while the site is maintained. If the daily
+rebuild is ever switched off, this file goes stale after half a year —
+which is the point of the field.
+{%- endcomment -%}
+{%- assign expires = site.time | date: '%s' | plus: 15552000 | date: '%Y-%m-%dT00:00:00%:z' -%}
+# ICS Security Switzerland: please report security issues concerning
+# www.icssec.ch to the address below.
+Contact: mailto:info@icssec.ch
+Expires: {{ expires }}
+Preferred-Languages: de, en, fr, it
+Canonical: https://www.icssec.ch/.well-known/security.txt

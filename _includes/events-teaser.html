@@ -23,8 +23,11 @@ bring links of its own.
 {%- if day >= today and shown < limit -%}
 {%- assign l = ev[include.lang] -%}
 {%- assign label = l.teaser | default: ev.teaser | default: l.title | default: ev.title -%}
-{%- comment -%} Show the time only when the event has a fixed slot. {%- endcomment -%}
-{%- if ev.end and ev.open_end != true -%}
+{%- comment -%}
+The time is shown whenever there is one, open-ended get-togethers included
+("from 17:30"): a visitor deciding whether to come needs it before clicking.
+{%- endcomment -%}
+{%- if ev.start -%}
 {%- assign show_time = true -%}
 {%- else -%}
 {%- assign show_time = false -%}

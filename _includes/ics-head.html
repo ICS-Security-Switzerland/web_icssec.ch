@@ -12,16 +12,25 @@ Times are written with TZID rather than converted to UTC, and the rules below
 are the EU daylight-saving rules, so a client resolves CET and CEST itself
 instead of guessing.
 
-No X-WR-CALNAME or X-WR-TIMEZONE. Both are non-standard hints that tell a
-client what to call a subscribed calendar and which zone to assume for it.
-There is no subscription here, and every time carries an explicit TZID backed
-by the VTIMEZONE below, so neither would do anything.
+  include.feed  true for the subscribable feed (ics-feed.html): adds the
+                calendar's name and a refresh hint, which only mean
+                something to a client that subscribes. They are calendar
+                properties, so they have to come before the VTIMEZONE.
+
+No X-WR-TIMEZONE: every time carries an explicit TZID backed by the
+VTIMEZONE below, so it would do nothing.
 {%- endcomment -%}
 BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//ICS Security Switzerland//icssec.ch//{{ include.lang | upcase }}
 CALSCALE:GREGORIAN
 METHOD:PUBLISH
+{% if include.feed -%}
+X-WR-CALNAME:ICS Security Switzerland
+NAME:ICS Security Switzerland
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+{% endif -%}
 BEGIN:VTIMEZONE
 TZID:Europe/Zurich
 BEGIN:STANDARD

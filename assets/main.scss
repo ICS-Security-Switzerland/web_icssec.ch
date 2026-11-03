@@ -868,6 +868,26 @@ a.event--teaser:hover .event-teaser-title {
 .event--teaser .event-when { margin: 0; display: block; }
 
 /* ---------- Past events are quieter, not louder ---------- */
+/* Calendar subscription under the intro of the events page. The https
+   address is printed as well, for apps that only take a pasted URL; it may
+   break anywhere on a phone rather than push the page sideways. */
+.events-subscribe {
+  margin: 12px 0 8px;
+  font-size: 0.93rem;
+}
+.events-subscribe .event-link {
+  font-weight: 600;
+  font-size: inherit;
+}
+.events-subscribe-hint {
+  display: block;
+  margin-top: 4px;
+  color: var(--color-text-secondary);
+}
+.events-subscribe-hint code {
+  overflow-wrap: anywhere;
+}
+
 .events-questions {
   margin: 18px 0 0;
   padding-top: 14px;
@@ -885,6 +905,21 @@ a.event--teaser:hover .event-teaser-title {
 }
 .join-privacy {
   margin: 0 0 12px;
+}
+
+/* The Webling form cannot report its height to this page (it sends no
+   message across the frame boundary), so the frame gets a fixed one per
+   width: measured at 860px on desktop and 970px at phone width, plus room
+   for validation messages. It used to be 1200px everywhere, which left a
+   blank band under the form on desktop. */
+.join-form {
+  display: block;
+  width: 100%;
+  height: 1020px;
+  border: 0;
+}
+@media (max-width: 768px) {
+  .join-form { height: 1160px; }
 }
 
 /* 404 */

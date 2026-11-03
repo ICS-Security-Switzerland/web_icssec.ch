@@ -67,6 +67,10 @@ Workflow file: `.github/workflows/jekyll-gh-pages.yml`
 Site URL: https://www.icssec.ch
 
 ## Notes
+- `/events.ics` (and `/de/`, `/fr/`, `/it/events.ics`) is a subscribable calendar
+  of all events, built from `_data/events.yml` like the events page.
+- `/.well-known/security.txt` (RFC 9116) gets its `Expires` date from the build;
+  the daily scheduled rebuild keeps it current.
 - Jekyll dependencies are declared through `github-pages` in `Gemfile` for Pages parity.
   The deploy workflow does **not** use this Gemfile — `actions/jekyll-build-pages` ships its
   own pinned bundle (currently Jekyll 3.10). The Gemfile only governs local previews.

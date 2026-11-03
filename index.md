@@ -2,6 +2,7 @@
 layout: home
 title: The Swiss community for OT security
 subtitle: We bring together people who work on OT security in Switzerland, to share experience and learn from each other.
+description: "We bring together people who work on OT security in Switzerland, to share experience and learn from each other."
 lang: en
 permalink: /
 ---
