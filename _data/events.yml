@@ -34,6 +34,25 @@
 # pages, the homepage teaser, the schema.org markup and the per-event calendar
 # download all render from this file, so they cannot disagree with each other.
 
+- date: 2027-01-25
+  start: "18:15"
+  en:
+    title: General Assembly with Apéro riche
+    location: Switch, Werdstrasse 2, 8004 Zurich
+    note: First ordinary general assembly of the members, followed by an apéro riche. On-site attendance preferred, virtual participation possible. The invitation with the agenda follows by e-mail; registration and motions by 11 January 2027.
+  de:
+    title: Generalversammlung (GV) mit Apéro riche
+    location: Switch, Werdstrasse 2, 8004 Zürich
+    note: Erste ordentliche Generalversammlung der Mitglieder, anschliessend Apéro riche. Teilnahme vor Ort bevorzugt, virtuell möglich. Die Einladung mit Traktanden folgt per E-Mail; Anmeldung und Anträge bis 11. Januar 2027.
+  fr:
+    title: Assemblée générale (AG) avec apéro riche
+    location: Switch, Werdstrasse 2, 8004 Zurich
+    note: "Première assemblée générale ordinaire des membres, suivie d'un apéro riche. Participation sur place de préférence, participation virtuelle possible. L'invitation avec l'ordre du jour suit par e-mail ; inscription et propositions jusqu'au 11 janvier 2027."
+  it:
+    title: Assemblea generale (AG) con apéro riche
+    location: Switch, Werdstrasse 2, 8004 Zurigo
+    note: "Prima assemblea generale ordinaria dei membri, seguita da un apéro riche. Partecipazione preferibilmente in presenza, possibile anche online. L'invito con l'ordine del giorno segue via e-mail; iscrizione e proposte entro l'11 gennaio 2027."
+
 - date: 2026-12-10
   start: "17:30"
   open_end: true
